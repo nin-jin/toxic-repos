@@ -1,0 +1,3274 @@
+[
+    {
+        "id": 4,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "broken_assembly",
+        "name": "fomvasss/laravel-dadata",
+        "commit_link": "https://github.com/fomvasss/laravel-dadata",
+        "description": "Удален с github"
+    },
+    {
+        "id": 7,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "broken_assembly",
+        "name": "yandex-php-library",
+        "commit_link": "https://github.com/nixsolutions/yandex-php-library/blob/master/README.md",
+        "description": "Заметил проблему с библиотекой дней 10 назад, владелец из Харькова,"
+    },
+    {
+        "id": 8,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "broken_assembly",
+        "name": "Un-Official Yandex-XML PHP library",
+        "commit_link": "https://packagist.org/packages/anton-shevchuk/yandex-xml-library",
+        "description": "В packagist добавлена версия пакета с политическим лозунгом, а исходники удалены из гитхаба. Результат - поломаная сборка проекта"
+    },
+    {
+        "id": 12,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "SlavaUkraini",
+        "commit_link": "https://github.com/ApocalypseCalculator/SlavaUkraini/commit/eee435955849ed04d064e29a60c45f0f2ece48d5",
+        "description": "DDOS tool against RU resources"
+    },
+    {
+        "id": 14,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "DDoS-Russia-App",
+        "commit_link": "https://github.com/seriascraper/DDoS-Russia-App/commit/a59430c8db86fdc73ed42eb47f4234dfcbdc1f89",
+        "description": "HTML DDoS from https://pwned.space site of RU resources in background"
+    },
+    {
+        "id": 15,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "Anti-Prop/antiprop_basic",
+        "commit_link": "https://github.com/Anti-Prop/antiprop_basic/commit/77a2f5f09b79d39702b6929be10fae5e260177ab",
+        "description": "DDoS tool, working from browser, against RU resources"
+    },
+    {
+        "id": 16,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "dddos",
+        "commit_link": "https://github.com/pauldb09/Dddos/commit/7d9bcbec25c58081b0df8a582acb5fd0bf2d4b67",
+        "description": "DDoS tool with ability to bypass Cloudflare"
+    },
+    {
+        "id": 17,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "SlavaUkraineSince1991/DDoS-for-all",
+        "commit_link": "https://github.com/SlavaUkraineSince1991/DDoS-for-all",
+        "description": "досилка"
+    },
+    {
+        "id": 18,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "StopWar.pro",
+        "commit_link": "https://StopWar.pro",
+        "description": "Мобильное приложение со встроенным DDoS"
+    },
+    {
+        "id": 19,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "dxh-team/CDUW",
+        "commit_link": "https://github.com/dxh-team/CDUW/commit/e2ae41c9315e1de2c32a1b0983f7c897e342d96f",
+        "description": "ПО разработанное и настроенное для атак ресурсов РФ на базе Hammer Dos Script"
+    },
+    {
+        "id": 21,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "alexander-danilenko/ua-loadtest",
+        "commit_link": "https://github.com/alexander-danilenko/ua-loadtest/commit/ce994b94bf8cc67fd04914d08e3913bcac1c4f53",
+        "description": "ПО для нагрузочного тестирования, ориентированное на использования в DDoS атаках на ресурсы РФ"
+    },
+    {
+        "id": 22,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "opengs/uashield",
+        "commit_link": "https://github.com/opengs/uashield/commit/f5de10a10e9e2c872450fe82454e838e62ff2d2f",
+        "description": "ПО для хакерских атак настроенное на атаки инфраструктуры и организаций в РФ"
+    },
+    {
+        "id": 24,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "erkexzcx/stoppropaganda",
+        "commit_link": "https://github.com/erkexzcx/stoppropaganda/commit/d1e0a530e6ebce2b61df2afa038956c074998292",
+        "description": "Хакерское ПО для проведения DDoS атак, настроенное на инфраструктуру и ресурсы РФ"
+    },
+    {
+        "id": 27,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "GloryToUA/Justice3",
+        "commit_link": "https://github.com/GloryToUA/Justice3/commit/38d5e7710929d6a6b19e7c60a867ef6a391abac0",
+        "description": "Инструментарий для DDoS атак, нацеленный на нефтедобывающую отрасль"
+    },
+    {
+        "id": 31,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "0x77dev/stoprussia",
+        "commit_link": "https://github.com/0x77dev/stoprussia",
+        "description": "Набор инструментов для атак инфраструктуры РФ - доставка еды, транспорт, гос.ресурсы, различных коммерческих компаний"
+    },
+    {
+        "id": 32,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "Инструмент для DDoS атак",
+        "commit_link": "https://github.com/d1sUa/DisDDos",
+        "description": "Инструмент для DDoS атак, призывы к атакам инфраструктуры РФ"
+    },
+    {
+        "id": 33,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "hack_russia",
+        "commit_link": "https://lostmsu.github.io/hack_russia/",
+        "description": "Инструмент для DDoS списка сайтов"
+    },
+    {
+        "id": 34,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "russia-must-be-stopped",
+        "commit_link": "https://github.com/zozulinskyi/russia-must-be-stopped/commits/main",
+        "description": "Скрипт, встраиваемый в браузер и превращающий его в своебразного \"зомби\" в бот-сети. Также, в репе лежит 2 текстовых файлика со списками url-жертв."
+    },
+    {
+        "id": 35,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "Death by 1000 needles",
+        "commit_link": "https://github.com/Arriven/db1000n",
+        "description": "получает конфиг с ip адресами и начинает флудить трафиком"
+    },
+    {
+        "id": 37,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "https://github.com/Luzhnuy/attacker",
+        "commit_link": "https://github.com/Luzhnuy/attacker",
+        "description": "репка с ддосом"
+    },
+    {
+        "id": 38,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "db1000n",
+        "commit_link": "https://github.com/Arriven/db1000n",
+        "description": "DDOS осуществляется через общедоступный список из ~100 тыс. проксей: https://github.com/Arriven/db1000n/blob/main/proxylist.json"
+    },
+    {
+        "id": 39,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "bombardier",
+        "commit_link": "https://github.com/almerico/bombardier",
+        "description": "Организация DoS-атак на инфраструктуру России: Госуслуги и проч."
+    },
+    {
+        "id": 40,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "https://github.com/Sateviss",
+        "commit_link": "https://github.com/Sateviss/sateviss.github.io/blob/master/ddos.html",
+        "description": "Гитхаб игнорит абузы с ру айпи"
+    },
+    {
+        "id": 41,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "russia_ddos",
+        "commit_link": "https://github.com/alexmon1989/russia_ddos",
+        "description": "Досилка"
+    },
+    {
+        "id": 42,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "AlexTrushkovsky/NoWarDDoS",
+        "commit_link": "https://github.com/AlexTrushkovsky/NoWarDDoS",
+        "description": "Вообще на неё пожаловались много раз, и в итоге гитхаб выкосил репу, на что автор даже написал что гитхаб поддерживает Русских. Репа опять появилась."
+    },
+    {
+        "id": 43,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "ChngYrNick/fuck-warship",
+        "commit_link": "https://github.com/ChngYrNick/fuck-warship",
+        "description": "Досилка"
+    },
+    {
+        "id": 44,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "SlavaUkraini2022/ddos_for_glory_of_ukraine",
+        "commit_link": "https://github.com/SlavaUkraini2022/ddos_for_glory_of_ukraine",
+        "description": "Досилка"
+    },
+    {
+        "id": 45,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "UA-IT-Army/aggressor-sites",
+        "commit_link": "https://github.com/UA-IT-Army/aggressor-sites",
+        "description": "Досилка"
+    },
+    {
+        "id": 46,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "ievgen11/ddoser",
+        "commit_link": "https://github.com/ievgen11/ddoser",
+        "description": "Досилка"
+    },
+    {
+        "id": 47,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "muterussia/MuteRussia",
+        "commit_link": "https://github.com/muterussia/MuteRussia",
+        "description": "Досилка"
+    },
+    {
+        "id": 48,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "smrt-fascismu/RuskiBot-Reddit",
+        "commit_link": "https://github.com/smrt-fascismu/RuskiBot-Reddit",
+        "description": "Досилка"
+    },
+    {
+        "id": 50,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "RusskijKorablIdiNaxuj/RusskijKorablIdiNaxuj",
+        "commit_link": "https://github.com/RusskijKorablIdiNaxuj/RusskijKorablIdiNaxuj",
+        "description": "Досилка"
+    },
+    {
+        "id": 51,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "metastck/putler-doser",
+        "commit_link": "https://github.com/metastck/putler-doser",
+        "description": "Досилка"
+    },
+    {
+        "id": 52,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "ajax-lives/NoRussian",
+        "commit_link": "https://github.com/ajax-lives/NoRussian",
+        "description": "досилка"
+    },
+    {
+        "id": 55,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ddos",
+        "name": "vnestoruk/BAN-dera",
+        "commit_link": "https://github.com/vnestoruk/ban-dera",
+        "description": "Сервис, который ддосит сайты из списка с компьютеров пользователей, у кого открыта вкладка с сайтом. Я думаю, стоит подробно описать как жаловаться на авторов подобных дистрибутивов или патчей."
+    },
+    {
+        "id": 349,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "ddos",
+        "name": "curlpump",
+        "commit_link": "https://github.com/yellowsummer1972/curlpump/",
+        "description": "При запуске отправляет многочисленные запросы на сайты из списка (там не только госсайты, но и российские компании)."
+    },
+    {
+        "id": 350,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "ddos",
+        "name": "MHDDoS_proxy",
+        "commit_link": "https://github.com/SlavaUkraineSince1991/DDoS-for-all/blob/main/MHDDoS_proxy.md",
+        "description": "Используется украиной для DDoS атак на российские коммерческие и государственные компании"
+    },
+    {
+        "id": 467,
+        "datetime": "2022-04-29 09:34:00",
+        "problem_type": "ddos",
+        "name": "Targets for auto_mhddos_alexnest",
+        "commit_link": "https://github.com/alexnest-ua/targets/",
+        "description": "Список российских ресурсов для DDoS атак"
+    },
+    {
+        "id": 6,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "hostile_actions",
+        "name": "Глянец",
+        "commit_link": "https://drupal.ru/glyanec-scam",
+        "description": "Компания «Глянец» встраивает на сайты клиентов вредоносный код для обхода защиты и получения полного доступа к сайтам. Они называют это «сервисным входом». 26 февраля руководитель «Глянец» Заика Анатолий в публичном телеграм-чате заявил, что российские сай"
+    },
+    {
+        "id": 20,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "hostile_actions",
+        "name": "ch33r10/SunflowerCon",
+        "commit_link": "https://github.com/ch33r10/SunflowerCon/commit/424e61c74463949dd43a62435ac8e332f4ba5a5f",
+        "description": "Страница по координации и сбору IT - разведданных нацеленных на атаки инфраструктуры РФ"
+    },
+    {
+        "id": 23,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "hostile_actions",
+        "name": "curated-intel/Ukraine-Cyber-Operations",
+        "commit_link": "https://github.com/curated-intel/Ukraine-Cyber-Operations",
+        "description": "Страница кураторов IT-разведок для координации информации необходимой для проведения хакерских атак и сбора разведданных о разведке РФ"
+    },
+    {
+        "id": 25,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "hostile_actions",
+        "name": "dimboknv/tg-stand-with-ukraine",
+        "commit_link": "https://github.com/dimboknv/tg-stand-with-ukraine/commit/77b82fdf8e8552131736b8f0af52d2d37c3de020",
+        "description": "Телеграм бот для массовой рассылки жалоб на телеграм-каналы"
+    },
+    {
+        "id": 26,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "hostile_actions",
+        "name": "mytechnotalent/turbo-scanner",
+        "commit_link": "https://github.com/mytechnotalent/turbo-scanner/commit/9a03670ada0ef5253f9ecde397c2edd7ed572352?short_path=b335630#diff-b3356305",
+        "description": "Сетевой сканер. Инструмент используемый для проведения хакерских атак. На странице добавлен тег Ukraine."
+    },
+    {
+        "id": 28,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "hostile_actions",
+        "name": "sanfarans/hack4ukraine",
+        "commit_link": "https://github.com/sanfarans/hack4ukraine",
+        "description": "На данный момент пустой репозиторий"
+    },
+    {
+        "id": 29,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "hostile_actions",
+        "name": "Syarol/how-did-they-respond",
+        "commit_link": "https://github.com/Syarol/how-did-they-respond/commit/3983dbb07e8194b8864de90ed724692b1b9406fb",
+        "description": "Сбор данных об организациях высказывающихся в ту или иную пользу о конфликте."
+    },
+    {
+        "id": 36,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "hostile_actions",
+        "name": "IT-ARMY-of-Ukraine-Resources-in-English",
+        "commit_link": "https://github.com/danieldanielecki/IT-ARMY-of-Ukraine-Resources-in-English",
+        "description": "Подборка целей и инструментов для атак по инфраструктуре РФ"
+    },
+    {
+        "id": 69,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "hostile_actions",
+        "name": "dell.com",
+        "commit_link": "https://www.dell.com/restrictions/support/ru-ru/index.html",
+        "description": "Заблокировали возможность скачивания драйверов из России. Вывод сообщения \"В настоящее время компания Dell не может оказывать техническую поддержку на территории России. Приносим извинения за доставленные неудобства.\""
+    },
+    {
+        "id": 70,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "hostile_actions",
+        "name": "lenovo.com",
+        "commit_link": "https://download.lenovo.com/eol/index.html",
+        "description": "Заблокировали возможность скачивания драйверов из Российского региона"
+    },
+    {
+        "id": 71,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "hostile_actions",
+        "name": "rubyweekly.com",
+        "commit_link": "https://rubyweekly.com/issues/595",
+        "description": "Убрали из рассылок русские адреса и возможность подписаться с .ru почты на изменения в языке Ruby и Rails-on-ruby"
+    },
+    {
+        "id": 84,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "hostile_actions",
+        "name": "Firefox",
+        "commit_link": "https://phabricator.services.mozilla.com/D140898",
+        "description": "удалил поиск Яндекса"
+    },
+    {
+        "id": 85,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "hostile_actions",
+        "name": "DeskCamera",
+        "commit_link": "https://www.deskcamera.com",
+        "description": "Блокируют проплаченные и активированные лицензии в России. Техподдержка отвечает \"Слава украине\"."
+    },
+    {
+        "id": 86,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "hostile_actions",
+        "name": "GitHub",
+        "commit_link": "нет",
+        "description": "Пришло сегодня письмо от гитхаба: Thank you for your patience during this process. After reviewing we have determined that your account is ineligible for GitHub purchases due to restrictions under U.S. economic sanctions. For this reason you will not be ab"
+    },
+    {
+        "id": 88,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "hostile_actions",
+        "name": "1password",
+        "commit_link": "https://blog.1password.com/responding-to-the-conflict-in-ukraine/",
+        "description": "Нельзя зарегать новый аккаунт из России, нельзя продлить подписку"
+    },
+    {
+        "id": 91,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "hostile_actions",
+        "name": "Wowza",
+        "commit_link": "https://www.wowza.com/",
+        "description": "Wowza — серверное программное обеспечения для организации как вещания потокового аудио и видео, так и доставки видео по запросу. Отозвало лицензии, в связи с чем вещание прекратилось. Ищите замену"
+    },
+    {
+        "id": 94,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "hostile_actions",
+        "name": "Mongodb Atlas",
+        "commit_link": "https://www.securitylab.ru/news/530550.php",
+        "description": "Был неприятный инцидент с Mongodb Atlas. Да, это не круто и это многим не нравится. Но это не опенсорсная монга, она на основе опен-сорс"
+    },
+    {
+        "id": 159,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "hostile_actions",
+        "name": "emergenzeHack/ukrainehelp.emergenzehack.info_segnalazioni",
+        "commit_link": "https://github.com/emergenzeHack/ukrainehelp.emergenzehack.info_segnalazioni/commit/278b4ec80b6c957bd7cbc0a8245a8ed2cba88e55",
+        "description": "Ресурсы для сбора разведданных и аналитики - геолокация, парсинг ресурсов, и т.п."
+    },
+    {
+        "id": 164,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "hostile_actions",
+        "name": "danieldanielecki/IT-ARMY-of-Ukraine-Resources-in-English",
+        "commit_link": "https://github.com/danieldanielecki/IT-ARMY-of-Ukraine-Resources-in-English/commit/7943fb13858197707b13686b612548f5812b3fab",
+        "description": "Страница для координации хакерских атак на инфраструктуру РФ, ссылки на прикладное ПО для атак, цели и адреса групп координирующих хакерские атаки"
+    },
+    {
+        "id": 166,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "hostile_actions",
+        "name": "a2435191/ukraine-war-map-twitter-bot",
+        "commit_link": "https://github.com/a2435191/ukraine-war-map-twitter-bot/commit/7c8c5fcd1478f5dcf61f76cc754c34e6de2682e1",
+        "description": "Бот для ведения пропаганды в твиттере"
+    },
+    {
+        "id": 167,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "hostile_actions",
+        "name": "helpmap/helpmap.io",
+        "commit_link": "https://github.com/helpmap/helpmap.io/commit/a4864227f59d42c216448f82c08d834af2f8eba6",
+        "description": "Фреймворк для массового создания ресурсов для сбора финансов"
+    },
+    {
+        "id": 213,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "hostile_actions",
+        "name": "OkayCMS",
+        "commit_link": "https://okay-cms.com/ https://ok-cms.com/",
+        "description": "Были политические заявления в блоге и на сайте компании, указывающие на то, что русских ненавидят. Прямой отказ в обновлениях движка и отправке уже оплаченных ранее модулей"
+    },
+    {
+        "id": 227,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "hostile_actions",
+        "name": "kbrehme/niffelheim",
+        "commit_link": "https://github.com/kbrehme/niffelheim/commit/7cb93ca14aab68c646a65ef21923835a0f791d4a",
+        "description": "Человек удаляет все что связано с русским народом в модах и скриптах"
+    },
+    {
+        "id": 289,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "hostile_actions",
+        "name": "CliWrap",
+        "commit_link": "https://github.com/Tyrrrz/CliWrap",
+        "description": "Внесение в условия использования, по которому использование библиотеки означает согласие с утверждениями которые могут привести у уголовной ответственности, разумеется нарушает принципы Открытого ПО, как заметил в ответах к комментарию автора в твиттере од"
+    },
+    {
+        "id": 295,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "hostile_actions",
+        "name": "AppFollow",
+        "commit_link": "https://appfollow.io/blog/supporting-ukraine",
+        "description": "не будут продлевать подписки компаний из России и Беларуси. доступ к аккаунту будет заблокирован через 30 дней после окончания подписки."
+    },
+    {
+        "id": 317,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "hostile_actions",
+        "name": "UpdatePack 7 / 2008 R2 / 22.3.11",
+        "commit_link": "https://blog.simplix.info/",
+        "description": "UpdatePack 7 / 2008 R2 / 22.3.11 В сборке от 11.03 при работе в системе с заданными TZ из России или Беларуси показывает сообщение \"ваша страна поддерживает войну...\" и работа завершается."
+    },
+    {
+        "id": 330,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "hostile_actions",
+        "name": "W3schools Rus on GitHub",
+        "commit_link": "https://github.com/w3schoolsrus/w3schoolsrus.github.io/commit/b3860d3e66dbc0c54ba617326c0378e42fd7fb12",
+        "description": "Клон сайта W3schools на русском. Делал укроинец. После 23 февраля решил удалить русский перевод и оставить только украинский. Восстановленная версия по состоянию на 23.02.2022 https://open-source-peace.github.io/w3schoolsrus/ https://github.com/w3schoolsru"
+    },
+    {
+        "id": 337,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "hostile_actions",
+        "name": "Uptime kuma",
+        "commit_link": "https://github.com/louislam/uptime-kuma/tree/1.12.0 https://www.reddit.com/r/UptimeKuma/comments/t1rsqs/uptime_kuma_112_released",
+        "description": "Удаляли русский язык, просили путина закончить войну что бы вернуть его."
+    },
+    {
+        "id": 355,
+        "datetime": "2022-04-08 11:06:54",
+        "problem_type": "hostile_actions",
+        "name": "PayPal",
+        "commit_link": "paypal.com",
+        "description": "Сняли остаток на счёте, отвязали привязанную виртуальную карту тинькова. При повторной привязке сообщают об ошибке. В списке карт можно выбрать mastercard/visa/итд, а выбор карты МИР - отсутствует. При попытке перевести средства из-за рубежа через форму `https://www.paypal.com/cgi-bin/webscr?item_name=Donation+to+user&cmd=_donations&business=user%40domain.com` - предлагают только рубли."
+    },
+    {
+        "id": 358,
+        "datetime": "2022-04-08 11:06:54",
+        "problem_type": "hostile_actions",
+        "name": "Ionos",
+        "commit_link": "https://www.ionos.com/",
+        "description": "Прекратили услуги регистрации доменных имен для пользователей РБ и РФ"
+    },
+    {
+        "id": 361,
+        "datetime": "2022-04-08 11:06:54",
+        "problem_type": "hostile_actions",
+        "name": "MoneyGram.com",
+        "commit_link": "moneygram.com",
+        "description": "приостановили услуги в России"
+    },
+    {
+        "id": 362,
+        "datetime": "2022-04-08 11:06:54",
+        "problem_type": "hostile_actions",
+        "name": "GitLab",
+        "commit_link": "gitlab.com",
+        "description": "С марта 2022 перестали продлевать и выдавать квоты на новые лицензии"
+    },
+    {
+        "id": 369,
+        "datetime": "2022-04-08 11:06:54",
+        "problem_type": "hostile_actions",
+        "name": "HPE",
+        "commit_link": "hpe.com",
+        "description": "HPE заблокировал аккаунты из РФ и Беларуси (Есть файлы, которые без зарегистрированного аккаунта с привязанным серийным номером не скачать) 24 марта пришло письмо от \"HPE Headquarters\" <no-reply@hpe.com> Due to regulatory requirements, HPE registered users in Russia and Belarus were deactivated on 22 March 2022 until further notice. This will result in not being allowed access to information and services that reside within HPE."
+    },
+    {
+        "id": 370,
+        "datetime": "2022-04-08 11:06:54",
+        "problem_type": "hostile_actions",
+        "name": "Synology",
+        "commit_link": "https://synology.com/",
+        "description": "При запросе в тех.поддержку Synology, автоматически тикет падает в архив с ответом В связи с последними событиями Synology объявила о временной приостановке поставок всех продуктов и предоставлении технической поддержки любым юридическим и физическим лицам в Российской Федерации и Республике Беларусь. Если в аккаунте выбрать Казахстан, то через время отвечают со скриншотом Dear customer, we are sorry to inform you, that we need to close your technical support request. Due to European Union sanctions, Synology subsidiaries within European Union are temporarily unable to provide support for our products and customers, located in russia and belarus. Please reffer entire EU sanction description attached. Please find here the official Knowldege Center: https://kb.synology.com/ Knowledge Center provides description for all functions and help for most common topics. Please do not answer to this message, as we are unable to send you any further reply. Best Regards Synology GmbH Technical Support"
+    },
+    {
+        "id": 394,
+        "datetime": "2022-04-11 10:28:33",
+        "problem_type": "hostile_actions",
+        "name": "Norton Security",
+        "commit_link": "https://norton.com/",
+        "description": "Отключили обновления. При попытке обновления ошибок нет, но антивирус всё-равно предупреждает об устаревших базах"
+    },
+    {
+        "id": 395,
+        "datetime": "2022-04-11 10:28:33",
+        "problem_type": "hostile_actions",
+        "name": "Host-tracker",
+        "commit_link": "https://www.host-tracker.com/ru/",
+        "description": "Сервис распределенного мониторинга и оповещений. Отказали в обслуживании всем пользователям из России, разослали письма с лозунгами"
+    },
+    {
+        "id": 396,
+        "datetime": "2022-04-11 10:28:33",
+        "problem_type": "hostile_actions",
+        "name": "Coursera",
+        "commit_link": "https://www.coursera.org/",
+        "description": "Отказали в платных услугах всем пользователям из России, письмо с лозунгами в поддержку Украины"
+    },
+    {
+        "id": 397,
+        "datetime": "2022-04-11 10:28:33",
+        "problem_type": "hostile_actions",
+        "name": "NewRelic",
+        "commit_link": "https://newrelic.com",
+        "description": "Отказали в обслуживании пользователям из России, игнор обращений в техподдержку при попытке решить этот вопрос"
+    },
+    {
+        "id": 399,
+        "datetime": "2022-04-11 10:28:33",
+        "problem_type": "hostile_actions",
+        "name": "Sparkpost (рассылка email)",
+        "commit_link": "Sparkpost.com",
+        "description": "Удалили аккаунт без объявления причин и не дали скачать данные"
+    },
+    {
+        "id": 401,
+        "datetime": "2022-04-11 10:28:33",
+        "problem_type": "hostile_actions",
+        "name": "Ubuntu",
+        "commit_link": "https://ubuntu.com/blog/canonical-standing-with-ukraine",
+        "description": "Canonical направила уведомление о прекращении поддержки, профессиональных услуг и партнерских отношений с российскими предприятиями. «Мы направим любой российский доход от подписки на такое обслуживание на украинские гуманитарные цели»"
+    },
+    {
+        "id": 402,
+        "datetime": "2022-04-11 10:28:33",
+        "problem_type": "hostile_actions",
+        "name": "Grammarly",
+        "commit_link": "grammarly.com",
+        "description": "Приостановили обслуживание в РФ и Белоруссии. Для россиких IP отображают страницу-заглушку с пропогандой. Перекрасили логотип в цвета украинского флага"
+    },
+    {
+        "id": 403,
+        "datetime": "2022-04-11 10:28:33",
+        "problem_type": "hostile_actions",
+        "name": "Leaflet",
+        "commit_link": "https://leafletjs.com/",
+        "description": "JavaScript library for interactive maps. Заблокировали доступ к сайту из РФ."
+    },
+    {
+        "id": 404,
+        "datetime": "2022-04-11 10:28:33",
+        "problem_type": "hostile_actions",
+        "name": "stalniy/casl",
+        "commit_link": "https://github.com/stalniy/casl/commit/b13c3de252b8412079b4030ff73309d65713c8d2",
+        "description": "Authorization JS library. Полит лозунг в документации и на сайте https://casl.js.org/v5/en/"
+    },
+    {
+        "id": 405,
+        "datetime": "2022-04-11 10:28:33",
+        "problem_type": "hostile_actions",
+        "name": "SilentButeo2/webgrabplus-siteinipack",
+        "commit_link": "https://github.com/SilentButeo2/webgrabplus-siteinipack/commit/1256512408bb07bf36ac90a4e35400d6c5dae4ab",
+        "description": "Софт для парсинга сайтов с ТВ программами от голландца Jan van Straaten. Удалил поддержку зоны ru (несколько коммитов). http://www.webgrabplus.com/content/stop-war-no-russia-support"
+    },
+    {
+        "id": 406,
+        "datetime": "2022-04-11 10:28:33",
+        "problem_type": "hostile_actions",
+        "name": "MenuetOS",
+        "commit_link": "http://menuetos.net/",
+        "description": "Зачем-то добавили флажок Украины в шапку сайта: https://imgbox.com/DdwDbvR7"
+    },
+    {
+        "id": 407,
+        "datetime": "2022-04-11 10:28:33",
+        "problem_type": "hostile_actions",
+        "name": "iFixit",
+        "commit_link": "https://ru.ifixit.com/",
+        "description": "Перекрасили логотип в цвета украинского флага."
+    },
+    {
+        "id": 408,
+        "datetime": "2022-04-11 10:28:33",
+        "problem_type": "hostile_actions",
+        "name": "softportal.com",
+        "commit_link": "https://www.softportal.com/img/green/head/sp_lenta2.jpg",
+        "description": "добавили синюю и желтую ленточки"
+    },
+    {
+        "id": 412,
+        "datetime": "2022-04-13 14:17:54",
+        "problem_type": "hostile_actions",
+        "name": "GitHub blog",
+        "commit_link": "https://github.blog/2022-03-02-our-response-to-the-war-in-ukraine/",
+        "description": "Перекрасили логотип в цвета украинского флага."
+    },
+    {
+        "id": 416,
+        "datetime": "2022-04-15 10:24:12",
+        "problem_type": "hostle_action",
+        "name": "wxwidgets cross platform gui library",
+        "commit_link": "https://www.wxwidgets.org/",
+        "description": "UA флаг на главной странице"
+    },
+    {
+        "id": 418,
+        "datetime": "2022-04-15 10:46:31",
+        "problem_type": "hostle_action",
+        "name": "Vintage programmable calculators",
+        "commit_link": "http://www.pisi.com.pl/piotr433/index.htm",
+        "description": "В марте владелец сайта удалил все материалы, связанные с советскими калькуляторами МК85 и МК90"
+    },
+    {
+        "id": 425,
+        "datetime": "2022-04-18 12:38:00",
+        "problem_type": "hostle_action",
+        "name": "Udemy (онлайн курсы)",
+        "commit_link": "https://www.udemy.com/",
+        "description": "На главной странице: \"На данный момент мы не принимаем оплату новых регистраций на курсы от учащихся из России.\""
+    },
+    {
+        "id": 427,
+        "datetime": "2022-04-18 12:38:00",
+        "problem_type": "hostle_action",
+        "name": "pagerduty",
+        "commit_link": "https://www.pagerduty.com/blog/support-for-ukraine-company-statement",
+        "description": "пришло письмо об отмене оплаченной подписки с 19 мая"
+    },
+    {
+        "id": 429,
+        "datetime": "2022-04-18 12:38:00",
+        "problem_type": "hostle_action",
+        "name": "Weblium",
+        "commit_link": "weblium.com",
+        "description": "Сообщение \"Weblium приостанавливает все новые продажи продуктов и услуг в России\". Политические лозунги, видео. Не пускает в админку сайта"
+    },
+    {
+        "id": 437,
+        "datetime": "2022-04-18 12:38:00",
+        "problem_type": "hostle_action",
+        "name": "Parallels",
+        "commit_link": "parallels.com",
+        "description": "Удалили русский перевод сайта. Пропаганда.\r\nhttps://imgbox.com/vIwZXDIO\r\nhttps://imgbox.com/ZJ11M8bf"
+    },
+    {
+        "id": 444,
+        "datetime": "2022-04-20 09:36:00",
+        "problem_type": "hostle_action",
+        "name": "Stripe",
+        "commit_link": "https://dashboard.stripe.com/register",
+        "description": "Убрали РФ из списка стран: https://ibb.co/dD1QT57, а также сразу удаляют аккаунт, если указать, что ты из РФ"
+    },
+    {
+        "id": 446,
+        "datetime": "2022-04-20 09:36:00",
+        "problem_type": "hostle_action",
+        "name": "Archi",
+        "commit_link": "https://github.com/archimatetool/archi",
+        "description": "Archi - opensource продукт для создания моделей и эскизов ArchiMate,\r\nиспользуется корпоративными архитекторами повсеместно.\r\nНа сайте продукта www.archimatetool.com добавили баннер для сбора пожертвований для Украины."
+    },
+    {
+        "id": 448,
+        "datetime": "2022-04-20 11:16:00",
+        "problem_type": "hostle_action",
+        "name": "CCleaner",
+        "commit_link": "https://www.ccleaner.com/ru-ru/ccleaner/download/standard",
+        "description": "При попытке скачать бесплатную версию перебрасывает на страничку https://bits.avcdn.net/productfamily_CCLEANER/insttype_FREE/platform_WIN_PIR/installertype_ONLINE/build_RELEASE/cookie_mmm_ccl_008_999_a6d_m\r\nВозможно такое же поведение и с avast, т.к. разработчик один (Чехия)"
+    },
+    {
+        "id": 449,
+        "datetime": "2022-04-20 11:16:00",
+        "problem_type": "hostle_action",
+        "name": "SAP",
+        "commit_link": "https://www.ixbt.com/news/2022/04/20/krupnejshij-razrabotchik-po-sap-polnostju-uhodit-iz-rossii.html",
+        "description": "Полностью выводят бизнес, который они вели здесь более 30 лет.\r\nПризывают вывести свои данные из облака за пределы России, которое здесь будет заблокировано. Подсанкционным фирмам не будут продлевать лицензии. Локальные продукты пока будут работать."
+    },
+    {
+        "id": 450,
+        "datetime": "2022-04-20 11:16:00",
+        "problem_type": "hostle_action",
+        "name": "SSL.com",
+        "commit_link": "ssl.com",
+        "description": "заблочили продление сертификата для сайта в зоне .com по инфе регистратора домена"
+    },
+    {
+        "id": 452,
+        "datetime": "2022-04-21 09:37:00",
+        "problem_type": "hostle_action",
+        "name": "MaxMind GeoLite2",
+        "commit_link": "https://dev.maxmind.com/geoip/geolite2-free-geolocation-data",
+        "description": "Прислали письмо:\r\n\r\nDear GeoLite User,\r\n\r\nIn order to maintain compliance with US sanctions against certain Russian entities, MaxMind is exercising its right to terminate your free access to the GeoLite2 Databases or Web Services per Section 10.(b) of the GeoLite2 End User License Agreement.\r\n\r\nYour account will no longer have access to the GeoLite2 Databases or Web Services on Monday, April 25, 2022."
+    },
+    {
+        "id": 458,
+        "datetime": "2022-04-25 13:02:00",
+        "problem_type": "hostle_action",
+        "name": "YetiForce CRM",
+        "commit_link": "https://github.com/YetiForceCompany/YetiForceCRM/discussions/15786",
+        "description": "Дали на халяву все платные фичи компаниям из Украины. Обещали в последующих обновлениях (версии выше 6.3) запретить использование компаниям из РФ."
+    },
+    {
+        "id": 471,
+        "datetime": "2022-04-30 10:49:00",
+        "problem_type": "hostle_action",
+        "name": "letyshops",
+        "commit_link": "https://letyshops.com/ru",
+        "description": "при входе на сайт из России:\r\nНа данный момент, сервис недоступен в этом регионе\r\nВ вашем аккаунте указан регион РФ.\r\nЕсли это ошибка и вы не относитесь к региону РФ, напишите, пожалуйста, на почту info@letyshops.ru\r\nВывести кэшбэк на благотворительность\r\nПришло время пояснить, почему вы не можете пользоваться сервисом.\r\nЯ - украинец. Живу в Украине. И у нас война. и т.д."
+    },
+    {
+        "id": 57,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ip_block",
+        "name": "Игра Top Eleven от nordeus",
+        "commit_link": "eu.nordeus.topeleven.android",
+        "description": "Удалили для РФ свои приложения в Google Play и Apple Store + заблокировали навсегда учетные записи всем, у кого была выбрана страна Россия. Я играл с 2019 года."
+    },
+    {
+        "id": 58,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ip_block",
+        "name": "Grafana",
+        "commit_link": "https://dl.grafana.com/enterprise/release/grafana-enterprise-8.4.4.windows-amd64.msi",
+        "description": "При попытке скачать бинарники Grafa появляется ошибка \"Sorry, our service is currently not available in your region\""
+    },
+    {
+        "id": 59,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ip_block",
+        "name": "checkmk",
+        "commit_link": "https://checkmk.com/",
+        "description": "Закрыт доступ с российских IP"
+    },
+    {
+        "id": 60,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ip_block",
+        "name": "Elastic search",
+        "commit_link": "Elastic.co",
+        "description": "По ссылке скачать ответ 403"
+    },
+    {
+        "id": 61,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ip_block",
+        "name": "Sypex Geo",
+        "commit_link": "https://sypexgeo.net/",
+        "description": "Sypex Geo – продукт для определение местоположения посетителя по IP-адресу. Проверял через немецкий VPN, работает нормально."
+    },
+    {
+        "id": 62,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ip_block",
+        "name": "Elasticsearch",
+        "commit_link": "docker.elastic.co/elasticsearch/elasticsearch",
+        "description": "Образ не грузится с российского IP. Команда для проверки docker pull docker.elastic.co/elasticsearch/elasticsearch:7.8.1 . См https://ibb.co/kDvN1q3\r\nДоступ к веб сайту https://www.elastic.co/ есть, но скачать ничего нельзя. Оставили доступ только к www, без www выдает ошибку 403. Компания прекратила продажи в РФ."
+    },
+    {
+        "id": 63,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ip_block",
+        "name": "templatemonster.com",
+        "commit_link": "https://www.templatemonster.com/",
+        "description": "Банят по ip через cloudflare. На сайте есть личный кабинет как покупателей так и продавцов, не знаю зависли ли у кого то деньги. Проверить не могу."
+    },
+    {
+        "id": 64,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ip_block",
+        "name": "Redis",
+        "commit_link": "https://redis.io/",
+        "description": "При попытке открыть сайт с IP из России появляется ошибка доступа под предлогом \"This request was blocked by the security rules\". Заблокирован доступ к документации и сайту."
+    },
+    {
+        "id": 65,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ip_block",
+        "name": "HPE MyAccount Services",
+        "commit_link": "Пришла E-mail рассылка на почту аккаунта",
+        "description": "Due to regulatory requirements, HPE registered users in Russia and Belarus were deactivated on 22 March 2022 until further notice. This will result in not being allowed access to information and services that reside within HPE."
+    },
+    {
+        "id": 66,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ip_block",
+        "name": "IAR Embedded Workbench",
+        "commit_link": "http://eclipse-update.iar.com/",
+        "description": "Закрыт доступ к части сайта, содержащей плагины для среды разработки Eclipse. Фирма IAR Systems является разработчиком компиляторов и интегрированных сред для встраиваемых систем. Также на сайте содержится репозиторий для дополнений к свободной среде Eclip"
+    },
+    {
+        "id": 67,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ip_block",
+        "name": "ClamAV",
+        "commit_link": "https://www.clamav.net/",
+        "description": "Доступ до серверов обновлений ClamAV заблокирован из России.\r\nДоступ к CDN ресурсам ClamAV закрыт для российских IP (решение Cisco). Freshclam не работает. Issue.\r\nhttps://github.com/Cisco-Talos/clamav/issues/500"
+    },
+    {
+        "id": 68,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ip_block",
+        "name": "Hewlett Packard Enterprise",
+        "commit_link": "https://www.hpe.com/ru/ru/home.html",
+        "description": "Прислали письмо: Due to regulatory requirements, HPE registered users in Russia and Belarus were deactivated on 22 March 2022 until further notice. This will result in not being allowed access to information and services that reside within HPE."
+    },
+    {
+        "id": 72,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ip_block",
+        "name": "Jasper Reports",
+        "commit_link": "Jaspersoft.com",
+        "description": "Ребята из Jaspersoft не пускают на сайт и форум community с российских IP-адресов"
+    },
+    {
+        "id": 76,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ip_block",
+        "name": "Doxygen",
+        "commit_link": "doxygen.nl doxygen.org",
+        "description": "Нет доступа с территории РФ. При использовании VPN всё ок."
+    },
+    {
+        "id": 77,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ip_block",
+        "name": "spamcop",
+        "commit_link": "(connect to vmx.spamcop.net[184.94.240.112]:25: Connection timed out)",
+        "description": "Сервис spamcop не принимает жалобы по почте c ip-адресов РФ. Проверено на нескольких хостах/провайдерах"
+    },
+    {
+        "id": 78,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ip_block",
+        "name": "Продукты HasiCorp (Terraform, Consul и.т.п)",
+        "commit_link": "https://apt.releases.hashicorp.com",
+        "description": "Заблокирован доступ для скачивания бинарников для IP из России"
+    },
+    {
+        "id": 79,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ip_block",
+        "name": "mattermost",
+        "commit_link": "https://mattermost.com/",
+        "description": "Основной сайт отдаёт 403, если заходить с российского адреса"
+    },
+    {
+        "id": 80,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ip_block",
+        "name": "Lenovo",
+        "commit_link": "https://www.lenovo.com/",
+        "description": "Не доступны для скачивания с российских IP драйвера."
+    },
+    {
+        "id": 81,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ip_block",
+        "name": "Shopware",
+        "commit_link": "https://www.shopware.com/",
+        "description": "заблокирован доступ с русских ip, заблокирован русский аккаунт при заходе через VPN, предупреждений не было"
+    },
+    {
+        "id": 82,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ip_block",
+        "name": "snort",
+        "commit_link": "https://www.snort.org",
+        "description": "Прикрываясь Cloudflare заблокировали сайт проекта ошибкой Error 1020 (заблокированы и базы аллертов). С не российского IP доступ присутствует. Snort — свободная сетевая система предотвращения вторжений (IPS) и обнаружения вторжений(IDS) с открытым исходным"
+    },
+    {
+        "id": 83,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ip_block",
+        "name": "Hybrid Analysis",
+        "commit_link": "https://hybrid-analysis.com/",
+        "description": "Без прокси не пускает"
+    },
+    {
+        "id": 87,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ip_block",
+        "name": "Qt",
+        "commit_link": "https://download.qt.io/",
+        "description": "Закрыли доступ ко всем внутренним ресурсам с 7.03.2022 Не работают ни чат, ни сервер загрузок, ни багтреккер. Фины из Qt Company ничего официально не заявляли - и, будем надеяться, что не будут ничего пихать в сорцы."
+    },
+    {
+        "id": 89,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ip_block",
+        "name": "Oracle cloud infrastructure",
+        "commit_link": "https://www.oracle.com/corporate/conflict-in-ukraine/russia/",
+        "description": "Не дает зайти в аккаунт, виртуальные машины пока еще работают"
+    },
+    {
+        "id": 90,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ip_block",
+        "name": "pnpm",
+        "commit_link": "https://github.com/pnpm/pnpm/commit/3c328ec465c597ff558c1f38afbfe2a0c1b02a83 , https://github.com/pnpm/pnpm/commit/0066c11b97799",
+        "description": "Заблокирован доступ на основной сайт https://pnpm.io для РФ и РБ по IP."
+    },
+    {
+        "id": 92,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "ip_block",
+        "name": "CIrcleCI",
+        "commit_link": "https://support.circleci.com/hc/en-us/articles/360043679453-CircleCI-Terms-of-Service-Violation-Sanctioned-Country",
+        "description": "Банит, если зайти под русским IP, банит по github-аккаунту или другому способу авторизации, после бана VPN не поможет, только заполнение из формы"
+    },
+    {
+        "id": 291,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "ip_block",
+        "name": "Oracle",
+        "commit_link": "oracle.com",
+        "description": "Отключили ВМ"
+    },
+    {
+        "id": 292,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "ip_block",
+        "name": "namecheap.com, nc.me, web-hosting.com",
+        "commit_link": "https://www.namecheap.com/",
+        "description": "Изначально обещали удалить все домены, зарегистрированные россиянами, а также приостановить хостинг и почту для доменов в белорусских и российских зонах. Позже сделали исключение для оппозиционных СМИ, но пообещали:\r\n* блокировать платежи с российских карт и с российскими почтовыми адресами\r\n* в саппорте не отвечать на тикеты от пользователей с российскими почтовыми адресами\r\n* забанить хостинг и почту для доменов *.ru*, *.xn--p1ai (рф)*, *.by*, *.xn--90ais (бел)*, *.su*\r\n* в саппорте не отвечать на тикеты от пользователей, которые заходили с российских IP.\r\n\r\nКроме того, основатель компании Richard Kirkendall в Twitter успеть опубликовать пару антироссийских лозунгов, а саппорт компании противоречит самому себе в твиттере и по электронной почте. Стоит отметить, что хотя полностью домены не удалили, это решение привело к финансовым потерям простых клиентов, так как всем нам придётся менять хостинг и регистратора, ведь даже при желании пользоваться Namecheap в дальнейшем не удастся оплачивать услуги."
+    },
+    {
+        "id": 293,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "ip_block",
+        "name": "Ruckus",
+        "commit_link": "https://support.ruckuswireless.com",
+        "description": "Блокировали доступ к сайту поддержки/скачивания драйверов/обновлений. Устройства ruckus сами тоже больше не могут обновиться."
+    },
+    {
+        "id": 294,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "ip_block",
+        "name": "GnuDB",
+        "commit_link": "https://gnudb.org/",
+        "description": "При подключении с российского IP перенаправляют на заглушку https://ru.gnudb.org/, где только украинский флаг и надпись \"GnuDB is closed for Russia in sympathy with the Ukrainian people.\" Через VPN gnudb.org открывается нормально."
+    },
+    {
+        "id": 296,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "ip_block",
+        "name": "Soap UI",
+        "commit_link": "https://www.soapui.org/",
+        "description": "Заблокирован доступ из РФ. Открывается при включенном VPN"
+    },
+    {
+        "id": 298,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "ip_block",
+        "name": "Fiddler Everywhere",
+        "commit_link": "https://www.telerik.com/fiddler/fiddler-everywhere",
+        "description": "Невозможно активировать триал с российских IP"
+    },
+    {
+        "id": 299,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "ip_block",
+        "name": "Mouser Electronics Ru",
+        "commit_link": "ru.mouser.com",
+        "description": "Отображается \"В Настоящее Время Данный Веб-Сайт Закрыт.\" eu.mouser.com пока работает."
+    },
+    {
+        "id": 300,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "ip_block",
+        "name": "Analog Devices",
+        "commit_link": "https://www.analog.com/ru/index.html",
+        "description": "Access denied under U.S. Export Administration Regulations."
+    },
+    {
+        "id": 301,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "ip_block",
+        "name": "Middleware inventory / Devops Junction",
+        "commit_link": "https://www.middlewareinventory.com/",
+        "description": "Не пускает из РФ. Из других стран подключение нормально проходит."
+    },
+    {
+        "id": 302,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "ip_block",
+        "name": "BDD Cucumber",
+        "commit_link": "https://cucumber.io/",
+        "description": "Популярный фреймворк тестирования в BDD. Отвечает 403. \"The Amazon CloudFront distribution is configured to block access from your country\""
+    },
+    {
+        "id": 303,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "ip_block",
+        "name": "SaaSJet - партнёр Atlassian",
+        "commit_link": "https://saasjet.com/products/",
+        "description": "Украинская компания, продают платные плагины Jira. Заблокирован доступ к сайту из РФ. Установить даёт, а дальше блочит по IP. У себя на сайте сообщают, что помогают IT-армии Украины взламывать ресурсы в РФ."
+    },
+    {
+        "id": 305,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "ip_block",
+        "name": "Shalla Secure Services",
+        "commit_link": "https://www.shallalist.de/",
+        "description": "Обновление черного списка приостановлено автором. этот черный список часто используют на шлюзах для блокировки нежелательного контента. Есть риск, что автор нарушит профессиональную этику и внесет в список хорошие сайты. Обычно на шлюзах этот список обновл"
+    },
+    {
+        "id": 307,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "ip_block",
+        "name": "Screaming Frog SEO Spider",
+        "commit_link": "https://download.screamingfrog.co.uk/",
+        "description": "Закрыли скачивание с российских IP"
+    },
+    {
+        "id": 308,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "ip_block",
+        "name": "Посмотрели",
+        "commit_link": "posmotre.li",
+        "description": "Называли себя \"свободной энциклопедией\" в статье про опен сорс (правда, с припиской, что не свободны от рекламы). Сперва собирали помощь \"жертвам политических репрессий в РФ и РБ\" на главной, а с началом известных действий на Украине закрыли всем доступ \"д"
+    },
+    {
+        "id": 310,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "ip_block",
+        "name": "bash.im",
+        "commit_link": "https://bash.im",
+        "description": "С начала операции сайт выдает только \"НЕТ ВОЙНЕ\"3.29.2022 16:47:12"
+    },
+    {
+        "id": 311,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "ip_block",
+        "name": "OVHcloud",
+        "commit_link": "https://www.ovhcloud.com",
+        "description": "Невозможно зарегистрировать новый аккаунт, т.к. в списке телефонных кодов стран отсутствует РФ"
+    },
+    {
+        "id": 312,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "ip_block",
+        "name": "Mbed",
+        "commit_link": "os.mbed.com",
+        "description": "IoT device development. Блокируют доступ по IP из РФ. Сайт доступен через tor."
+    },
+    {
+        "id": 313,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "ip_block",
+        "name": "c-rieger",
+        "commit_link": "https://www.c-rieger.de/",
+        "description": "Немецкий блог по Nextcloud. При подключении из РФ ошибка 403"
+    },
+    {
+        "id": 318,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "ip_block",
+        "name": "Платежный сервис Xsolla",
+        "commit_link": "secure.xsolla.com",
+        "description": "Не работает из ДНР"
+    },
+    {
+        "id": 319,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "ip_block",
+        "name": "A Cloud Guru",
+        "commit_link": "https://acloudguru.com/",
+        "description": "Портал с обучением по IT тематике. Сам портал доступен, но при попытке авторизации в личный кабинет с российского IP пишут \"SORRY, THIS SITE IS NOT AVAILABLE IN YOUR AREA.\" Техподдержка подтвердила блокировку, но если зайти через европейский VPN, то все ра"
+    },
+    {
+        "id": 320,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "ip_block",
+        "name": "Atlassian Jira",
+        "commit_link": "https://www.atlassian.com/ru/software/jira",
+        "description": "Не работает скачивание плагинов с российских IP. Сайт доступен, но при попытке скачать показывать сообщение в поддержку Украины и о приостановке продаж в РФ"
+    },
+    {
+        "id": 321,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "ip_block",
+        "name": "EmBitz",
+        "commit_link": "Embitz.org",
+        "description": "Не совсем опенсорс. Бан по IP и по локали, на сайт с русским языком не зайти даже через vpn. Также бан по локали в самой IDE, на easyelectronics уже сумели это обойти."
+    },
+    {
+        "id": 322,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "ip_block",
+        "name": "Downlod Master",
+        "commit_link": "https://westbyte.com/",
+        "description": "При заходе с российского IP высвечивает \"403 Forbidden\""
+    },
+    {
+        "id": 323,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "ip_block",
+        "name": "vertica",
+        "commit_link": "https://www.vertica.com/",
+        "description": "Block reason: Access from your Country was disabled by the administrator."
+    },
+    {
+        "id": 352,
+        "datetime": "2022-04-08 11:06:54",
+        "problem_type": "ip_block",
+        "name": "AVG AntiVirus Free Edition",
+        "commit_link": "http://bits.avcdn.net",
+        "description": "Заблокирован доступ для скачивания антивируса"
+    },
+    {
+        "id": 353,
+        "datetime": "2022-04-08 11:06:54",
+        "problem_type": "ip_block",
+        "name": "O&O ShutUp10",
+        "commit_link": "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe",
+        "description": "Заблокирован доступ к серверу для скачивания утилиты для деактивации некоторых функций Windows 10/11"
+    },
+    {
+        "id": 354,
+        "datetime": "2022-04-08 11:06:54",
+        "problem_type": "ip_block",
+        "name": "McAfee Stinger",
+        "commit_link": "https://downloadcenter.mcafee.com/products/mcafee-avert/Stinger/stinger32.exe",
+        "description": "Заблокирован доступ к серверу для скачивания обезвреживающей утилиты"
+    },
+    {
+        "id": 356,
+        "datetime": "2022-04-08 11:06:54",
+        "problem_type": "ip_block",
+        "name": "Сетевая академия Cisco",
+        "commit_link": "https://www.netacad.com",
+        "description": "Блокируется вход на сайт с российских IP, также заблокированы российские аккаунты"
+    },
+    {
+        "id": 357,
+        "datetime": "2022-04-08 11:06:54",
+        "problem_type": "ip_block",
+        "name": "Weather.com",
+        "commit_link": "https://weather.com/",
+        "description": "Заблокирован доступ из России - возвращает \"Bad Request - Blocked\""
+    },
+    {
+        "id": 359,
+        "datetime": "2022-04-08 11:06:54",
+        "problem_type": "ip_block",
+        "name": "Bitdefender",
+        "commit_link": "https://bitdefender.com/",
+        "description": "Сайт заблокирован для пользователей РФ. Вполне возможно, что обновления тоже не работают из-за этого."
+    },
+    {
+        "id": 360,
+        "datetime": "2022-04-08 11:06:54",
+        "problem_type": "ip_block",
+        "name": "Syncfusion (C#)",
+        "commit_link": "https://www.syncfusion.com/",
+        "description": "Набор компонент для C# с десятками млн скачиваний. Заблокировали доступ к сайту. Скачать можно с https://www.nuget.org/profiles/SyncfusionInc."
+    },
+    {
+        "id": 363,
+        "datetime": "2022-04-08 11:06:54",
+        "problem_type": "ip_block",
+        "name": "Oracle SQL Developer",
+        "commit_link": "https://www.oracle.com/tools/downloads/sqldev-downloads.html",
+        "description": "Блокировка скачивания по IP клиента из России после авторизации на скачивание. Thank you for accessing https://edelivery.oracle.com/akam/otn/java/sqldeveloper/sqldeveloper-21.4.2.018.1706-no-jre.zip In compliance with U.S. and applicable Export laws we are unable to process your request. Please contact RPLS-Ops_ww@oracle.com if you believe you are receiving this notice in error. Debug Info: Edge IP=96.17.6.139, Client IP=<мой IP>, Client Country=RU, Client Region=Not Available"
+    },
+    {
+        "id": 364,
+        "datetime": "2022-04-08 11:06:54",
+        "problem_type": "ip_block",
+        "name": "Octopus RBL Monster",
+        "commit_link": "https://octopusdns.com/",
+        "description": "Сервис предоставлял черные списки спаммеров. IP адреса блокируются с сообщением: \"sanction against Belarus\""
+    },
+    {
+        "id": 365,
+        "datetime": "2022-04-08 11:06:54",
+        "problem_type": "ip_block",
+        "name": "Polspam RHSBL",
+        "commit_link": "https://polspam.pl/",
+        "description": "Сервис предоставлял черные списки спаммеров. DNS имена блокируются с сообщением \"Русский домен\"/\"Беларускі дамен\""
+    },
+    {
+        "id": 366,
+        "datetime": "2022-04-08 11:06:54",
+        "problem_type": "ip_block",
+        "name": "STMicroelectronics",
+        "commit_link": "https://www.st.com/en/development-tools/stm32cubeide.html",
+        "description": "Запрет загрузки ПО и драйверов - Not available for download, нет доступных для скачивания версий. Паспорта pdf загружаются нормально. Через VPN/Proxy всё работает."
+    },
+    {
+        "id": 367,
+        "datetime": "2022-04-08 11:06:54",
+        "problem_type": "ip_block",
+        "name": "MacUpdate - Mac app and software download website",
+        "commit_link": "https://www.macupdate.com",
+        "description": "С российского IP перенаправляет на левый сайт с пропагандой"
+    },
+    {
+        "id": 368,
+        "datetime": "2022-04-08 11:06:54",
+        "problem_type": "ip_block",
+        "name": "intervention.io",
+        "commit_link": "https://github.com/Intervention",
+        "description": "Сайт с документацией не открывается с Российских IP, отображая сообщение про войну."
+    },
+    {
+        "id": 371,
+        "datetime": "2022-04-08 11:06:54",
+        "problem_type": "ip_block",
+        "name": "Intel",
+        "commit_link": "https://intel.com/",
+        "description": "При обращении с российских адресов или выборе русского языка перебрасывает на заглушку https://www.intel.com/content/www/us/en/support/ru-banner-inside.html Официальный пресс релиз https://www.intel.com/content/www/us/en/newsroom/news/russia-business-statement.html"
+    },
+    {
+        "id": 372,
+        "datetime": "2022-04-08 11:06:54",
+        "problem_type": "ip_block",
+        "name": "Bruker",
+        "commit_link": "https://bruker.com",
+        "description": "Блокировки российских аккаунтов, российских IP. Техподдержка также не отвечает."
+    },
+    {
+        "id": 373,
+        "datetime": "2022-04-08 11:06:54",
+        "problem_type": "ip_block",
+        "name": "DUO Security Multi-Factor Authentication",
+        "commit_link": "https://dl.duosecurity.com",
+        "description": "Блокировка скачивания релизов open source компонента duo_unix"
+    },
+    {
+        "id": 393,
+        "datetime": "2022-04-09 09:14:51",
+        "problem_type": "ip_block",
+        "name": "bufbuild/buf",
+        "commit_link": "https://buf.build/",
+        "description": "Политические лозунги + Блокировка доступа. С росcийского IP - 403. Через зарубежное ВПН - всё ок. Так же, без, ВПН больше не работает сборка proto. https://github.com/bufbuild/buf"
+    },
+    {
+        "id": 398,
+        "datetime": "2022-04-11 10:28:33",
+        "problem_type": "ip_block",
+        "name": "Terraform",
+        "commit_link": "https://www.terraform.io/",
+        "description": "Нет доступа к Terraform плагинам с белорусского IP, 403 Not Allowed, через VPN работает"
+    },
+    {
+        "id": 400,
+        "datetime": "2022-04-11 10:28:33",
+        "problem_type": "ip_block",
+        "name": "Go (Golang)",
+        "commit_link": "https://golang.org/",
+        "description": "Не открывается на территории ДНР, в РФ - открывается"
+    },
+    {
+        "id": 409,
+        "datetime": "2022-04-12 13:35:59",
+        "problem_type": "ip_block",
+        "name": "acunetix.com",
+        "commit_link": "https://www.acunetix.com/",
+        "description": "Блокируют вход с ip РФ"
+    },
+    {
+        "id": 417,
+        "datetime": "2022-04-15 10:28:21",
+        "problem_type": "ip_block",
+        "name": "MinGW Minimalist gnu for winfows",
+        "commit_link": "http://www.mingw.org/",
+        "description": "Заблокировали для стран РФ. Перебрасывает на страницу с сообщением о блокировке \"Country not allowed\""
+    },
+    {
+        "id": 421,
+        "datetime": "2022-04-16 22:43:00",
+        "problem_type": "ip_block",
+        "name": "soketi.app",
+        "commit_link": "https://soketi.app/",
+        "description": "сайт закрыт для российских пользователей"
+    },
+    {
+        "id": 423,
+        "datetime": "2022-04-18 12:38:00",
+        "problem_type": "ip_block",
+        "name": "Terraform",
+        "commit_link": "https://app.terraform.io/",
+        "description": "Сообщение: \"This content is not currently available in your region.\" Не дают скачать бинарники, также нет доступа к репам с модулями. Всё остальное от HashiCorp так же недоступно."
+    },
+    {
+        "id": 424,
+        "datetime": "2022-04-18 12:38:00",
+        "problem_type": "ip_block",
+        "name": "splunk",
+        "commit_link": "https://splunk.com/",
+        "description": "заблокирован доступ к сайту из РФ"
+    },
+    {
+        "id": 426,
+        "datetime": "2022-04-18 12:38:00",
+        "problem_type": "ip_block",
+        "name": "ActiveState",
+        "commit_link": "https://activestate.com",
+        "description": "При попытке скачать пишет: 403 ERROR The Amazon CloudFront distribution is configured to block access from your country."
+    },
+    {
+        "id": 428,
+        "datetime": "2022-04-18 12:38:00",
+        "problem_type": "ip_block",
+        "name": "Mattermost",
+        "commit_link": "https://mattermost.com/",
+        "description": "При нажатии на trial показывает ошибку 403"
+    },
+    {
+        "id": 430,
+        "datetime": "2022-04-18 12:38:00",
+        "problem_type": "ip_block",
+        "name": "depesz.com",
+        "commit_link": "depesz.com, explain.depesz.com, paste.depesz.com",
+        "description": "Поляк заблокировал доступ с российских/белорусских IP к своему блогу depesz.com и поддоменам explain.depesz.com, paste.depesz.com"
+    },
+    {
+        "id": 431,
+        "datetime": "2022-04-18 12:38:00",
+        "problem_type": "ip_block",
+        "name": "Syllable (OS site)",
+        "commit_link": "https://syllable.metaproject.frl/",
+        "description": "С российских ip вместо контента отображает проигрыватель с роликами BBC о ситуации на Украине https://imgbox.com/SpFYMZUR."
+    },
+    {
+        "id": 432,
+        "datetime": "2022-04-18 12:38:00",
+        "problem_type": "ip_block",
+        "name": "Auth0",
+        "commit_link": "auth0.com",
+        "description": "Ошибка 403 на регистрации с редиректом на auth0-stands-with-ukraine с текстом про санкции США"
+    },
+    {
+        "id": 451,
+        "datetime": "2022-04-20 11:16:00",
+        "problem_type": "ip_block",
+        "name": "KDAB the Qt",
+        "commit_link": "https://www.kdab.com/about/",
+        "description": "Консалтинговая фирма по C++ and OpenGL. Заблокирован доступ к своему сайту со статьями про С++ и Qt"
+    },
+    {
+        "id": 455,
+        "datetime": "2022-04-22 10:05:00",
+        "problem_type": "ip_block",
+        "name": "MiTeC",
+        "commit_link": "http://www.mitec.cz/",
+        "description": "При подключении с российских IP перенаправляют на сайт со страшными фото. Через VPN нормально, в заголовке пропаганда."
+    },
+    {
+        "id": 456,
+        "datetime": "2022-04-22 10:05:00",
+        "problem_type": "ip_block",
+        "name": "Apiary",
+        "commit_link": "https://apiary.io/",
+        "description": "Сервис для проектирования \\ документирования API. Заблокирован доступ из РФ по IP."
+    },
+    {
+        "id": 459,
+        "datetime": "2022-04-25 13:02:00",
+        "problem_type": "ip_block",
+        "name": "Certify The Web",
+        "commit_link": "https://certifytheweb.com/",
+        "description": "Блокировка по IP, через VPN открывается"
+    },
+    {
+        "id": 460,
+        "datetime": "2022-04-25 13:02:00",
+        "problem_type": "ip_block",
+        "name": "Heroku",
+        "commit_link": "https://heroku.com/",
+        "description": "При попытке войти в аккаунт с Российского IP ошибка. При попытке создать новый аккаунт c любой страной сообщение: \"We do not aceept sign-ups from your country\" (проверяют по IP)"
+    },
+    {
+        "id": 461,
+        "datetime": "2022-04-25 13:02:00",
+        "problem_type": "ip_block",
+        "name": "IBM Quantum Lab",
+        "commit_link": "quantum-computing.ibm.com",
+        "description": "Веб-приложение для доступа к вычислениям на квантовых компьютерах от IBM заблокировало доступ с российских IP"
+    },
+    {
+        "id": 469,
+        "datetime": "2022-04-30 10:49:00",
+        "problem_type": "ip_block",
+        "name": "JSFiddle (Code Playground)",
+        "commit_link": "https://jsfiddle.net",
+        "description": "Не открывается в Российских IP. Через VPN открывается."
+    },
+    {
+        "id": 470,
+        "datetime": "2022-04-30 10:49:00",
+        "problem_type": "ip_block",
+        "name": "CVE Details",
+        "commit_link": "https://www.cvedetails.com/",
+        "description": "Блокировка на Cloudflare: CF 1009: The owner of this website (www.cvedetails.com) has banned the country or region your IP address is in (RU) from accessing this website."
+    },
+    {
+        "id": 1,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "malware",
+        "name": "Onefetch",
+        "commit_link": "https://github.com/o2sh/onefetch",
+        "description": "При установке программы подменяет библиотеку libgcc_s.so.1, система перестает отвечать и после перезагрузки система выдает ошибку kernel panic. Проблема не подтверждена. Вредоносных коммитов не обнаружено."
+    },
+    {
+        "id": 2,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "malware",
+        "name": "Yaffle/EventSource",
+        "commit_link": "https://github.com/Yaffle/EventSource/commit/de137927e13d8afac153d2485152ccec48948a7a",
+        "description": "https://github.com/Yaffle/EventSource/issues/199"
+    },
+    {
+        "id": 9,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "malware",
+        "name": "node-ipc",
+        "commit_link": "https://github.com/RIAEvangelist/node-ipc/issues/233",
+        "description": "https://github.com/RIAEvangelist/node-ipc/issues/233 В библиотеку node-ipc добавили шифровальщик для ip России и Белоруссии https://github.com/RIAEvangelist/node-ipc/blob/847047cf7f81ab08352038b2204f0e7633449580/dao/ssl-geospec.js Оно реально всю фс закиды"
+    },
+    {
+        "id": 10,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "malware",
+        "name": "RIAEvangelist/peacenotwar",
+        "commit_link": "https://github.com/RIAEvangelist/peacenotwar",
+        "description": "Сама библиотека удаляющая файловую систему по IP из России и Белоруссии"
+    },
+    {
+        "id": 11,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "malware",
+        "name": "es5-ext",
+        "commit_link": "https://github.com/medikoo/es5-ext/commit/28de285ed433b45113f01e4ce7c74e9a356b2af2",
+        "description": "Коллеги, обращаем внимание, что популярная библиотека https://www.npmjs.com/package/es5-ext которая не обновлялась до этого 2 года начала получать регулярные обновления которые содержат как негативную пропаганду, так и код по таймзоне увеличивающий утилиза"
+    },
+    {
+        "id": 13,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "malware",
+        "name": "Parad1seBomb",
+        "commit_link": "https://github.com/K1ngSoul/Parad1seBomb",
+        "description": "SMS Bomber for Russia and Ukraine"
+    },
+    {
+        "id": 3,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "RedisDesktopManager",
+        "commit_link": "https://github.com/uglide/RedisDesktopManager/commit/8b2b357d9d233100f84a69f81ed22b8caa04fa22",
+        "description": "как бы чего еще туда не заложили вредного"
+    },
+    {
+        "id": 5,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "WordPress плагин Mistape",
+        "commit_link": "https://wordpress.org/plugins/mistape/",
+        "description": "Через уязвимость в популярном плагине Mistape злоумышленник получает доступ к разделам администратора, заливает плагин UnderConstruction, с помощью которого на главную страницу сайта выводит произвольную информацию. Обычно это виджет на тему текущих событи"
+    },
+    {
+        "id": 56,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Личный сайт Столярова А.В. stolyarov.info",
+        "commit_link": "http://stolyarov.info/",
+        "description": "Через пару дней после начала спецоперации сменил весь сайт на надпись \"КОГДА ПУШКИ ГОВОРЯТ, МУЗЫ МОЛЧАТ\" со ссылкой на страницу с книгами (на чём спасибо), функционирование остального сайта в данных обстоятельствах счёл неуместным."
+    },
+    {
+        "id": 96,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "py7zr",
+        "commit_link": "https://github.com/miurahr/py7zr/commit/3ad1743fe00c8c9a2a89b548ed80f7de2406d275",
+        "description": "Политический лозунг"
+    },
+    {
+        "id": 98,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Wireguard VPN",
+        "commit_link": "https://github.com/litded/wireguard-vpn",
+        "description": "Плашка с агитацией при браузинге"
+    },
+    {
+        "id": 99,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Unity Ads for Android",
+        "commit_link": "https://github.com/Unity-Technologies/unity-ads-android https://unity.com/products/unity-ads",
+        "description": "После встраивания рекламы Unity Ads в мобильную игру, пользователям из России игра начинает показывать вместо рекламы политические лозунги о свержении конституционного строя. Причём на устройстве разработчика ничего подобного не проявляется Мы чудом замети"
+    },
+    {
+        "id": 100,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "MicrosoftDocs/azure-docs",
+        "commit_link": "https://github.com/MicrosoftDocs/azure-docs",
+        "description": "В статьях перед справкой появляется #StopRussianWar"
+    },
+    {
+        "id": 101,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "styled-components",
+        "commit_link": "https://github.com/styled-components",
+        "description": "после установки через npm, в консоли появляется текст про Украину. Текст лежит в файле node_modules/styled-components/postinstall.js"
+    },
+    {
+        "id": 103,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "postfixadmin",
+        "commit_link": "https://github.com/postfixadmin/postfixadmin.git",
+        "description": "Политический баннер #StandWithUkraine"
+    },
+    {
+        "id": 107,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "MacUpdate",
+        "commit_link": "https://www.macupdate.com",
+        "description": "Баннер на сайте в поддержку Украины."
+    },
+    {
+        "id": 108,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "PlantUML",
+        "commit_link": "https://plantuml.com/ru/",
+        "description": "Антирооссийская пропаганда. Угрозы, призывы к антиправительственным акциям"
+    },
+    {
+        "id": 110,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Locust",
+        "commit_link": "https://github.com/locustio/locust/commit/38fb94d4c39db07a2f984b6b1a6c944a4e489d7f",
+        "description": "Added Support Ukraine badge to README.md"
+    },
+    {
+        "id": 111,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Целый список wordpress плагинов",
+        "commit_link": "https://docs.google.com/document/d/1CusIWpZVO5TrQNLMWwT7URMiEfIR6y3K45GGWTBEOZU/edit?usp=sharing",
+        "description": "Как минимум один из них собирает донаты на военную компанию https://plugins.trac.wordpress.org/browser/stand-with-ukraine/trunk/stand-with-ukraine.php#L26"
+    },
+    {
+        "id": 112,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "MicroSIP",
+        "commit_link": "https://www.microsip.org/",
+        "description": "Лозунги на сайте, возможно какой-то недокументированный функционал в новых версиях"
+    },
+    {
+        "id": 113,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Mate",
+        "commit_link": "https://prnt.sc/oVezpycty94G",
+        "description": "Плагин переводчика для браузера Firefox. Теперь показывает политические лозунги."
+    },
+    {
+        "id": 115,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "selenium",
+        "commit_link": "https://www.selenium.dev/",
+        "description": "Selenium Supports Ukraine"
+    },
+    {
+        "id": 116,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Composer",
+        "commit_link": "https://github.com/composer/packagist/commit/86244a3695fcaaac9c5ba4257a4314eae1c6d981",
+        "description": "Выводит текст: \"Info from https://repo.packagist.org: #StandWithUkraine\""
+    },
+    {
+        "id": 117,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "ukraine-not-war/stop-war",
+        "commit_link": "https://github.com/ukraine-not-war/stop-war",
+        "description": "виджет"
+    },
+    {
+        "id": 118,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "pgcli",
+        "commit_link": "https://github.com/dbcli/pgcli/commit/6884c298e6845a4d870ac815a1ed269063fe3ddc",
+        "description": "#StandWithUkraine"
+    },
+    {
+        "id": 119,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Security-Code-Scan",
+        "commit_link": "https://github.com/security-code-scan/security-code-scan/releases/tag/5.6.2",
+        "description": "I'm the author. :)"
+    },
+    {
+        "id": 120,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "PHPUnit",
+        "commit_link": "https://github.com/sebastianbergmann/phpunit/commit/4634e702b5f05f5e948e531eb8b4fc19be40610c",
+        "description": "политический лозунг (начиная с версий 9.5.17 и 8.5.24 от 5 марта 2022)"
+    },
+    {
+        "id": 122,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "piccy.info",
+        "commit_link": "https://piccy.info/",
+        "description": "Сообщение \"\"\"Сайт не работает, потому что\" Россия напала на нас и начинает уничтожать \"мирное население\"\"\""
+    },
+    {
+        "id": 123,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "UpdatePack7R2",
+        "commit_link": "https://blog.simplix.info/",
+        "description": "Нет пуша. В сборке от 11.03 при работе в системе с заданными TZ из России или Беларуси выбивает окно \"ваша страна поддерживает войну...\" и работа завершается."
+    },
+    {
+        "id": 124,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "WebdriverIO",
+        "commit_link": "https://github.com/webdriverio/webdriverio/commit/efd781a7ba432bae7720de03704f6a12409da978",
+        "description": "StandWithUkraine banner in в README.md"
+    },
+    {
+        "id": 125,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Instant Games Bridge",
+        "commit_link": "https://github.com/mewtongames/instant-games-bridge",
+        "description": "Вместо баннеров показываются призывы к революции"
+    },
+    {
+        "id": 126,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "VK Blue - плагин Google Chrome",
+        "commit_link": "https://chrome.google.com/webstore/detail/pckkddchhdhkfapanbkcalloijbbjhbd",
+        "description": "Плагин для прослушивания музыки ВК. После установки показывает это: https://ibb.co/P91dP36"
+    },
+    {
+        "id": 127,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Yad",
+        "commit_link": "https://github.com/v1cont/yad/commit/e38f7fa71aa9b2dff408ae14ca7133e4fdc4b02a",
+        "description": "Вырезание русского языка, \"DROP K HUJAM russian translation\" (https://github.com/v1cont/yad/commit/f14f5fc497827871e314c5c7b68d12a4de827d46); Автор - Украинец, который находится в резерве сил территориальной обороны (https://github.com/v1cont/yad/issues/10"
+    },
+    {
+        "id": 128,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Svelte и Svelte-Kit",
+        "commit_link": "https://svelte.dev/",
+        "description": "Баннер на сайте в поддержку Украины"
+    },
+    {
+        "id": 129,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "outdatedregime/change",
+        "commit_link": "https://github.com/outdatedregime/change/commit/f22e7f90a5bb8fe2b8f0001d9774fe495084d234",
+        "description": "Block people visiting your website from Russia, redirect them to a page telling them their Regime is outdated and offering them unbiased news sources in their language."
+    },
+    {
+        "id": 130,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "in-solidarity-with-ukraine",
+        "commit_link": "https://github.com/core-hacked/in-solidarity-with-ukraine/commit/60af44e10440e5fed49aea4e80d84530e46c6ab8",
+        "description": "A simple repository with HTML/CSS Ukraine flag and \"stop war\" text on it."
+    },
+    {
+        "id": 131,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "ukrfetch",
+        "commit_link": "https://github.com/ukrfetch/ukrfetch/commit/362853d86a64d093c5ddb8d11d8d06ec69cd7c7c",
+        "description": "Simple fetch tool to show Solidarity with Ukraine"
+    },
+    {
+        "id": 132,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Russia-Blocker",
+        "commit_link": "https://github.com/Riceblade/Russia-Blocker/commit/ec9b3cd026f28f592c1cf3620da799e6f4f914ec",
+        "description": "Automatically redirects Russian connections to ukrainian charities"
+    },
+    {
+        "id": 133,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "hands-off-ukraine-banner",
+        "commit_link": "https://github.com/filipe-freire/hands-off-ukraine-banner/commit/5a1fa52f04022971fdcc738d4b1d58c9371c1769",
+        "description": "This banner includes easy access links to support Ukraine against the deliberate military invasion of Russia. It was built as a Web Component to facilitate its integration between all the frontend library/frameworks used."
+    },
+    {
+        "id": 134,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "embargoed-list",
+        "commit_link": "https://github.com/rameerez/embargoed-list/blob/main/README.md",
+        "description": "List of all language-specific versions of embargoed, software to block to block all requests from Russia to any website and display a pro-Ukraine message instead"
+    },
+    {
+        "id": 135,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "hejny/Ukraine",
+        "commit_link": "https://github.com/hejny/Ukraine/commit/e74a5de837d6ed0e2e11e174f4319a5ededc7c28",
+        "description": "Add ribbon with Ukraine flag into the website you manage, show the anti-war message to Russian users, or block them from your service."
+    },
+    {
+        "id": 136,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "RussianBlocker Public",
+        "commit_link": "https://github.com/OB42/RussianBlocker/commit/10e0ab31f0e0f8372fb24d32544e7e4867d3f688",
+        "description": "Detect Russian and Belarussian visitors to block or alert them to protest the war in Ukraine(works by checking timezone and languages as this is the easiest way to do it unlimitedly for free on the frontend, should work 9 times out of 10, except for a few"
+    },
+    {
+        "id": 137,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "PutinWantedPoster",
+        "commit_link": "https://github.com/snippetboy/PutinWantedPoster/commit/fbafce5e49d22c660d9da78919f035b812cced13",
+        "description": "Putin Wanted Poster"
+    },
+    {
+        "id": 138,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "express-putin",
+        "commit_link": "https://github.com/limesquid/express-putin/commit/b3eb6eae757d74d1a8241bc5dd6773dae6920fb2",
+        "description": "Node.js Express middleware to reject requests from all Russian IPs."
+    },
+    {
+        "id": 139,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "yandex-conqueror",
+        "commit_link": "https://github.com/piotrmaslanka/yandex-conqueror/commit/a2f5d01f9a367b22dbafbcb2a9643cb73d2365a1",
+        "description": "A tool to inform the general Russian population about what's going on in year 2022 on Ukraine via posting 5-star reviews to Yandex."
+    },
+    {
+        "id": 140,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "stopwarstopputin Wordpress plugin",
+        "commit_link": "https://github.com/stopwarstopputin/swsp-wordpress-plugin/commit/6e75e015fc17186b6e1a0592f02189d5b991805a",
+        "description": "The Stop War! Stop Putin! WordPress Plugin allows you to block all visitors from Russia & Belarus and display a custom message to stand up against Putin and to stop war."
+    },
+    {
+        "id": 141,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "voku/portable-ascii",
+        "commit_link": "https://github.com/voku/portable-ascii/commit/377ab19df364e512cb6e49b8c7d026f5b550ac92",
+        "description": "Все пакеты в packagist от пользователя voku: https://packagist.org/packages/voku/. Конкретно у этого более 66 млн. инсталляций"
+    },
+    {
+        "id": 142,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "event-source-polyfill",
+        "commit_link": "https://github.com/Yaffle/EventSource/commit/de137927e13d8afac153d2485152ccec48948a7a",
+        "description": "javascript либа. Начиная с версии 1.0.26 выводит alert() на странице."
+    },
+    {
+        "id": 144,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "PHPMailer",
+        "commit_link": "https://github.com/PHPMailer/PHPMailer",
+        "description": "Баннер в README."
+    },
+    {
+        "id": 145,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Appsberry (websa)",
+        "commit_link": "https://websa.advancedhosting.com/StandWithUkraine",
+        "description": "облачный хостинг"
+    },
+    {
+        "id": 146,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Refactoring.Guru",
+        "commit_link": "https://refactoring.guru/ru/help-ukraine",
+        "description": "Призывы спонсировать украинских военных и волонтеров, гуманитарные благотворительные организации."
+    },
+    {
+        "id": 147,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Notepad++",
+        "commit_link": "https://notepad-plus-plus.org/news/v833-make-apps-not-war/",
+        "description": "Политические лозунги на сайте. Есть опасение что последние версии продукта могут их содержать."
+    },
+    {
+        "id": 148,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Isomorphic Authorization JavaScript library",
+        "commit_link": "https://github.com/stalniy/casl/commit/b13c3de252b8412079b4030ff73309d65713c8d2",
+        "description": "Политический баннер \"Stop war in Ukraine. All truth about Russia invasion\""
+    },
+    {
+        "id": 149,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Расширение Random User-Agent",
+        "commit_link": "https://github.com/tarampampam/random-user-agent/commit/fb9f595306a0e149a248c080859749b6d549be90",
+        "description": "так то вроде ничего серьёзного. перекрасили лого в известные цвета."
+    },
+    {
+        "id": 150,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "The unarchiver (macOS App Store)",
+        "commit_link": "https://imgur.com/a/q5DGKxG",
+        "description": "Если не нажать кнопку, то разархивировать не будет, но только раз. При следующем запуске не возникает"
+    },
+    {
+        "id": 151,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "ratatype.ru",
+        "commit_link": "https://www.ratatype.ru/",
+        "description": "https://www.ratatype.ru/"
+    },
+    {
+        "id": 152,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "FreePBX",
+        "commit_link": "ОТСУТСТВУЕТ",
+        "description": "При обновлении каждую 5 команду выдает сообщение с призывом остановить РФ"
+    },
+    {
+        "id": 153,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Diptrace",
+        "commit_link": "Что за жаргон? Почему не использовать нормальные слова, что за гопницкое быдло?",
+        "description": "После встречи \"пуша в репе\" никакого желания что -либо дальше делать нет, общаться с тупой школотой - ну нафиг."
+    },
+    {
+        "id": 154,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "yaml-front-matter",
+        "commit_link": "https://github.com/spatie/yaml-front-matter/commit/a5a8443f7d9bfc5c337cf41c92347b6d677d23bb",
+        "description": "https://github.com/spatie/yaml-front-matter - баннер в README.md"
+    },
+    {
+        "id": 155,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "LeafletJs",
+        "commit_link": "https://leafletjs.com/",
+        "description": "На главной странице теперь полит-лозунги, с предложением положить \"семена в корман\" если поддерживаешь РФ. Также ко всем ссылкам в документации добавили лозунг \"SlavaUkraini\", пример: https://leafletjs.com/SlavaUkraini/reference.html"
+    },
+    {
+        "id": 156,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "SergeyOcheretenko/StopWarBot",
+        "commit_link": "https://github.com/SergeyOcheretenko/StopWarBot/commit/152d9a0f06625475d913633452c41779a1f9f25b",
+        "description": "Бот для рассылки пропагандистского спама"
+    },
+    {
+        "id": 157,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "goddessmokosh/stop-war-in-ukraine",
+        "commit_link": "https://github.com/goddessmokosh/stop-war-in-ukraine/commit/171191737d289608cc55f7c4324c74fce233821a",
+        "description": "Плагин для wordpress для демонстрации баннеров и сбора средств на ведение боевых действий"
+    },
+    {
+        "id": 158,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "stopwarstopputin/swsp-wordpress-plugin",
+        "commit_link": "https://github.com/stopwarstopputin/swsp-wordpress-plugin/commit/f26bd25ec52c366df977848677607ff889b51780",
+        "description": "Плагин для wordpress итегрирующий пропагандистские баннеры"
+    },
+    {
+        "id": 160,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "daocentral/ukraine",
+        "commit_link": "https://github.com/daocentral/ukraine/commit/ffc07ebc67c244c59acd4d01193c428f8a5e756c",
+        "description": "Ресурсы цифровой децентрализованной организации нацеленной на сбор средств для ведения боевых действий"
+    },
+    {
+        "id": 161,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "petrussola/help-ukraine-open-source",
+        "commit_link": "https://github.com/petrussola/help-ukraine-open-source/commit/676bfac5ed77ccb6b6a8a731353ed6239a57d45f",
+        "description": "Список опенсорс проектов, используемых для сбора данных, создания организаций и пропаганды"
+    },
+    {
+        "id": 162,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "hattifn4ttar/youtube_supportfreemedia",
+        "commit_link": "https://github.com/hattifn4ttar/youtube_supportfreemedia/commit/99ae3284665adc24fc393e9537bf74222517a4a8",
+        "description": "ПО для накрутки просмотров пропагандистских youtube роликов"
+    },
+    {
+        "id": 163,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "artshishkin/swarm-digital-ocean",
+        "commit_link": "https://github.com/artshishkin/swarm-digital-ocean/commit/6d718f17f41011f7d710deb8963fee63e39e4afa",
+        "description": "ПО для хакерских атак, настроенное на конкретные ресурсы в РФ"
+    },
+    {
+        "id": 165,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "gianpaj/walnut.tv",
+        "commit_link": "https://github.com/gianpaj/walnut.tv/commit/b29d08c048a1020526a8212c9cd20665c4fba980",
+        "description": "Политические лозунги в ПО"
+    },
+    {
+        "id": 168,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "VSBalanchuk/AAInUkraine",
+        "commit_link": "https://github.com/VSBalanchuk/AAInUkraine/commit/f400a1b04bcd0055c99aebebe07b165ae5fa5270",
+        "description": "Баннер для размещения на веб-ресурсах"
+    },
+    {
+        "id": 169,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "alexshapalov/Support-Ukraine",
+        "commit_link": "https://github.com/alexshapalov/Support-Ukraine/commit/a5b48de9a8f6e9b36d8519acba803f67693e5125",
+        "description": "Баннер для размещения на веб-ресурсах"
+    },
+    {
+        "id": 170,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "KobaltDigital/goods4ukraine.eu (Laravel)",
+        "commit_link": "https://github.com/KobaltDigital/goods4ukraine.eu/commit/2dfda21ef8f0d18a4afce9c886367c4f8aabc543",
+        "description": "Веб-фреймворк, название переименовано в лозунг"
+    },
+    {
+        "id": 171,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "vshymanskyy/StandWithUkraine",
+        "commit_link": "https://github.com/vshymanskyy/StandWithUkraine/commit/7c25c6ce0ca2e2956ca710180b095aa9a9dfc355",
+        "description": "Инструментарий для внедрения баннеров в ПО/Веб ресурсы"
+    },
+    {
+        "id": 172,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "evermade/support-ukraine-banner",
+        "commit_link": "https://github.com/evermade/support-ukraine-banner",
+        "description": "Софт для распространения баннеров"
+    },
+    {
+        "id": 173,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "brzuchal/stop-the-war",
+        "commit_link": "https://github.com/evermade/support-ukraine-banner/commit/38d2bd5cd898452576de53055f48aa82d235b63e",
+        "description": "PHP_CodeSniffer rule adding non-collapsable comment calling out to Stop The War"
+    },
+    {
+        "id": 174,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "retejs/rete",
+        "commit_link": "https://github.com/retejs/rete/commit/d3ff828a41f96e34f04619eb44c688c913ee8def",
+        "description": "#StandWithUkraine postinstall message"
+    },
+    {
+        "id": 175,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Synergy",
+        "commit_link": "https://github.com/symless/synergy-core/commit/c542c57b5ef6ee0640a5a68ecb40a2997a68bedb",
+        "description": "баннер, редирект с ip адресов РФ"
+    },
+    {
+        "id": 176,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Rust",
+        "commit_link": "https://blog.rust-lang.org/2022/02/24/Rust-1.59.0.html",
+        "description": "В начале анонса релиза 1.59.0 абзац: Today's release falls on the day in which the world's attention is captured by the sudden invasion of Ukraine by Putin's forces. Before going into the details of the new Rust release, we'd like to state that we stand in"
+    },
+    {
+        "id": 177,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Winbox snap install",
+        "commit_link": "https://github.com/panaceya/winbox",
+        "description": "Пакет с Winbox для Linux систем. Политика."
+    },
+    {
+        "id": 178,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "ukraine-not-war/stop-war",
+        "commit_link": "https://github.com/ukraine-not-war/stop-war",
+        "description": "-"
+    },
+    {
+        "id": 179,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Mate Translate",
+        "commit_link": "https://addons.mozilla.org/ru/firefox/addon/instant-translate/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=sea",
+        "description": "Политические призывы в расширении браузера версии 10.1.13"
+    },
+    {
+        "id": 180,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Winbox из SANP Linux",
+        "commit_link": "https://snapcraft.io/winbox",
+        "description": "Пакет установлен из магазина SNAP. Политические призывы в версии 3.35 при запуске."
+    },
+    {
+        "id": 181,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "VyOS",
+        "commit_link": "https://blog.vyos.io/global-security-issue-with-russian-federation-invasion-into-ukraine",
+        "description": "В самом коде пока(?) ничего не замечено, автор этой записи комитил последний раз в 2018 году в их репозиторий, но с учетом текста в конце сообщения и общего характера всего поста, надо учитывать в дальнейшем при обновлении. Так же, ниже в комментариях, ест"
+    },
+    {
+        "id": 182,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "LosslessCut",
+        "commit_link": "https://github.com/mifi/lossless-cut/issues/1055",
+        "description": "Добавлена кнопка в самом центре окна программы, которая сначала была украинским флагом, а теперь стала просто картинкой с подсолнухами. При нажатии на ссылку открывается пропагандистская страница https://mifi.no/ukraine.html"
+    },
+    {
+        "id": 185,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "svelte.dev",
+        "commit_link": "https://github.com/sveltejs/sites/pull/308",
+        "description": "Баннер с ссылкой на донаты Украине. Автор https://github.com/pngwn"
+    },
+    {
+        "id": 186,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Jest",
+        "commit_link": "https://jestjs.io/ru/",
+        "description": "Баннер в поддержку Украины."
+    },
+    {
+        "id": 189,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "yii2-starter-kit",
+        "commit_link": "https://github.com/yii-starter-kit/yii2-starter-kit/commit/cfc03ed42cd3dffb7c4b4ee4d081615024bffde7",
+        "description": "политические лозунги"
+    },
+    {
+        "id": 190,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "mailtrap.io",
+        "commit_link": "mailtrap.io",
+        "description": "Если зайти под русским ip то показывает страницу политическим лозунгом и видеоматериалами, использование сервиса далее заблокировано, vpn решает проблему"
+    },
+    {
+        "id": 191,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Evolution CMS",
+        "commit_link": "https://github.com/evolution-cms/evolution/commit/1c586bc76f739264dcf0482530945875fa444b77",
+        "description": "После обновления на релизы Evolution CMS 3.1.10 и Evolution CMS 1.4.17 полит. лозунг в админке."
+    },
+    {
+        "id": 192,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "kubernetes-sigs/kind",
+        "commit_link": "https://github.com/kubernetes-sigs/kind/pull/2666",
+        "description": "На сайт https://kind.sigs.k8s.io/ добавлен баннер с флагом и ссылка \"Help Provide Humanitarian Aid for Ukraine\". Стоит следить за новыми коммитами на всякий случай"
+    },
+    {
+        "id": 193,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Dotnet Foundation",
+        "commit_link": "https://github.com/dotnet-foundation/website/commit/72ddd84dd8c1b68489d870e467cc584752af8049",
+        "description": "Баннер \"We Stand with Ukraine\""
+    },
+    {
+        "id": 194,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Roave/SecurityAdvisories",
+        "commit_link": "https://github.com/Roave/SecurityAdvisories/commit/3b910ed88bb6ee25696073ff282cfdbd4bd886b8",
+        "description": "При недовольстве примешивания политики в опен сорс, людей могут банить - https://github.com/Roave/SecurityAdvisories/pull/92"
+    },
+    {
+        "id": 195,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Figma",
+        "commit_link": "https://forum.figma.com/t/ukrainian-people-are-dying-close-figma-in-russia/15263/3",
+        "description": "Figma решила заморозить корпоративные аккаунты российских клиентов. Личные пока не трогают. (источник: см. \"Ссылка на пуш в репе\", https://vk.com/wall-30666517_1781721)"
+    },
+    {
+        "id": 198,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Symfony",
+        "commit_link": "https://github.com/symfony/symfony/commit/37ca066c6fb3aac241ccfb12b2531675798528d7",
+        "description": "Шильдик #StandWithUkraine"
+    },
+    {
+        "id": 199,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "EventSource",
+        "commit_link": "https://github.com/Yaffle/EventSource/blob/master/src/eventsource.js#L1032",
+        "description": "Полифилы js используются в множестве сторонних сервисов, пол миллиона загрузок в неделю."
+    },
+    {
+        "id": 201,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "event-source-polyfill",
+        "commit_link": "https://github.com/Yaffle/EventSource/commit/de137927e13d8afac153d2485152ccec48948a7a",
+        "description": "Через 15 секунд после открытия страницы алертит призыв прекратить происходящее и открывает change.org"
+    },
+    {
+        "id": 202,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "T-Regx",
+        "commit_link": "https://github.com/T-Regx/T-Regx/commit/88c05aa62f1931f31e252c68c4084f22336e4552 и https://github.com/T-Regx/T-Regx/commit/7e481",
+        "description": "StandWithUkraine banner"
+    },
+    {
+        "id": 203,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Portable ASCII for PHP",
+        "commit_link": "https://github.com/voku/portable-ascii",
+        "description": "used e.g. in Laravel Core"
+    },
+    {
+        "id": 204,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "react-create-app",
+        "commit_link": "https://github.com/facebook/create-react-app/commit/fd8c5f7b1b1d19d10d24cc2f9fdfc110585dc030",
+        "description": "docs: add homepage banner in support of Ukraine (#12113)"
+    },
+    {
+        "id": 206,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "laminas/*, mezzio/*,",
+        "commit_link": "https://github.com/laminas/laminas-servicemanager/commit/1fb805d456f4e916e5fbddad4d2349adfd2f05ba",
+        "description": "Данный политический лозунг есть во всех пакетах laminas/ и mezzio/."
+    },
+    {
+        "id": 207,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "daemon tools",
+        "commit_link": "daemon-tools.cc",
+        "description": "с главного сайта начали перенаправлять на политический, отключили обновления"
+    },
+    {
+        "id": 209,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "MUI",
+        "commit_link": "https://github.com/mui/material-ui/pull/31275",
+        "description": "Баннер в поддержку Украины"
+    },
+    {
+        "id": 210,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Elmedia Player macOS",
+        "commit_link": "…",
+        "description": "Вместо проигрывания медиа файлов запускает видео военных действий с политическими лозунгами"
+    },
+    {
+        "id": 212,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "NewEXE/belsk-schedule",
+        "commit_link": "https://github.com/NewEXE/belsk-schedule/commit/b27b55bcf992887864d933af19e009e5750c4ca1",
+        "description": "Куча говна"
+    },
+    {
+        "id": 214,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "stop-war-in-ukraine",
+        "commit_link": "https://github.com/yarnpkg/website/issues/1155",
+        "description": "Массовый спам issues в репозиториях"
+    },
+    {
+        "id": 215,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Ember.js",
+        "commit_link": "https://emberjs.com/community/invasion-of-ukraine/",
+        "description": "https://emberjs.com/"
+    },
+    {
+        "id": 216,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "vdz yandex metrika",
+        "commit_link": "https://plugins.trac.wordpress.org/browser/vdz-yandex-metrika/assets/banner-772x250.png?rev=2688057",
+        "description": "это плагин wordpress, политические лозунги плюс бекдор, сейчас репозиторий зачищен, плагин блокирован"
+    },
+    {
+        "id": 217,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "k01ek/notowar",
+        "commit_link": "https://github.com/k01ek/notowar",
+        "description": "Примеры программ на разных языках программированиях выводящие текст \"No to war\""
+    },
+    {
+        "id": 218,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "mallardduck",
+        "commit_link": "https://github.com/KickflipCli/kickflip-src",
+        "description": "Генератор фейковых сайтов по шаблону с ключевыми словами и призывами (одного мейнтейнера уже забанили за национальную рознь, другой продолжает работу)"
+    },
+    {
+        "id": 219,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "GM-DONATE (gm-donate.ru) система доната в Garry's mod",
+        "commit_link": "https://github.com/GM-DONATE/IGS/commit/d98b6dd9f43225a6b03c665db8a57690646515ee#diff-13dde08e38ae5b40da01b8fed10e552f417dd10447",
+        "description": "Скрытно заменена текстура модели автомата с содовой на текстуру господина П. с фекалиями с расчетом на проблемы с законом. Возможно дальнейшее внедрение вредоносов, функционал позволяет."
+    },
+    {
+        "id": 220,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Redirect Russia",
+        "commit_link": "https://github.com/pabio/redirect-russia",
+        "description": "Скрипт встраиваемый на сайты, перенаправляющий пользователей из России на страницу с политическими лозунгами"
+    },
+    {
+        "id": 222,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "vadimdemedes/ink",
+        "commit_link": "https://github.com/vadimdemedes/ink/issues/506",
+        "description": "Issue с призывом платной поддержки украинской армии"
+    },
+    {
+        "id": 223,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "spaceship-prompt/spaceship-prompt",
+        "commit_link": "https://github.com/spaceship-prompt",
+        "description": "Поддержка полит лозунгами и удаление всех русских issues"
+    },
+    {
+        "id": 224,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Qalctulate! (GTK)",
+        "commit_link": "https://github.com/Qalculate/qalculate-gtk/commit/74c7413429b386f08028565f16f537204217b456",
+        "description": "Remove flags for RUB and BYR/BYN, and show UAH flag when first using the new version; Ничего серьезного, но раздражает. Версия с этим коммитом уже в репозиториях arch. Работает не только в РФ/БР, а вообще у всех."
+    },
+    {
+        "id": 225,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "pastebin.com",
+        "commit_link": "https://pastebin.com/",
+        "description": "Политический баннер"
+    },
+    {
+        "id": 226,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "SWUbanner",
+        "commit_link": "https://github.com/vshymanskyy/StandWithUkraine#projects-that-standwithukraine",
+        "description": "Есть смысл проверить эти проекты"
+    },
+    {
+        "id": 228,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Dash Electrum",
+        "commit_link": "https://github.com/akhavr/electrum-dash/commit/80e7bfbc9325f0012dc9c6bd1017cd71de80e2371017cd71de80e237",
+        "description": "Разработчик впилил в продукт политические лозунги, сделав их сюрпризом - в логе что в софте нового про это ни слова."
+    },
+    {
+        "id": 229,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "ReactJS",
+        "commit_link": "https://github.com/facebook/react/pull/23375/commits/11e414ce6c67dc6c3c7e8cf4146af5c39c9c93ea",
+        "description": "В документации полит. лозунг \"STOP RUSSIA'S INVASION OF UKRAINE\" https://ru.reactjs.org"
+    },
+    {
+        "id": 230,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "EmotionJS",
+        "commit_link": "https://github.com/emotion-js/emotion/pull/2668",
+        "description": "В документации полит. лозунг \"STOP RUSSIA'S INVASION OF UKRAINE\" https://emotion.sh/docs/introduction"
+    },
+    {
+        "id": 231,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "MUI (Material UI)",
+        "commit_link": "https://github.com/mui/material-ui/pull/31275",
+        "description": "В документации полит. лозунг \"STOP RUSSIA'S INVASION OF UKRAINE\" https://mui.com/getting-started/installation/"
+    },
+    {
+        "id": 232,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "mint",
+        "commit_link": "https://github.com/dbarnett/python-helloworld/pull/13",
+        "description": "https://uk.wikipedia.org/wiki/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9_%D0%B2%D0%BE%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%80%D0%B0%D0%B1%D0%BB%D1%8C,_%D0%B8%D0%B4%D0%B8_%D0%BD%D0%B0_%D1%85%D1%83%D0%B9"
+    },
+    {
+        "id": 233,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "CoreELEC",
+        "commit_link": "https://github.com/CoreELEC/CoreELEC",
+        "description": "Замена логотипа в цвета флага Украины"
+    },
+    {
+        "id": 234,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Return youtube dislike api",
+        "commit_link": "https://github.com/Anarios/return-youtube-dislike/commit/9f257b354c2a933610fafc7c466af0572eef91bf",
+        "description": "Добавление на главную страницу украинского флага и ссылки на сайт для поддержки украинской армии; + интересная строка в комментарии одного из разработчиков (https://github.com/Anarios/return-youtube-dislike/graphs/contributors): https://github.com/Anarios/"
+    },
+    {
+        "id": 235,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "pre-commit-terraform",
+        "commit_link": "https://github.com/antonbabenko/pre-commit-terraform/pull/348/commits/fc190f980a6f0edac571253bce39e288c5d93949",
+        "description": "см. условия использования в конце readme"
+    },
+    {
+        "id": 236,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "react-native-ui-lib",
+        "commit_link": "https://github.com/wix/react-native-ui-lib/commit/dca74afdc64f76101c105d02534f4a05bb0c771c",
+        "description": "Политический баннер #StandWithUkraine"
+    },
+    {
+        "id": 239,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Autodesk AutoCAD",
+        "commit_link": "https://www.autodesk.ru/",
+        "description": "Лозунги"
+    },
+    {
+        "id": 240,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Pnpn менеджер пакетов",
+        "commit_link": "https://github.com/pnpm/pnpm",
+        "description": "Вредительства не замечено, но сайт с доками блочит ру айпи"
+    },
+    {
+        "id": 241,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Svelte Material UI",
+        "commit_link": "https://github.com/hperrin/svelte-material-ui",
+        "description": "на их официальрном сайте https://sveltematerialui.com/ висит плашка с лозунгом"
+    },
+    {
+        "id": 242,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "filestash",
+        "commit_link": "https://github.com/mickael-kerjean/filestash-website/commit/c30a31a583c827182c92cb8ec4b5e8ba1d854c3d",
+        "description": "С помощью определения ip показывали видео обращение Зеленского. Сейчас убрали"
+    },
+    {
+        "id": 243,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Activeadmin SimpleMDE Markdown Editor",
+        "commit_link": "https://github.com/ypylypenko/activeadmin_simplemde/commit/9bdf811b5c23430b5d7c45d342082e4f1cca14a9",
+        "description": "Политические лозунги."
+    },
+    {
+        "id": 244,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Php Project",
+        "commit_link": "https://github.com/spider-mane/php-project/commit/f742eafcf96496ad7f687f452a5c893d29f3e79e",
+        "description": "#StandWithUkraine"
+    },
+    {
+        "id": 245,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "PHPBench",
+        "commit_link": "https://github.com/phpbench/phpbench/commit/414f462c2ee40a6b30ffafbe0c4ee760e75780f8",
+        "description": "standwithukraine"
+    },
+    {
+        "id": 246,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "django-modeltranslatio",
+        "commit_link": "https://github.com/deschler/django-modeltranslation/commit/0617eadfb4606cd9cf3c5fcea761af142b5eb3b2",
+        "description": "Политические лозунги в документации"
+    },
+    {
+        "id": 247,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "11ty/11ty-website",
+        "commit_link": "https://github.com/11ty/11ty-website/commit/544e54a62947c41381d0e9b59891dfe4dd9f3de6",
+        "description": "шильда в шапке Stand with Ukraine ??. До этого была ссылка на донаты для украины"
+    },
+    {
+        "id": 248,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "repo.packagist.org",
+        "commit_link": "https://github.com/composer/packagist/pull/1270",
+        "description": "composer update - выдает в консоли #StandWithUkraine"
+    },
+    {
+        "id": 249,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "RNUILib",
+        "commit_link": "https://github.com/wix/react-native-ui-lib/commit/dca74afdc64f76101c105d02534f4a05bb0c771c",
+        "description": "Баннер #StandWithUkraine"
+    },
+    {
+        "id": 251,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "deskreen",
+        "commit_link": "https://deskreen.com",
+        "description": "Не опенсурс, но не знаю куда ещё отправить эту информацию."
+    },
+    {
+        "id": 252,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "The Unarchiver",
+        "commit_link": "https://github.com/MacPaw (приватный репозиторий)",
+        "description": "Проверить, есть ли что-то помимо лозунгов, пока не удаётся. Лозунги точно показываются на баннере при разархивации/архивации."
+    },
+    {
+        "id": 253,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Spark",
+        "commit_link": "https://sparkmailapp.com/",
+        "description": "Из текущего: лозунги и отказ от обслуживания жителей РФ (такое чувство, что ограничение на клиентской части приложения, т.к. отказ пришел с обновлениями)"
+    },
+    {
+        "id": 254,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "GNOME extension ddterm",
+        "commit_link": "оф сайт расширений гнома",
+        "description": "Демонстрирует в окне консоли баннер."
+    },
+    {
+        "id": 255,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "plantUml web ресурс",
+        "commit_link": "https://plantuml.com/ru/",
+        "description": "Я аналитик, я не найду пуш в репе. plantUML много где используется как библиотечка для документирования и плагин в Idea. Но конкретно сейчас я нашла это в web версии"
+    },
+    {
+        "id": 257,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Codeception for PHP",
+        "commit_link": "https://github.com/Codeception/Codeception/commit/eefe1abc60500c0516b85131cbbfbb9a22899db4",
+        "description": "при запуске в консоли выводится \"Codeception PHP Testing Framework v4.1.31 https://helpukrainewin.org\""
+    },
+    {
+        "id": 258,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Docusaurus",
+        "commit_link": "https://github.com/facebook/docusaurus/pull/6811",
+        "description": "Опенсорс проект http://docusaurus.io/"
+    },
+    {
+        "id": 259,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "UpdatePack7R2 для Windows 7 SP1 и Server 2008 R2 SP1",
+        "commit_link": "https://blog.simplix.info/update7/",
+        "description": "Мартовское обновление не устанавливается. По информации в ченджлоге: История изменений 22.03.2011 ... Из-за военного вторжения работа программы на территории России и Беларуси ограничена"
+    },
+    {
+        "id": 263,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Codeception",
+        "commit_link": "https://github.com/Codeception/Codeception/commit/d6b7af9233124652b0425217d633e034bfa9bf2b",
+        "description": "Выводит в консоли ссылку на https://helpukrainewin.org"
+    },
+    {
+        "id": 264,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "ebastianbergmann",
+        "commit_link": "https://github.com/sebastianbergmann/phpunit/commit/4634e702b5f05f5e948e531eb8b4fc19be40610c",
+        "description": "политика"
+    },
+    {
+        "id": 265,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "The unarchiver.app",
+        "commit_link": "https://macpaw.com/news/macpaw-amidst-aggression",
+        "description": "Дополнительное окно с кнопкой «Узнайте правду о происходящем на Украине»."
+    },
+    {
+        "id": 268,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "russia-sanctions/base",
+        "commit_link": "https://github.com/Russia-Sanctions/Base",
+        "description": "Просто пакет, который предлагается включать, чтобы выводить политические лозунги"
+    },
+    {
+        "id": 270,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Список github проектов с лозунгами",
+        "commit_link": "https://github.com/vshymanskyy/StandWithUkraine#projects-that-standwithukraine",
+        "description": "Список github проектов с лозунгами"
+    },
+    {
+        "id": 272,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Поиск по Github",
+        "commit_link": "https://github.com/search?l=Markdown&q=SWUbanner&type=Code",
+        "description": "Ссылка на поиск тех, что включил баннер в репу"
+    },
+    {
+        "id": 273,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "1password.com - менеджер паролей",
+        "commit_link": "Только ссылка",
+        "description": "https://blog.1password.com/responding-to-the-conflict-in-ukraine/"
+    },
+    {
+        "id": 275,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "peacenotwar",
+        "commit_link": "https://github.com/RIAEvangelist/peacenotwar",
+        "description": "автор мальваря в node-ipc"
+    },
+    {
+        "id": 276,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "YoutubeDownloader",
+        "commit_link": "https://github.com/Tyrrrz/YoutubeDownloader",
+        "description": "Дал ссылку на репо, там везде призывы к поддержке х-слов, ну и в самой программе при запуске всплывает плашка о поддержке т.н. \"украины\""
+    },
+    {
+        "id": 277,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Awesome Prometheus Alerts",
+        "commit_link": "https://github.com/samber/awesome-prometheus-alerts/commit/6bfcdcca165e57c6fa09a561515c33284caa20c2",
+        "description": "Определяет активный у пользователя язык и редиректит на страницу с лозунгами. В следующих коммитах код удалили."
+    },
+    {
+        "id": 278,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "docs.nestjs.com",
+        "commit_link": "https://github.com/nestjs/docs.nestjs.com/commit/a411b74d114a1342170334e84e426b3259c3872c",
+        "description": "В документации полит. лозунг \"STOP RUSSIA'S INVASION OF UKRAINE\""
+    },
+    {
+        "id": 279,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "Stop Russia IT",
+        "commit_link": "https://github.com/stop-war-in-ukraine/stop-russia-it",
+        "description": "По ссылке список сервисов, ссылок на обсуждения, петиции на change.org"
+    },
+    {
+        "id": 280,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "verdaccio",
+        "commit_link": "https://github.com/verdaccio/verdaccio/pull/3060",
+        "description": "Баннер в поддержку украины"
+    },
+    {
+        "id": 281,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "ECMAScript extensions",
+        "commit_link": "https://github.com/medikoo/es5-ext/commit/28de285ed433b45113f01e4ce7c74e9a356b2af2",
+        "description": "anti-war manifest"
+    },
+    {
+        "id": 287,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "retejs/rete",
+        "commit_link": "https://github.com/retejs/rete/commit/d3ff828a41f96e34f04619eb44c688c913ee8def",
+        "description": "#StandWithUkraine postinstall message"
+    },
+    {
+        "id": 288,
+        "datetime": "2022-03-29 15:48:48",
+        "problem_type": "political_slogans",
+        "name": "AWS Terraform modules",
+        "commit_link": "https://github.com/terraform-aws-modules",
+        "description": "все модули AWS для Terraform поддерживаемые сообществом, также сдублировалось в официальный Registry (https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest), внимание на \"дополнительные соглашения\" внизу README каждого модуля."
+    },
+    {
+        "id": 324,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "political_slogans",
+        "name": "Angular",
+        "commit_link": "https://angular.io/",
+        "description": "Добавли баннер в шапку сайта"
+    },
+    {
+        "id": 325,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "political_slogans",
+        "name": "Wagtail (CMS на Django)",
+        "commit_link": "https://wagtail.org/",
+        "description": "Баннер в поддержку Украины в шапке сайта"
+    },
+    {
+        "id": 326,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "political_slogans",
+        "name": "Vim",
+        "commit_link": "https://www.vim.org/",
+        "description": "Перекрасили шапку сайта в цвета украинского флага"
+    },
+    {
+        "id": 327,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "political_slogans",
+        "name": "random-user-agent (расширение для браузера)",
+        "commit_link": "https://github.com/tarampampam/random-user-agent/",
+        "description": "Иконки перекрашены в цвета флага Украины"
+    },
+    {
+        "id": 328,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "political_slogans",
+        "name": "pastebin.com",
+        "commit_link": "https://pastebin.com",
+        "description": "Покрасили лого в цвета украинского флага"
+    },
+    {
+        "id": 329,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "political_slogans",
+        "name": "MikTex",
+        "commit_link": "https://miktex.org/",
+        "description": "Логотип на фоне флага украины со ссылкой на пожертвования украинским беженцам"
+    },
+    {
+        "id": 331,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "political_slogans",
+        "name": "Online-go.com",
+        "commit_link": "https://github.com/online-go/online-go.com",
+        "description": "Логотип перекрашен в цвета флага Украины"
+    },
+    {
+        "id": 332,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "political_slogans",
+        "name": "Prometheus",
+        "commit_link": "https://prometheus.io/",
+        "description": "Проукраинский баннер на титульной странице проекта"
+    },
+    {
+        "id": 333,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "political_slogans",
+        "name": "bromite",
+        "commit_link": "https://www.bromite.org/",
+        "description": "Слоган в поддержку Украины на сайте. Пропагандистские ссылки на новостные сайты в списке рекомендованных на домашней странице браузера"
+    },
+    {
+        "id": 334,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "political_slogans",
+        "name": "dry-rb",
+        "commit_link": "https://github.com/dry-rb/dry-rb.org/commit/70be9b42a4d85c7d4025bdb7b98d4e5c72945d03",
+        "description": "На сайте с документацией в заголовке появились политические призывы к \"российским друзьям\" - https://dry-rb.org"
+    },
+    {
+        "id": 335,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "political_slogans",
+        "name": "Cobian Reflector",
+        "commit_link": "https://www.cobiansoft.com/crhistory.html",
+        "description": "Cobiansoft популярные, бесплатные для коммерции, программы резервного копирования. Автор швед, учившийся в России обозлился из-за западной пропаганды на Путина и с каждым обновлением в журнале обновления постит политические лозунги. Заканчивается ли вся не"
+    },
+    {
+        "id": 336,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "political_slogans",
+        "name": "random-user-agent",
+        "commit_link": "https://github.com/tarampampam/random-user-agent/commit/fb9f595306a0e149a248c080859749b6d549be90",
+        "description": "Выпущен тег только для смены иконки"
+    },
+    {
+        "id": 339,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "political_slogans",
+        "name": "Gitlab",
+        "commit_link": "gitlab.com",
+        "description": "Логотип перекрашен в цвета флага Украины (появляется не всегда)"
+    },
+    {
+        "id": 340,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "political_slogans",
+        "name": "ScreenshotTile",
+        "commit_link": "https://github.com/cvzi/ScreenshotTile/blob/master/app/src/main/java/com/github/cvzi/screenshottile/utils/Utils.kt#L793",
+        "description": "всплывающие сообщения при снимках экрана"
+    },
+    {
+        "id": 341,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "political_slogans",
+        "name": "vue-boilerplate-template",
+        "commit_link": "https://github.com/nicejade/vue-boilerplate-template",
+        "description": "при подгрузке пакетов вылезает полит. текст."
+    },
+    {
+        "id": 343,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "political_slogans",
+        "name": "Slack",
+        "commit_link": "https://slack.com/",
+        "description": "Замена логотипа в цвета флага Украины"
+    },
+    {
+        "id": 344,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "political_slogans",
+        "name": "EdgeDB",
+        "commit_link": "https://twitter.com/edgedatabase/status/1499842655840190468",
+        "description": "Смена логотипа в репозитории, пропаганда в twitter https://github.com/edgedb"
+    },
+    {
+        "id": 345,
+        "datetime": "2022-04-02 10:36:34",
+        "problem_type": "political_slogans",
+        "name": "virtualdj",
+        "commit_link": "https://www.virtualdj.com/",
+        "description": "При запуске программы с росcийского ip вылетает политический пуш, на сайте также в шапке политические лозунги."
+    },
+    {
+        "id": 374,
+        "datetime": "2022-04-08 11:12:05",
+        "problem_type": "political_slogans",
+        "name": "docker-php-extension-installer",
+        "commit_link": "https://github.com/mlocati/docker-php-extension-installer/commit/5fab1d04c3a857ece3284b6052b029652ca50477",
+        "description": "Утилита для установки PHP-модулей внутри контейнеров. Совмещает политические коммиты с недокументируемыми изменениями"
+    },
+    {
+        "id": 375,
+        "datetime": "2022-04-08 11:12:05",
+        "problem_type": "political_slogans",
+        "name": "docker-compose Icinga stack",
+        "commit_link": "https://github.com/lippserd/docker-compose-icinga",
+        "description": "заблокирован доступ к файлам в репозитории https://repo.packagist.org/, с лозунгом #StandWithUkraine"
+    },
+    {
+        "id": 376,
+        "datetime": "2022-04-08 11:12:05",
+        "problem_type": "political_slogans",
+        "name": "ClickHouse",
+        "commit_link": "https://clickhouse.com/blog/we-stand-with-ukraine/",
+        "description": "Политические лозунги на главной и в блоге. Перекрасили шапку в цвета украинского флага."
+    },
+    {
+        "id": 377,
+        "datetime": "2022-04-08 11:12:05",
+        "problem_type": "political_slogans",
+        "name": "AltStore (iOS)",
+        "commit_link": "https://altstore.io/",
+        "description": "Обновлена вкладка «Новости AltStore» со ссылкой на руководство по ресурсам, подготовленное @razomforukraine, с призывом делать пожертвования и #StandWithUkraine. На сайте чисто."
+    },
+    {
+        "id": 378,
+        "datetime": "2022-04-08 11:12:29",
+        "problem_type": "political_slogans",
+        "name": "docker-php-extension-installer",
+        "commit_link": "https://github.com/mlocati/docker-php-extension-installer/commit/5fab1d04c3a857ece3284b6052b029652ca50477",
+        "description": "Утилита для установки PHP-модулей внутри контейнеров. Совмещает политические коммиты с недокументируемыми изменениями"
+    },
+    {
+        "id": 379,
+        "datetime": "2022-04-08 11:12:29",
+        "problem_type": "political_slogans",
+        "name": "docker-compose Icinga stack",
+        "commit_link": "https://github.com/lippserd/docker-compose-icinga",
+        "description": "заблокирован доступ к файлам в репозитории https://repo.packagist.org/, с лозунгом #StandWithUkraine"
+    },
+    {
+        "id": 381,
+        "datetime": "2022-04-08 11:12:29",
+        "problem_type": "political_slogans",
+        "name": "AltStore (iOS)",
+        "commit_link": "https://altstore.io/",
+        "description": "Обновлена вкладка «Новости AltStore» со ссылкой на руководство по ресурсам, подготовленное @razomforukraine, с призывом делать пожертвования и #StandWithUkraine. На сайте чисто."
+    },
+    {
+        "id": 382,
+        "datetime": "2022-04-08 11:12:54",
+        "problem_type": "political_slogans",
+        "name": "docker-php-extension-installer",
+        "commit_link": "https://github.com/mlocati/docker-php-extension-installer/commit/5fab1d04c3a857ece3284b6052b029652ca50477",
+        "description": "Утилита для установки PHP-модулей внутри контейнеров. Совмещает политические коммиты с недокументируемыми изменениями"
+    },
+    {
+        "id": 383,
+        "datetime": "2022-04-08 11:12:54",
+        "problem_type": "political_slogans",
+        "name": "docker-compose Icinga stack",
+        "commit_link": "https://github.com/lippserd/docker-compose-icinga",
+        "description": "заблокирован доступ к файлам в репозитории https://repo.packagist.org/, с лозунгом #StandWithUkraine"
+    },
+    {
+        "id": 385,
+        "datetime": "2022-04-08 11:12:54",
+        "problem_type": "political_slogans",
+        "name": "AltStore (iOS)",
+        "commit_link": "https://altstore.io/",
+        "description": "Обновлена вкладка «Новости AltStore» со ссылкой на руководство по ресурсам, подготовленное @razomforukraine, с призывом делать пожертвования и #StandWithUkraine. На сайте чисто."
+    },
+    {
+        "id": 386,
+        "datetime": "2022-04-08 11:12:54",
+        "problem_type": "political_slogans",
+        "name": "Cucumber JS (NPM package)",
+        "commit_link": "https://github.com/cucumber/cucumber-js/commit/94458aaf07146ee3069e3b2d536ca773e5faec54",
+        "description": "Cucumber (NPM package \"@cucumber/cucumber\") - added StandWithUkraine banner in в README.md"
+    },
+    {
+        "id": 387,
+        "datetime": "2022-04-08 11:12:54",
+        "problem_type": "political_slogans",
+        "name": "counter.dev",
+        "commit_link": "https://github.com/ihucos/counter.dev/commit/7abe9d1d9dca75d6a242a7f3833390b883e2ae70",
+        "description": "Message for russian users. Так же предыдущий и следующий коммиты."
+    },
+    {
+        "id": 388,
+        "datetime": "2022-04-08 11:14:13",
+        "problem_type": "political_slogans",
+        "name": "imgur",
+        "commit_link": "imgur.com",
+        "description": "Перекрасили логотип в цвета украинского флага"
+    },
+    {
+        "id": 389,
+        "datetime": "2022-04-08 12:08:24",
+        "problem_type": "political_slogans",
+        "name": "imageshack",
+        "commit_link": "https://imageshack.com/",
+        "description": "Лозунги при встраивании изображение в код."
+    },
+    {
+        "id": 390,
+        "datetime": "2022-04-09 09:10:30",
+        "problem_type": "political_slogans",
+        "name": "yyyar/gobetween",
+        "commit_link": "https://github.com/yyyar/gobetween",
+        "description": "Политические лозунги"
+    },
+    {
+        "id": 391,
+        "datetime": "2022-04-09 09:10:30",
+        "problem_type": "political_slogans",
+        "name": "Canva",
+        "commit_link": "https://www.canva.com/newsroom/news/supporting-ukraine/",
+        "description": "Политические лозунги"
+    },
+    {
+        "id": 392,
+        "datetime": "2022-04-09 09:10:30",
+        "problem_type": "political_slogans",
+        "name": "koreader/koreader",
+        "commit_link": "https://github.com/koreader/koreader/releases/tag/v2022.02",
+        "description": "flag Ukraine with icon app"
+    },
+    {
+        "id": 410,
+        "datetime": "2022-04-12 13:38:22",
+        "problem_type": "political_slogans",
+        "name": "zadam/trilium",
+        "commit_link": "https://github.com/zadam/trilium",
+        "description": "Всё стандартно. Баннер, лозунги, призывы."
+    },
+    {
+        "id": 411,
+        "datetime": "2022-04-13 14:17:54",
+        "problem_type": "political_slogans",
+        "name": "azjezz/psl",
+        "commit_link": "https://github.com/azjezz/psl",
+        "description": "Политика"
+    },
+    {
+        "id": 413,
+        "datetime": "2022-04-13 14:18:29",
+        "problem_type": "political_slogans",
+        "name": "acornjs/acorn",
+        "commit_link": "https://github.com/acornjs/acorn",
+        "description": "Политика"
+    },
+    {
+        "id": 414,
+        "datetime": "2022-04-14 11:04:39",
+        "problem_type": "political_slogans",
+        "name": "AssemblyScript/assemblyscript",
+        "commit_link": "https://github.com/AssemblyScript/assemblyscript",
+        "description": "Политика"
+    },
+    {
+        "id": 415,
+        "datetime": "2022-04-14 11:04:39",
+        "problem_type": "political_slogans",
+        "name": "AlDente",
+        "commit_link": "https://apphousekitchen.com/aldente-pro-1-16-release-notes/",
+        "description": "В новом релизе автор написал что поддерживает Украину. Так же автор добавил флаг. Есть опасения, что добавил еще что-то в новый релиз. Обновляться до 1.16 явно опасно."
+    },
+    {
+        "id": 419,
+        "datetime": "2022-04-15 11:17:20",
+        "problem_type": "political_slogans",
+        "name": "PortableApps/SuiteUkraine",
+        "commit_link": "https://github.com/PortableApps/SuiteUkraine",
+        "description": "Политика"
+    },
+    {
+        "id": 420,
+        "datetime": "2022-04-16 22:43:00",
+        "problem_type": "political_slogans",
+        "name": "soketi/soketi",
+        "commit_link": "https://github.com/soketi/soketi",
+        "description": "Политика"
+    },
+    {
+        "id": 422,
+        "datetime": "2022-04-18 12:38:00",
+        "problem_type": "political_slogans",
+        "name": "burgua/yandex_search_in_chrome",
+        "commit_link": "https://github.com/burgua/yandex_search_in_chrome/blob/master/code.js#L3",
+        "description": "Аддон открывает видео Ильи Яшина на ютубе. До этого открывал видео Каца"
+    },
+    {
+        "id": 433,
+        "datetime": "2022-04-18 12:38:00",
+        "problem_type": "political_slogans",
+        "name": "MahApps/MahApps.Metro",
+        "commit_link": "https://github.com/MahApps/MahApps.Metro",
+        "description": "Добавили баннер в readme"
+    },
+    {
+        "id": 434,
+        "datetime": "2022-04-18 12:38:00",
+        "problem_type": "political_slogans",
+        "name": "jech/galene",
+        "commit_link": "https://github.com/jech/galene",
+        "description": "На сайтах https://galene.org/ и https://galene.org:8443/group/public/ изображения и политические лозунги"
+    },
+    {
+        "id": 435,
+        "datetime": "2022-04-18 12:38:00",
+        "problem_type": "political_slogans",
+        "name": "composer/packagist",
+        "commit_link": "https://github.com/composer/packagist/commit/86244a3695fcaaac9c5ba4257a4314eae1c6d981",
+        "description": "Менеджер пакетов для PHP. При скачивании пакетов в терминале выводит текст: \"Info from https://repo.packagist.org: #StandWithUkraine\".\r\nhttps://github.com/composer/packagist/pull/1270\r\nАвтор добавил их в публичный репозиторий packagist, так что апгрейд/даунгрейд самого composer.phar не поможет. Кому-то CI/CD поломало, лозунги пишутся в stderr. Решение: https://github.com/open-composer/composer/issues/3#issuecomment-1087867491"
+    },
+    {
+        "id": 436,
+        "datetime": "2022-04-18 12:38:00",
+        "problem_type": "political_slogans",
+        "name": "Macintosh Repository",
+        "commit_link": "macintoshrepository.org",
+        "description": "Добавлен призыв \"Пожалуйста остановите войну\" внизу страницы https://imgbox.com/5BGEAhrx"
+    },
+    {
+        "id": 438,
+        "datetime": "2022-04-18 12:38:00",
+        "problem_type": "political_slogans",
+        "name": "Hacking with Swift",
+        "commit_link": "www.hackingwithswift.com",
+        "description": "Образовательный ресурс по программированию на Swift. Добавили украинский флажок: https://imgbox.com/SL27Rljs"
+    },
+    {
+        "id": 439,
+        "datetime": "2022-04-18 12:38:00",
+        "problem_type": "political_slogans",
+        "name": "The Web Dev",
+        "commit_link": "https://thewebdev.info/",
+        "description": "Сайт с якобы информацией по веб-разработке заполнен рекламой с политическими лозунгами в пользу Украину и пропагандой против России."
+    },
+    {
+        "id": 440,
+        "datetime": "2022-04-18 12:38:00",
+        "problem_type": "political_slogans",
+        "name": ".NET Fiddle",
+        "commit_link": "https://dotnetfiddle.net",
+        "description": "Баннер на сайте https://dotnetfiddle.net \"We Stand with Ukraine\""
+    },
+    {
+        "id": 441,
+        "datetime": "2022-04-18 12:38:00",
+        "problem_type": "political_slogans",
+        "name": "AppVeyor",
+        "commit_link": "https://www.appveyor.com",
+        "description": "Добавили украинский флаг в шапку"
+    },
+    {
+        "id": 442,
+        "datetime": "2022-04-18 12:38:00",
+        "problem_type": "political_slogans",
+        "name": "Freepik",
+        "commit_link": "https://www.freepik.com/",
+        "description": "Добавли баннер в шапку сайта: https://www.freepik.com/"
+    },
+    {
+        "id": 443,
+        "datetime": "2022-04-18 12:38:00",
+        "problem_type": "political_slogans",
+        "name": "Uninstall Tool",
+        "commit_link": "https://crystalidea.com/ru/uninstall-tool/buy",
+        "description": "Лозунг на странице покупки. Такие же лозунги на странице покупки других программ данного разработчика."
+    },
+    {
+        "id": 445,
+        "datetime": "2022-04-20 09:36:00",
+        "problem_type": "political_slogans",
+        "name": "CherryTree",
+        "commit_link": "https://github.com/giuspen/cherrytree/commit/66d69523239c98ada36d93f841615370a1517c48",
+        "description": "Под эгидой добавления новых пиктограмм для веток заметок запилил первым в списке жовто-блакитное сердечко и заменил российский флаг сначала на украинский, потом на бело-сине-белый флаг, придуманный нам западными кураторами на манер БЧБ в Беларуси. Автор - итальянец, живущий в Британии, жена из Украины. Годный продукт, но теперь стрёмно им пользоваться, вдруг начнёт базы портить, если локаль русская"
+    },
+    {
+        "id": 453,
+        "datetime": "2022-04-21 09:37:00",
+        "problem_type": "political_slogans",
+        "name": "Laravel",
+        "commit_link": "https://github.com/laravel/laravel.com/commit/d688711ef9642529bc93d49362b8bcdf87362cf1",
+        "description": "Добавили политические лозунги на свой сайт. В когда самого framework пока вроде бы чисто."
+    },
+    {
+        "id": 454,
+        "datetime": "2022-04-21 09:37:00",
+        "problem_type": "political_slogans",
+        "name": "Svelte.JS",
+        "commit_link": "https://github.com/sveltejs/sites/commit/ce0750bcfb8b50f67f84976c161fa4768a434647",
+        "description": "Добавили на сайт https://svelte.dev/ баннер со ссылкой на сайт stopputin. В русской версии сайт https://ru.svelte.dev/ этот баннер стыдливо прячут"
+    },
+    {
+        "id": 457,
+        "datetime": "2022-04-22 10:05:00",
+        "problem_type": "political_slogans",
+        "name": "wxWidgets",
+        "commit_link": "https://github.com/wxWidgets/website/commit/e55c1d3498ab313093084671aa34aaaa9ce849be",
+        "description": "Повесили флажок и добавили пропаганды на сайт"
+    },
+    {
+        "id": 463,
+        "datetime": "2022-04-25 13:02:00",
+        "problem_type": "political_slogans",
+        "name": "Selenide",
+        "commit_link": "https://github.com/selenide/selenide.github.io/commit/fa6c212ee609a6c93de066d7c0c4e42e1b7f454d",
+        "description": "UI tests in Java. Опубликовали лозунги в блоге продукта. Сбор денег для украинской армии.\r\nhttps://ru.selenide.org/2022/04/07/selenide-6.4.0/"
+    },
+    {
+        "id": 464,
+        "datetime": "2022-04-25 13:02:00",
+        "problem_type": "political_slogans",
+        "name": "Robot Framework",
+        "commit_link": "https://github.com/robotframework/robotframework.github.com/commit/77592b828d6782421f585bb44b12de8f8680dcd4",
+        "description": "Добавили украинский флаг в в название на robotframework.org"
+    },
+    {
+        "id": 465,
+        "datetime": "2022-04-25 13:02:00",
+        "problem_type": "political_slogans",
+        "name": "Worker (файловый менеджер)",
+        "commit_link": "http://www.boomerangsworld.de/cms/worker/index.html",
+        "description": "Фон сайта перекрашен в цвета украинского флага"
+    },
+    {
+        "id": 466,
+        "datetime": "2022-04-29 09:34:00",
+        "problem_type": "political_slogans",
+        "name": "CleanMyMac X",
+        "commit_link": "https://apps.apple.com/us/app/cleanmymac-x/id1339170533?mt=12",
+        "description": "Политические лозунги, логотип, сбор денег.\r\nVersion 4.10.4\r\nA new category in the Uninstaller module — Suspicious — where CleanMyMac puts apps associated with or owned by Russian or Belarusian developers.\r\nUpdated the Ukrainian theme and added an ability to switch it off in the Preferences."
+    },
+    {
+        "id": 468,
+        "datetime": "2022-04-29 09:34:00",
+        "problem_type": "political_slogans",
+        "name": "Claws Mail",
+        "commit_link": "https://www.claws-mail.org/",
+        "description": "Ukraine flag with slogan \"no war\" at Claws Mail's homepage."
+    },
+    {
+        "id": 472,
+        "datetime": "2022-04-30 10:49:00",
+        "problem_type": "political_slogans",
+        "name": "fmtlib/fmt",
+        "commit_link": "https://github.com/fmtlib/fmt",
+        "description": "Политические лозунги, логотип, сбор денег. Что характерно, до 1 марта Зверович агитировал за белорусских нациков, видимо работодатель заставил перевесить."
+    },
+    {
+        "id": 473,
+        "datetime": "2022-04-30 10:49:00",
+        "problem_type": "political_slogans",
+        "name": "dmtrKovalenko/cypress-real-events",
+        "commit_link": "https://github.com/dmtrKovalenko/cypress-real-events/commit/660025b0dac4e69ef6a982eeb0a26e025d3a7696",
+        "description": "Баннер для сбора пожертвований, в том числе для армии Украины"
+    }
+]
