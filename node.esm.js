@@ -8199,7 +8199,7 @@ var $;
 (function ($) {
     class $toxic_app extends $mol_book2_catalog {
         menu_title() {
-            return "Toxis Repos";
+            return "Toxic Repos";
         }
         menu_tools() {
             return [
