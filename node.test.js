@@ -9411,7 +9411,7 @@ var $;
                 return Data(json);
             }
             data_sorted() {
-                return [...this.data_all()].sort($mol_compare_text(item => item.datetime)).reverse();
+                return this.data_all().slice().sort($mol_compare_text(item => item.datetime)).reverse();
             }
             search(next) {
                 return this.$.$mol_state_arg.value('search', next) ?? '';
