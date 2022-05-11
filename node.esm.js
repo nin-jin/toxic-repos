@@ -8795,6 +8795,34 @@ var $;
 "use strict";
 var $;
 (function ($) {
+    function $mol_compare_text(item = (item) => String(item)) {
+        return (a, b) => {
+            const text_a = item(a).trim().toLowerCase();
+            const text_b = item(b).trim().toLowerCase();
+            const parts_a = text_a.split(/(\d+)/);
+            const parts_b = text_b.split(/(\d+)/);
+            const count = Math.max(parts_a.length, parts_b.length);
+            for (let i = 0; i < count; ++i) {
+                const part_a = parts_a[i] || '';
+                const part_b = parts_b[i] || '';
+                const diff = Number(part_a) - Number(part_b);
+                if (diff)
+                    return diff;
+                if (part_a > part_b)
+                    return 1;
+                if (part_a < part_b)
+                    return -1;
+            }
+            return parts_a.length - parts_b.length;
+        };
+    }
+    $.$mol_compare_text = $mol_compare_text;
+})($ || ($ = {}));
+//mol/compare/text/text.ts
+;
+"use strict";
+var $;
+(function ($) {
     function $mol_match_text(query, values) {
         const tags = query.toLowerCase().trim().split(/\s+/).filter(tag => tag);
         if (tags.length === 0)
@@ -9365,7 +9393,7 @@ var $;
 "use strict";
 var $;
 (function ($) {
-    $mol_style_attach("toxic/app/app.view.css", "[toxic_app] {\n\t--mol_theme_hue: 380deg;\n}\n\n[toxic_app_menu] {\n\tflex: 0 0 18rem;\n}\n\n[toxic_app_issues_page] {\n\tflex: 0 0 60rem;\n}\n\n[toxic_app_issues] {\n\t/* padding: var(--mol_gap_block); */\n}\n\n[toxic_app_issue] {\n\tpadding: var(--mol_gap_block);\n}\n\n[toxic_app_issue_main] {\n\tjustify-content: space-between;\n\tflex-wrap: wrap;\n\tgap: .75rem;\n}\n\n[toxic_app_issue_name] {\n\ttext-shadow: 0 0;\n\tflex: 1 1 auto;\n}\n\n[toxic_app_issue_type] {\n\tcolor: var(--mol_theme_shade);\n}\n\n[toxic_app_issue_date] {\n\tcolor: var(--mol_theme_shade);\n}\n\n[toxic_app_issue_descr] {\n\tmax-width: 100%\n}\n\n[toxic_app_issue_descr_row] {\n}\n");
+    $mol_style_attach("toxic/app/app.view.css", "[toxic_app] {\n\t--mol_theme_hue: 380deg;\n}\n\n[toxic_app_menu] {\n\tflex: 0 0 18rem;\n}\n\n[toxic_app_issues_page] {\n\tflex: 0 0 60rem;\n}\n\n[toxic_app_menu_foot] {\n\tpadding: var(--mol_gap_block);\n}\n\n[toxic_app_issue] {\n\tpadding: var(--mol_gap_block);\n}\n\n[toxic_app_issue_main] {\n\tjustify-content: space-between;\n\tflex-wrap: wrap;\n\tgap: .75rem;\n}\n\n[toxic_app_issue_name] {\n\ttext-shadow: 0 0;\n\tflex: 1 1 auto;\n}\n\n[toxic_app_issue_type] {\n\tcolor: var(--mol_theme_shade);\n}\n\n[toxic_app_issue_date] {\n\tcolor: var(--mol_theme_shade);\n}\n\n[toxic_app_issue_descr] {\n\tmax-width: 100%\n}\n");
 })($ || ($ = {}));
 //toxic/app/-css/app.view.css.ts
 ;
@@ -9391,12 +9419,7 @@ var $;
                 return Data(json);
             }
             data_sorted() {
-                return [...this.data_all()]
-                    .sort((left, right) => left.datetime > right.datetime
-                    ? -1
-                    : left.datetime < right.datetime
-                        ? 1
-                        : 0);
+                return [...this.data_all()].sort($mol_compare_text(item => item.datetime)).reverse();
             }
             search(next) {
                 return this.$.$mol_state_arg.value('search', next) ?? '';

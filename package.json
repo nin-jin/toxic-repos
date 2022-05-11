@@ -180,6 +180,7 @@
     "$mol_data_string",
     "$mol_fetch",
     "$mol_dom_parse",
+    "$mol_compare_text",
     "$mol_match",
     "$mol_time_moment",
     "$mol_time",
