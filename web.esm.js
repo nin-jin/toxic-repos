@@ -4857,14 +4857,26 @@ var $;
 "use strict";
 var $;
 (function ($) {
-    class $mol_icon_twitter extends $mol_icon {
+    class $mol_icon_bug extends $mol_icon {
         path() {
-            return "M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z";
+            return "M14,12H10V10H14M14,16H10V14H14M20,8H17.19C16.74,7.22 16.12,6.55 15.37,6.04L17,4.41L15.59,3L13.42,5.17C12.96,5.06 12.5,5 12,5C11.5,5 11.04,5.06 10.59,5.17L8.41,3L7,4.41L8.62,6.04C7.88,6.55 7.26,7.22 6.81,8H4V10H6.09C6.04,10.33 6,10.66 6,11V12H4V14H6V15C6,15.34 6.04,15.67 6.09,16H4V18H6.81C7.85,19.79 9.78,21 12,21C14.22,21 16.15,19.79 17.19,18H20V16H17.91C17.96,15.67 18,15.34 18,15V14H20V12H18V11C18,10.66 17.96,10.33 17.91,10H20V8Z";
         }
     }
-    $.$mol_icon_twitter = $mol_icon_twitter;
+    $.$mol_icon_bug = $mol_icon_bug;
 })($ || ($ = {}));
-//mol/icon/twitter/-view.tree/twitter.view.tree.ts
+//mol/icon/bug/-view.tree/bug.view.tree.ts
+;
+"use strict";
+var $;
+(function ($) {
+    class $mol_icon_bug_outline extends $mol_icon {
+        path() {
+            return "M20,8H17.19C16.74,7.2 16.12,6.5 15.37,6L17,4.41L15.59,3L13.42,5.17C12.96,5.06 12.5,5 12,5C11.5,5 11.05,5.06 10.59,5.17L8.41,3L7,4.41L8.62,6C7.87,6.5 7.26,7.21 6.81,8H4V10H6.09C6.03,10.33 6,10.66 6,11V12H4V14H6V15C6,15.34 6.03,15.67 6.09,16H4V18H6.81C8.47,20.87 12.14,21.84 15,20.18C15.91,19.66 16.67,18.9 17.19,18H20V16H17.91C17.97,15.67 18,15.34 18,15V14H20V12H18V11C18,10.66 17.97,10.33 17.91,10H20V8M16,15C16,17.21 14.21,19 12,19C9.79,19 8,17.21 8,15V11C8,8.79 9.79,7 12,7C14.21,7 16,8.79 16,11V15M14,10V12H10V10H14M10,14H14V16H10V14Z";
+        }
+    }
+    $.$mol_icon_bug_outline = $mol_icon_bug_outline;
+})($ || ($ = {}));
+//mol/icon/bug/outline/-view.tree/outline.view.tree.ts
 ;
 "use strict";
 var $;
@@ -7903,8 +7915,8 @@ var $;
         }
         menu_foot() {
             return [
-                this.Chat(),
-                this.New(),
+                this.News(),
+                this.Support(),
                 this.Mail()
             ];
         }
@@ -7976,29 +7988,29 @@ var $;
             const obj = new this.$.$mol_lights_toggle();
             return obj;
         }
-        Chat_icon() {
+        News_icon() {
             const obj = new this.$.$mol_icon_telegram();
             return obj;
         }
-        Chat() {
+        News() {
             const obj = new this.$.$mol_link();
             obj.uri = () => "https://t.me/toxic_repos";
-            obj.hint = () => this.$.$mol_locale.text('$toxic_app_Chat_hint');
+            obj.hint = () => this.$.$mol_locale.text('$toxic_app_News_hint');
             obj.sub = () => [
-                this.Chat_icon()
+                this.News_icon()
             ];
             return obj;
         }
-        News_icon() {
-            const obj = new this.$.$mol_icon_twitter();
+        Chat_icon() {
+            const obj = new this.$.$mol_icon_bug_outline();
             return obj;
         }
-        New() {
+        Support() {
             const obj = new this.$.$mol_link();
-            obj.uri = () => "https://twitter.com/ZStravnik";
-            obj.hint = () => this.$.$mol_locale.text('$toxic_app_New_hint');
+            obj.hint = () => this.$.$mol_locale.text('$toxic_app_Support_hint');
+            obj.uri = () => "https://t.me/g1l2a";
             obj.sub = () => [
-                this.News_icon()
+                this.Chat_icon()
             ];
             return obj;
         }
@@ -8112,16 +8124,16 @@ var $;
     ], $toxic_app.prototype, "Lights", null);
     __decorate([
         $mol_mem
-    ], $toxic_app.prototype, "Chat_icon", null);
-    __decorate([
-        $mol_mem
-    ], $toxic_app.prototype, "Chat", null);
-    __decorate([
-        $mol_mem
     ], $toxic_app.prototype, "News_icon", null);
     __decorate([
         $mol_mem
-    ], $toxic_app.prototype, "New", null);
+    ], $toxic_app.prototype, "News", null);
+    __decorate([
+        $mol_mem
+    ], $toxic_app.prototype, "Chat_icon", null);
+    __decorate([
+        $mol_mem
+    ], $toxic_app.prototype, "Support", null);
     __decorate([
         $mol_mem
     ], $toxic_app.prototype, "Mail_icon", null);

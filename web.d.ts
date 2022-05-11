@@ -1499,7 +1499,13 @@ declare namespace $ {
 }
 
 declare namespace $ {
-    class $mol_icon_twitter extends $mol_icon {
+    class $mol_icon_bug extends $mol_icon {
+        path(): string;
+    }
+}
+
+declare namespace $ {
+    class $mol_icon_bug_outline extends $mol_icon {
         path(): string;
     }
 }
@@ -2480,10 +2486,10 @@ declare namespace $ {
         Add(): $$.$mol_link;
         Source(): $mol_link_source;
         Lights(): $$.$mol_lights_toggle;
-        Chat_icon(): $mol_icon_telegram;
-        Chat(): $$.$mol_link;
-        News_icon(): $mol_icon_twitter;
-        New(): $$.$mol_link;
+        News_icon(): $mol_icon_telegram;
+        News(): $$.$mol_link;
+        Chat_icon(): $mol_icon_bug_outline;
+        Support(): $$.$mol_link;
         Mail_icon(): $mol_icon_email;
         Mail(): $$.$mol_link;
         Theme(): $$.$mol_theme_auto;
