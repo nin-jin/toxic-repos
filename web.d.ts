@@ -2060,6 +2060,8 @@ declare namespace $ {
         code3: RegExp;
         code: RegExp;
         strike: RegExp;
+        remark: RegExp;
+        quote: RegExp;
         'image-link': RegExp;
         'text-link': RegExp;
         'text-link-http': RegExp;
@@ -2702,8 +2704,16 @@ declare namespace $.$$ {
             commit_link: string;
             description: string;
         }>[];
+        data_sorted(): Readonly<{
+            id: number;
+            datetime: string;
+            problem_type: string;
+            name: string;
+            commit_link: string;
+            description: string;
+        }>[];
         search(next?: string): string;
-        data_filtered(): readonly Readonly<{
+        data_filtered(): Readonly<{
             id: number;
             datetime: string;
             problem_type: string;
