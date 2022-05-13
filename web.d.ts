@@ -2497,7 +2497,6 @@ declare namespace $ {
             political_slogans: string;
         };
         Issues_page(id: any): $mol_page;
-        Issue(id: any): $$.$mol_list;
         Add_icon(): $mol_icon_plus;
         Add(): $$.$mol_link;
         Source(): $mol_link_source;
@@ -2512,8 +2511,6 @@ declare namespace $ {
         issues_page_title(id: any): string;
         search(val?: any): string;
         Search(): $$.$mol_search;
-        issues(): readonly any[];
-        Issues(): $$.$mol_list;
         issue_uri(id: any): string;
         issue_name(id: any): string;
         Issue_name(id: any): $$.$mol_dimmer;
@@ -2524,6 +2521,9 @@ declare namespace $ {
         Issue_main(id: any): $$.$mol_link;
         issue_descr(id: any): string;
         Issue_descr(id: any): $$.$mol_text;
+        Issue(id: any): $$.$mol_list;
+        issues(): readonly any[];
+        Issues(): $$.$mol_list;
     }
 }
 

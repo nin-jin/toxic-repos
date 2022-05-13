@@ -8315,14 +8315,6 @@ var $;
             ];
             return obj;
         }
-        Issue(id) {
-            const obj = new this.$.$mol_list();
-            obj.rows = () => [
-                this.Issue_main(id),
-                this.Issue_descr(id)
-            ];
-            return obj;
-        }
         Add_icon() {
             const obj = new this.$.$mol_icon_plus();
             return obj;
@@ -8401,14 +8393,6 @@ var $;
             obj.query = (val) => this.search(val);
             return obj;
         }
-        issues() {
-            return [];
-        }
-        Issues() {
-            const obj = new this.$.$mol_list();
-            obj.rows = () => this.issues();
-            return obj;
-        }
         issue_uri(id) {
             return "";
         }
@@ -8460,13 +8444,30 @@ var $;
             obj.highlight = () => this.search();
             return obj;
         }
+        Issue(id) {
+            const obj = new this.$.$mol_list();
+            obj.minimal_height = () => 104;
+            obj.minimal_width = () => 0;
+            obj.rows = () => [
+                this.Issue_main(id),
+                this.Issue_descr(id)
+            ];
+            return obj;
+        }
+        issues() {
+            return [
+                this.Issue("0")
+            ];
+        }
+        Issues() {
+            const obj = new this.$.$mol_list();
+            obj.rows = () => this.issues();
+            return obj;
+        }
     }
     __decorate([
         $mol_mem_key
     ], $toxic_app.prototype, "Issues_page", null);
-    __decorate([
-        $mol_mem_key
-    ], $toxic_app.prototype, "Issue", null);
     __decorate([
         $mol_mem
     ], $toxic_app.prototype, "Add_icon", null);
@@ -8507,9 +8508,6 @@ var $;
         $mol_mem
     ], $toxic_app.prototype, "Search", null);
     __decorate([
-        $mol_mem
-    ], $toxic_app.prototype, "Issues", null);
-    __decorate([
         $mol_mem_key
     ], $toxic_app.prototype, "Issue_name", null);
     __decorate([
@@ -8524,6 +8522,12 @@ var $;
     __decorate([
         $mol_mem_key
     ], $toxic_app.prototype, "Issue_descr", null);
+    __decorate([
+        $mol_mem_key
+    ], $toxic_app.prototype, "Issue", null);
+    __decorate([
+        $mol_mem
+    ], $toxic_app.prototype, "Issues", null);
     $.$toxic_app = $toxic_app;
 })($ || ($ = {}));
 //toxic/app/-view.tree/app.view.tree.ts
