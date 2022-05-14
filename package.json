@@ -136,6 +136,11 @@
     "$mol_icon_bug",
     "$mol_icon_email",
     "$mol_theme_auto",
+    "$mol_button_download",
+    "$mol_icon_download",
+    "$mol_jsx",
+    "$mol_type_partial_deep",
+    "$mol_type_partial",
     "$mol_search",
     "$mol_pop",
     "$mol_hotkey",
@@ -180,7 +185,6 @@
     "$mol_diff",
     "$mol_data_record",
     "$mol_type_partial_undefined",
-    "$mol_type_partial",
     "$mol_data_integer",
     "$mol_data_number",
     "$mol_data_string",
@@ -191,7 +195,9 @@
     "$mol_time_moment",
     "$mol_time",
     "$mol_time_duration",
-    "$mol_time_base"
+    "$mol_time_base",
+    "$mol_csv_serial",
+    "$mol_csv"
   ],
   "dependencies": {
     "colorette": "*",

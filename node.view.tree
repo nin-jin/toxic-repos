@@ -190,6 +190,15 @@ $mol_icon_email $mol_icon path \M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.8
 $mol_theme_auto $mol_plugin
 	attr * mol_theme <= theme \
 
+$mol_icon_download $mol_icon path \M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z
+
+$mol_button_download $mol_button_minor
+	blob null
+	uri \
+	file_name \blob.bin
+	sub /
+		<= Icon $mol_icon_download
+
 $mol_pop $mol_view
 	showed?val false
 	align_vert \
@@ -565,6 +574,10 @@ $toxic_app $mol_book2_catalog
 	Issues_page* $mol_page
 		title <= issues_page_title* \
 		tools /
+			<= Download $mol_button_download
+				hint @ \Download as spreadsheet
+				uri <= download_uri \
+				file_name <= download_name \
 			<= Search $mol_search
 				query?val <=> search?val \
 		body /

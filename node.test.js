@@ -5209,6 +5209,155 @@ var $;
 "use strict";
 var $;
 (function ($) {
+    class $mol_icon_download extends $mol_icon {
+        path() {
+            return "M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z";
+        }
+    }
+    $.$mol_icon_download = $mol_icon_download;
+})($ || ($ = {}));
+//mol/icon/download/-view.tree/download.view.tree.ts
+;
+"use strict";
+var $;
+(function ($) {
+    class $mol_button_download extends $mol_button_minor {
+        blob() {
+            return null;
+        }
+        uri() {
+            return "";
+        }
+        file_name() {
+            return "blob.bin";
+        }
+        sub() {
+            return [
+                this.Icon()
+            ];
+        }
+        Icon() {
+            const obj = new this.$.$mol_icon_download();
+            return obj;
+        }
+    }
+    __decorate([
+        $mol_mem
+    ], $mol_button_download.prototype, "Icon", null);
+    $.$mol_button_download = $mol_button_download;
+})($ || ($ = {}));
+//mol/button/download/-view.tree/download.view.tree.ts
+;
+"use strict";
+//mol/type/partial/deep/deep.ts
+;
+"use strict";
+var $;
+(function ($) {
+    $.$mol_jsx_prefix = '';
+    $.$mol_jsx_booked = null;
+    $.$mol_jsx_document = {
+        getElementById: () => null,
+        createElementNS: (space, name) => $mol_dom_context.document.createElementNS(space, name),
+        createDocumentFragment: () => $mol_dom_context.document.createDocumentFragment(),
+    };
+    $.$mol_jsx_frag = '';
+    function $mol_jsx(Elem, props, ...childNodes) {
+        const id = props && props.id || '';
+        if (Elem && $.$mol_jsx_booked) {
+            if ($.$mol_jsx_booked.has(id)) {
+                $mol_fail(new Error(`JSX already has tag with id ${JSON.stringify(id)}`));
+            }
+            else {
+                $.$mol_jsx_booked.add(id);
+            }
+        }
+        const guid = $.$mol_jsx_prefix + id;
+        let node = guid ? $.$mol_jsx_document.getElementById(guid) : null;
+        if (typeof Elem !== 'string') {
+            if ('prototype' in Elem) {
+                const view = node && node[Elem] || new Elem;
+                Object.assign(view, props);
+                view[Symbol.toStringTag] = guid;
+                view.childNodes = childNodes;
+                if (!view.ownerDocument)
+                    view.ownerDocument = $.$mol_jsx_document;
+                node = view.valueOf();
+                node[Elem] = view;
+                return node;
+            }
+            else {
+                const prefix = $.$mol_jsx_prefix;
+                const booked = $.$mol_jsx_booked;
+                try {
+                    $.$mol_jsx_prefix = guid;
+                    $.$mol_jsx_booked = new Set;
+                    return Elem(props, ...childNodes);
+                }
+                finally {
+                    $.$mol_jsx_prefix = prefix;
+                    $.$mol_jsx_booked = booked;
+                }
+            }
+        }
+        if (!node) {
+            node = Elem
+                ? $.$mol_jsx_document.createElementNS(props?.xmlns ?? 'http://www.w3.org/1999/xhtml', Elem)
+                : $.$mol_jsx_document.createDocumentFragment();
+        }
+        $mol_dom_render_children(node, [].concat(...childNodes));
+        if (!Elem)
+            return node;
+        for (const key in props) {
+            if (typeof props[key] === 'string') {
+                ;
+                node.setAttribute(key, props[key]);
+            }
+            else if (props[key] &&
+                typeof props[key] === 'object' &&
+                Reflect.getPrototypeOf(props[key]) === Reflect.getPrototypeOf({})) {
+                if (typeof node[key] === 'object') {
+                    Object.assign(node[key], props[key]);
+                    continue;
+                }
+            }
+            else {
+                node[key] = props[key];
+            }
+        }
+        if (guid)
+            node.id = guid;
+        return node;
+    }
+    $.$mol_jsx = $mol_jsx;
+})($ || ($ = {}));
+//mol/jsx/jsx.ts
+;
+"use strict";
+var $;
+(function ($) {
+    var $$;
+    (function ($$) {
+        class $mol_button_download extends $.$mol_button_download {
+            uri() {
+                return URL.createObjectURL(this.blob());
+            }
+            click() {
+                const a = $mol_jsx("a", { href: this.uri(), download: this.file_name() });
+                a.click();
+            }
+        }
+        __decorate([
+            $mol_mem
+        ], $mol_button_download.prototype, "uri", null);
+        $$.$mol_button_download = $mol_button_download;
+    })($$ = $.$$ || ($.$$ = {}));
+})($ || ($ = {}));
+//mol/button/download/download.view.tsx
+;
+"use strict";
+var $;
+(function ($) {
     class $mol_pop extends $mol_view {
         showed(val) {
             if (val !== undefined)
@@ -8308,6 +8457,7 @@ var $;
             const obj = new this.$.$mol_page();
             obj.title = () => this.issues_page_title(id);
             obj.tools = () => [
+                this.Download(),
                 this.Search()
             ];
             obj.body = () => [
@@ -8382,6 +8532,19 @@ var $;
         }
         issues_page_title(id) {
             return "";
+        }
+        download_uri() {
+            return "";
+        }
+        download_name() {
+            return "";
+        }
+        Download() {
+            const obj = new this.$.$mol_button_download();
+            obj.hint = () => this.$.$mol_locale.text('$toxic_app_Download_hint');
+            obj.uri = () => this.download_uri();
+            obj.file_name = () => this.download_name();
+            return obj;
         }
         search(val) {
             if (val !== undefined)
@@ -8501,6 +8664,9 @@ var $;
     __decorate([
         $mol_mem
     ], $toxic_app.prototype, "Theme", null);
+    __decorate([
+        $mol_mem
+    ], $toxic_app.prototype, "Download", null);
     __decorate([
         $mol_mem
     ], $toxic_app.prototype, "search", null);
@@ -9446,6 +9612,31 @@ var $;
 "use strict";
 var $;
 (function ($) {
+    function $mol_csv_serial(data, delimiter = ',') {
+        const fields = new Set();
+        for (const item of data) {
+            for (const field of Object.keys(item)) {
+                fields.add(field);
+            }
+        }
+        const rows = [[...fields]];
+        for (const item of data) {
+            const row = [];
+            rows.push(row);
+            for (const field of fields) {
+                const val = String(item[field] ?? '');
+                row.push('"' + val.replace(/"/g, '""') + '"');
+            }
+        }
+        return rows.map(row => row.join(delimiter)).join('\n');
+    }
+    $.$mol_csv_serial = $mol_csv_serial;
+})($ || ($ = {}));
+//mol/csv/serial/serial.ts
+;
+"use strict";
+var $;
+(function ($) {
     $mol_style_attach("toxic/app/app.view.css", "[toxic_app] {\n\t--mol_theme_hue: 380deg;\n}\n\n[toxic_app_menu] {\n\tflex: 0 0 18rem;\n}\n\n[toxic_app_issues_page] {\n\tflex: 0 0 60rem;\n}\n\n[toxic_app_menu_foot] {\n\tpadding: var(--mol_gap_block);\n}\n\n[toxic_app_issue] {\n\tpadding: var(--mol_gap_block);\n}\n\n[toxic_app_issue_main] {\n\tjustify-content: space-between;\n\tflex-wrap: wrap;\n\tgap: .75rem;\n}\n\n[toxic_app_issue_name] {\n\ttext-shadow: 0 0;\n\tflex: 1 1 auto;\n}\n\n[toxic_app_issue_type] {\n\tcolor: var(--mol_theme_shade);\n}\n\n[toxic_app_issue_date] {\n\tcolor: var(--mol_theme_shade);\n}\n\n[toxic_app_issue_descr] {\n\tmax-width: 100%\n}\n");
 })($ || ($ = {}));
 //toxic/app/-css/app.view.css.ts
@@ -9504,6 +9695,13 @@ var $;
             }
             issue_descr(index) {
                 return this.data_filtered()[index].description;
+            }
+            download_uri() {
+                const csv = $mol_csv_serial(this.data_filtered());
+                return `data:text/csv;charset=utf-8,${encodeURIComponent(csv)}`;
+            }
+            download_name() {
+                return `toxic-repos_${this.spread()}_${this.search()}.csv`;
             }
         }
         __decorate([
@@ -9646,9 +9844,6 @@ var $;
 //mol/type/partial/deep/deep.test.ts
 ;
 "use strict";
-//mol/type/partial/deep/deep.ts
-;
-"use strict";
 var $;
 (function ($) {
     $mol_test({
@@ -9713,88 +9908,6 @@ var $;
     });
 })($ || ($ = {}));
 //mol/jsx/jsx.test.tsx
-;
-"use strict";
-var $;
-(function ($) {
-    $.$mol_jsx_prefix = '';
-    $.$mol_jsx_booked = null;
-    $.$mol_jsx_document = {
-        getElementById: () => null,
-        createElementNS: (space, name) => $mol_dom_context.document.createElementNS(space, name),
-        createDocumentFragment: () => $mol_dom_context.document.createDocumentFragment(),
-    };
-    $.$mol_jsx_frag = '';
-    function $mol_jsx(Elem, props, ...childNodes) {
-        const id = props && props.id || '';
-        if (Elem && $.$mol_jsx_booked) {
-            if ($.$mol_jsx_booked.has(id)) {
-                $mol_fail(new Error(`JSX already has tag with id ${JSON.stringify(id)}`));
-            }
-            else {
-                $.$mol_jsx_booked.add(id);
-            }
-        }
-        const guid = $.$mol_jsx_prefix + id;
-        let node = guid ? $.$mol_jsx_document.getElementById(guid) : null;
-        if (typeof Elem !== 'string') {
-            if ('prototype' in Elem) {
-                const view = node && node[Elem] || new Elem;
-                Object.assign(view, props);
-                view[Symbol.toStringTag] = guid;
-                view.childNodes = childNodes;
-                if (!view.ownerDocument)
-                    view.ownerDocument = $.$mol_jsx_document;
-                node = view.valueOf();
-                node[Elem] = view;
-                return node;
-            }
-            else {
-                const prefix = $.$mol_jsx_prefix;
-                const booked = $.$mol_jsx_booked;
-                try {
-                    $.$mol_jsx_prefix = guid;
-                    $.$mol_jsx_booked = new Set;
-                    return Elem(props, ...childNodes);
-                }
-                finally {
-                    $.$mol_jsx_prefix = prefix;
-                    $.$mol_jsx_booked = booked;
-                }
-            }
-        }
-        if (!node) {
-            node = Elem
-                ? $.$mol_jsx_document.createElementNS(props?.xmlns ?? 'http://www.w3.org/1999/xhtml', Elem)
-                : $.$mol_jsx_document.createDocumentFragment();
-        }
-        $mol_dom_render_children(node, [].concat(...childNodes));
-        if (!Elem)
-            return node;
-        for (const key in props) {
-            if (typeof props[key] === 'string') {
-                ;
-                node.setAttribute(key, props[key]);
-            }
-            else if (props[key] &&
-                typeof props[key] === 'object' &&
-                Reflect.getPrototypeOf(props[key]) === Reflect.getPrototypeOf({})) {
-                if (typeof node[key] === 'object') {
-                    Object.assign(node[key], props[key]);
-                    continue;
-                }
-            }
-            else {
-                node[key] = props[key];
-            }
-        }
-        if (guid)
-            node.id = guid;
-        return node;
-    }
-    $.$mol_jsx = $mol_jsx;
-})($ || ($ = {}));
-//mol/jsx/jsx.ts
 ;
 "use strict";
 var $;
@@ -12883,5 +12996,46 @@ var $;
     });
 })($ || ($ = {}));
 //mol/time/moment/moment.test.ts
+;
+"use strict";
+var $;
+(function ($) {
+    function $mol_csv_parse(text, delimiter = ',') {
+        var lines = text.split(/\r?\n/g);
+        var header = lines.shift().split(delimiter);
+        var res = [];
+        for (const line of lines) {
+            if (!line)
+                continue;
+            var row = {};
+            for (const [index, val] of line.split(delimiter).entries()) {
+                row[header[index]] = val.replace(/^"|"$/g, '').replace(/""/g, '"');
+            }
+            res.push(row);
+        }
+        return res;
+    }
+    $.$mol_csv_parse = $mol_csv_parse;
+})($ || ($ = {}));
+//mol/csv/parse/parse.ts
+;
+"use strict";
+var $;
+(function ($) {
+    $mol_test({
+        'serial & parse'() {
+            const data = [
+                { foo: '123', bar: '456' },
+                { foo: 'x"xx', bar: 'y"y"y' },
+            ];
+            $mol_assert_like($mol_csv_parse($mol_csv_serial(data)), data);
+        },
+        'parse & serial'() {
+            const csv = 'foo,bar\n"123","456"\n"x""xx","y""y""y"';
+            $mol_assert_like($mol_csv_serial($mol_csv_parse(csv)), csv);
+        },
+    });
+})($ || ($ = {}));
+//mol/csv/csv.test.ts
 
 //# sourceMappingURL=node.test.js.map
