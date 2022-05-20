@@ -1948,7 +1948,8 @@ var $;
                 if ((error_shower.get(error) ?? this) !== this)
                     return node;
                 try {
-                    node.innerText = '\xA0\xA0' + (error.message || error) + '\xA0\xA0';
+                    const message = error.message || error;
+                    node.innerText = message.replace(/^|$/mg, '\xA0\xA0');
                 }
                 catch { }
                 error_shower.set(error, this);
@@ -3500,7 +3501,7 @@ var $;
                     weight: 'normal',
                 },
                 flex: {
-                    grow: 1000,
+                    grow: 1,
                     shrink: 1,
                     basis: 'auto',
                 },
@@ -3508,7 +3509,7 @@ var $;
             Tools: {
                 flex: {
                     basis: 'auto',
-                    grow: 0,
+                    grow: 1000,
                     shrink: 1,
                 },
                 display: 'flex',
@@ -6695,7 +6696,7 @@ var $;
         'code-comment-inline': /\/\/.*?$/,
         'code-string': /(?:".*?"|'.*?'|`.*?`|\/.+?\/[gmi]*\b|(?:^|[ \t])\\[^\n]*\n)/,
         'code-number': /[+-]?(?:\d*\.)?\d+\w*/,
-        'code-call': /\.?\w+(?=\()/,
+        'code-call': /\.?\w+ *(?=\()/,
         'code-field': /(?:\.\w+|[\w-]+\??\s*:(?!\/\/))/,
         'code-keyword': /\b(throw|readonly|unknown|keyof|typeof|never|from|class|interface|type|function|extends|implements|module|namespace|import|export|include|require|var|let|const|for|do|while|until|in|of|new|if|then|else|switch|case|this|return|async|await|try|catch|break|continue|get|set|public|private|protected|string|boolean|number|null|undefined|true|false|void)\b/,
         'code-global': /[$]+\w*|\b[A-Z][a-z0-9]+[A-Z]\w*/,
@@ -6722,7 +6723,7 @@ var $;
                 color: $mol_theme.shade,
                 width: rem(3),
                 margin: {
-                    left: rem(-4),
+                    left: rem(-3.75),
                 },
                 display: 'inline-block',
                 whiteSpace: 'nowrap',
@@ -6947,9 +6948,6 @@ var $;
 var $;
 (function ($) {
     class $mol_check_expand extends $mol_check {
-        minimal_height() {
-            return 40;
-        }
         Icon() {
             const obj = new this.$.$mol_icon_chevron();
             return obj;
@@ -6994,7 +6992,7 @@ var $;
 "use strict";
 var $;
 (function ($) {
-    $mol_style_attach("mol/check/expand/expand.view.css", "[mol_check_expand] {\n\tmin-width: 20px;\n}\n\n[mol_check_expand][disabled] [mol_check_expand_icon] {\n\tvisibility: hidden;\n}\n\n[mol_check_expand_icon] {\n\tbox-shadow: none;\n\tmargin: .25rem 0;\n}\n[mol_check_expand_icon] {\n\ttransform: rotateZ(0deg);\n}\n\n[mol_check_checked] [mol_check_expand_icon_path] {\n\ttransform: rotateZ(90deg);\n}\n\n[mol_check_expand_icon] {\n\tvertical-align: text-top;\n}\n\n[mol_check_expand_label] {\n\tmargin-left: 0;\n}\n");
+    $mol_style_attach("mol/check/expand/expand.view.css", "[mol_check_expand] {\n\tmin-width: 20px;\n}\n\n[mol_check_expand][disabled] [mol_check_expand_icon] {\n\tvisibility: hidden;\n}\n\n[mol_check_expand_icon] {\n\tbox-shadow: none;\n\tmargin: .25rem -.25rem;\n}\n[mol_check_expand_icon] {\n\ttransform: rotateZ(0deg);\n}\n\n[mol_check_checked] [mol_check_expand_icon_path] {\n\ttransform: rotateZ(90deg);\n}\n\n[mol_check_expand_icon] {\n\tvertical-align: text-top;\n}\n\n[mol_check_expand_label] {\n\tmargin-left: 0;\n}\n");
 })($ || ($ = {}));
 //mol/check/expand/-css/expand.view.css.ts
 ;
@@ -7541,7 +7539,7 @@ var $;
         }
         sub() {
             return [
-                this.Fallback()
+                this.Fallback_link()
             ];
         }
         uri(val) {
@@ -7557,10 +7555,18 @@ var $;
                 return val;
             return "";
         }
-        Fallback() {
-            const obj = new this.$.$mol_link();
+        Fallback_image() {
+            const obj = new this.$.$mol_image();
             obj.uri = () => this.uri();
             obj.title = () => this.title();
+            return obj;
+        }
+        Fallback_link() {
+            const obj = new this.$.$mol_link();
+            obj.uri = () => this.uri();
+            obj.sub = () => [
+                this.Fallback_image()
+            ];
             return obj;
         }
     }
@@ -7572,7 +7578,10 @@ var $;
     ], $mol_embed_native.prototype, "title", null);
     __decorate([
         $mol_mem
-    ], $mol_embed_native.prototype, "Fallback", null);
+    ], $mol_embed_native.prototype, "Fallback_image", null);
+    __decorate([
+        $mol_mem
+    ], $mol_embed_native.prototype, "Fallback_link", null);
     $.$mol_embed_native = $mol_embed_native;
 })($ || ($ = {}));
 //mol/embed/native/-view.tree/native.view.tree.ts
@@ -7762,20 +7771,19 @@ var $;
         Code_line(id) {
             const obj = new this.$.$mol_text_code_row();
             obj.numb_showed = () => false;
+            obj.highlight = () => this.highlight();
             obj.text = () => this.line_text(id);
             return obj;
         }
         Link(id) {
             const obj = new this.$.$mol_link_iconed();
             obj.uri = () => this.link_uri(id);
-            obj.target = () => this.link_target(id);
             obj.content = () => this.line_content(id);
             return obj;
         }
         Link_http(id) {
             const obj = new this.$.$mol_link_iconed();
             obj.uri = () => this.link_uri(id);
-            obj.target = () => this.link_target(id);
             obj.content = () => [
                 this.String(id)
             ];
@@ -7784,7 +7792,7 @@ var $;
         Image(id) {
             const obj = new this.$.$mol_embed_native();
             obj.uri = () => this.link_uri(id);
-            obj.sub = () => this.line_content(id);
+            obj.title = () => this.line_text(id);
             return obj;
         }
         block_content(id) {
@@ -7831,9 +7839,6 @@ var $;
         }
         link_uri(id) {
             return "";
-        }
-        link_target(id) {
-            return "_blank";
         }
     }
     __decorate([
