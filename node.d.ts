@@ -114,10 +114,6 @@ declare namespace $ {
 }
 
 declare namespace $ {
-    function $mol_deprecated(message: string): <Method extends (this: Host, ...args: readonly any[]) => any, Host extends { [key in Field]: Method; }, Field extends keyof Host>(host: Host, field: Field, descr: TypedPropertyDescriptor<Method>) => void;
-}
-
-declare namespace $ {
     const $mol_tree_convert: unique symbol;
     type $mol_tree_path = Array<string | number | null>;
     type $mol_tree_hack = (input: $mol_tree, context: $mol_tree_context) => readonly $mol_tree[];
@@ -163,6 +159,7 @@ declare namespace $ {
 declare namespace $ {
 }
 
+/// <reference types="node" />
 /// <reference types="node" />
 declare namespace $ {
     function $mol_exec(this: $, dir: string, command: string, ...args: string[]): import("child_process").SpawnSyncReturns<Buffer>;
@@ -536,7 +533,7 @@ declare namespace $ {
 
 declare namespace $ {
     class $mol_memo extends $mol_wrapper {
-        static wrap<This extends object, Value>(task: (this: This, next?: Value) => Value): (this: This, next?: Value | undefined) => Value | undefined;
+        static wrap<This extends object, Value>(task: (this: This, next?: Value) => Value): (this: This, next?: Value) => Value | undefined;
     }
 }
 
@@ -1284,8 +1281,6 @@ declare namespace $ {
 declare namespace $ {
     class $mol_button extends $mol_view {
         enabled(): boolean;
-        minimal_height(): number;
-        minimal_width(): number;
         click(event?: any): any;
         event_click(event?: any): any;
         event(): {
@@ -1431,6 +1426,8 @@ declare namespace $.$$ {
 
 declare namespace $ {
     class $mol_button_typed extends $mol_button {
+        minimal_height(): number;
+        minimal_width(): number;
     }
 }
 
@@ -2112,6 +2109,7 @@ declare namespace $ {
         Numb(): $mol_view;
         Token(id: any): $mol_text_code_token;
         Token_link(id: any): $mol_text_code_token_link;
+        find_pos(id: any): any;
         numb(): number;
         token_type(id: any): string;
         token_text(id: any): string;
@@ -2193,6 +2191,14 @@ declare namespace $.$$ {
         token_content(path: number[]): (string | $mol_text_code_token)[];
         token_text(path: number[]): string;
         view_find(check: (path: $mol_view, text?: string) => boolean, path?: $mol_view[]): Generator<$mol_view[]>;
+        find_pos(offset: number): {
+            token: $mol_text_code_token;
+            offset: number;
+        } | null;
+        find_token_pos([offset, ...path]: number[]): {
+            token: $mol_text_code_token;
+            offset: number;
+        } | null;
     }
 }
 
@@ -2203,6 +2209,7 @@ declare namespace $ {
         };
         text(): string;
         text_lines(): readonly string[];
+        find_pos(id: any): any;
         Row(id: any): $$.$mol_text_code_row;
         sidebar_showed(): boolean;
         row_numb(id: any): number;
@@ -2220,6 +2227,10 @@ declare namespace $.$$ {
         rows(): $mol_text_code_row[];
         row_text(index: number): string;
         row_numb(index: number): number;
+        find_pos(offset: number): {
+            token: $mol_text_code_token;
+            offset: number;
+        } | null;
     }
 }
 
@@ -2462,7 +2473,7 @@ declare namespace $.$$ {
         uri_resource(): string;
         uri_listener(): $mol_dom_listener;
         uri_change(event?: MessageEvent<[string, string]>): void;
-        auto(): ($mol_dom_listener | Window)[];
+        auto(): (Window | $mol_dom_listener)[];
     }
 }
 
@@ -2663,9 +2674,9 @@ declare namespace $ {
 }
 
 declare namespace $ {
-    function $mol_data_record<Sub extends Record<string, $mol_data_value<any>>>(sub: Sub): ((val: unknown) => Readonly<$mol_type_merge<Partial<{ [key in keyof Sub]: ReturnType<Sub[key]>; }> & Pick<{ [key in keyof Sub]: ReturnType<Sub[key]>; }, { [Field in keyof { [key in keyof Sub]: ReturnType<Sub[key]>; }]: undefined extends { [key in keyof Sub]: ReturnType<Sub[key]>; }[Field] ? never : Field; }[keyof Sub]>>>) & {
+    function $mol_data_record<Sub extends Record<string, $mol_data_value<any>>>(sub: Sub): ((val: unknown) => Readonly<$mol_type_merge<Partial<{ [key in keyof Sub]: ReturnType<Sub[key]>; }> & Pick<{ [key in keyof Sub]: ReturnType<Sub[key]>; }, ({ [key in keyof Sub]: ReturnType<Sub[key]>; } extends infer T ? { [Field in keyof T]: undefined extends { [key in keyof Sub]: ReturnType<Sub[key]>; }[Field] ? never : Field; } : never)[keyof Sub]>>>) & {
         config: Sub;
-        Value: Readonly<$mol_type_merge<Partial<{ [key in keyof Sub]: ReturnType<Sub[key]>; }> & Pick<{ [key in keyof Sub]: ReturnType<Sub[key]>; }, { [Field in keyof { [key in keyof Sub]: ReturnType<Sub[key]>; }]: undefined extends { [key in keyof Sub]: ReturnType<Sub[key]>; }[Field] ? never : Field; }[keyof Sub]>>>;
+        Value: Readonly<$mol_type_merge<Partial<{ [key in keyof Sub]: ReturnType<Sub[key]>; }> & Pick<{ [key in keyof Sub]: ReturnType<Sub[key]>; }, ({ [key in keyof Sub]: ReturnType<Sub[key]>; } extends infer T_1 ? { [Field in keyof T_1]: undefined extends { [key in keyof Sub]: ReturnType<Sub[key]>; }[Field] ? never : Field; } : never)[keyof Sub]>>>;
     };
 }
 
