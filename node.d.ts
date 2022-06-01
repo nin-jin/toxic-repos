@@ -452,7 +452,7 @@ declare namespace $ {
 declare namespace $ {
     class $mol_wire_atom<Host, Args extends readonly unknown[], Result> extends $mol_wire_fiber<Host, Args, Result> {
         static getter<Host, Args extends readonly unknown[], Result>(task: (this: Host, ...args: Args) => Result, keys: number): (host: Host, args: Args) => $mol_wire_atom<Host, [...Args], Result>;
-        recall(...args: Args): Error | Result | Promise<Error | Result>;
+        resync(...args: Args): Error | Result | Promise<Error | Result>;
         once(): Awaited<Result>;
         destructor(): void;
         put(next: Result | Error | Promise<Result | Error>): Error | Result | Promise<Error | Result>;
@@ -612,8 +612,8 @@ declare namespace $ {
         maximal_width(): number;
         minimal_height(): number;
         static watchers: Set<$mol_view>;
-        view_rect(): ClientRect | null;
-        view_rect_cache(next?: ClientRect | null): ClientRect | null;
+        view_rect(): DOMRectReadOnly | null;
+        view_rect_cache(next?: DOMRectReadOnly | null): DOMRectReadOnly | null;
         view_rect_watcher(): {
             destructor: () => boolean;
         };
@@ -1414,7 +1414,7 @@ declare namespace $ {
 
 declare namespace $.$$ {
     class $mol_button extends $.$mol_button {
-        status(next?: null): null;
+        status(next?: any[]): any[];
         disabled(): boolean;
         event_activate(next: Event): void;
         event_key_press(event: KeyboardEvent): void;
@@ -2157,6 +2157,7 @@ declare namespace $ {
         'text-link-http': RegExp;
     }>;
     const $mol_syntax2_md_code: $mol_syntax2<{
+        'code-indent': RegExp;
         'code-docs': RegExp;
         'code-comment-block': RegExp;
         'code-link': RegExp;
@@ -2497,6 +2498,7 @@ declare namespace $ {
         Link_http(id: any): $$.$mol_link_iconed;
         Image(id: any): $$.$mol_embed_native;
         block_content(id: any): readonly any[];
+        uri_resolve(id: any): any;
         quote_text(id: any): string;
         list_text(id: any): string;
         header_level(id: any): string;
