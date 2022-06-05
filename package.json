@@ -30,6 +30,8 @@
     "$mol_exec",
     "$mol_log3",
     "$mol_tree",
+    "$mol_term_color",
+    "$mol_term",
     "$mol_env",
     "$mol_book2_catalog",
     "$mol_book2",
@@ -68,6 +70,7 @@
     "$mol_memo",
     "$mol_wrapper",
     "$mol_dom_qname",
+    "$mol_wire_watch",
     "$mol_const",
     "$mol_dom_render_attributes",
     "$mol_dom_render",
@@ -161,6 +164,10 @@
     "$mol_text_code_token",
     "$mol_syntax2_md",
     "$mol_syntax2",
+    "$mol_stack",
+    "$mol_button_copy",
+    "$mol_icon_content_copy",
+    "$mol_icon_content",
     "$mol_grid",
     "$mol_float",
     "$mol_check_expand",
@@ -199,7 +206,6 @@
     "$mol_csv"
   ],
   "dependencies": {
-    "colorette": "*",
     "jsdom": "*",
     "chokidar": "*",
     "node-fetch": "*"

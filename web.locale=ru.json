@@ -3,6 +3,8 @@
 	"$mol_link_source_hint": "Исходные коды",
 	"$mol_search_Clear_hint": "Очистить",
 	"$mol_search_hint": "Поиск..",
+	"$mol_text_code_Copy_hint": "Скопировать весь код",
+	"$mol_text_header_Link_hint": "Ссылка на эту секцию",
 	"$toxic_app_Add_hint": "Добавить новую проблему",
 	"$toxic_app_Download_hint": "Скачать как электронную таблицу",
 	"$toxic_app_Mail_hint": "Почта",
