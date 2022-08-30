@@ -2734,6 +2734,7 @@ declare namespace $ {
         menu_title(): string;
         menu_tools(): readonly any[];
         menu_foot(): readonly any[];
+        link_content(id: any): readonly any[];
         plugins(): readonly any[];
         spreads(): {
             "": $mol_page;
@@ -2764,6 +2765,8 @@ declare namespace $ {
         Support(): $$.$mol_link;
         Mail_icon(): $mol_icon_email;
         Mail(): $$.$mol_link;
+        spread_count(id: any): number;
+        Spread_count(id: any): $mol_view;
         Theme(): $$.$mol_theme_auto;
         issues_page_title(id: any): string;
         download_uri(): string;
@@ -2986,6 +2989,7 @@ declare namespace $ {
 declare namespace $.$$ {
     class $toxic_app extends $.$toxic_app {
         issues_page_title(id: string): any;
+        spread_count(type: string): number;
         data_all(): readonly Readonly<{
             id: number;
             datetime: string;

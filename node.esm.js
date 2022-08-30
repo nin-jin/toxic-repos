@@ -9269,6 +9269,12 @@ var $;
                 this.Mail()
             ];
         }
+        link_content(id) {
+            return [
+                this.spread_title(id),
+                this.Spread_count(id)
+            ];
+        }
         plugins() {
             return [
                 this.Theme()
@@ -9366,6 +9372,16 @@ var $;
             obj.hint = () => this.$.$mol_locale.text('$toxic_app_Mail_hint');
             obj.sub = () => [
                 this.Mail_icon()
+            ];
+            return obj;
+        }
+        spread_count(id) {
+            return 0;
+        }
+        Spread_count(id) {
+            const obj = new this.$.$mol_view();
+            obj.sub = () => [
+                this.spread_count(id)
             ];
             return obj;
         }
@@ -9504,6 +9520,9 @@ var $;
     __decorate([
         $mol_mem
     ], $toxic_app.prototype, "Mail", null);
+    __decorate([
+        $mol_mem_key
+    ], $toxic_app.prototype, "Spread_count", null);
     __decorate([
         $mol_mem
     ], $toxic_app.prototype, "Theme", null);
@@ -10480,7 +10499,7 @@ var $;
 "use strict";
 var $;
 (function ($) {
-    $mol_style_attach("toxic/app/app.view.css", "[toxic_app] {\n\t--mol_theme_hue: 380deg;\n}\n\n[toxic_app_menu] {\n\tflex: 0 0 18rem;\n}\n\n[toxic_app_issues_page] {\n\tflex: 0 0 60rem;\n}\n\n[toxic_app_menu_foot] {\n\tpadding: var(--mol_gap_block);\n}\n\n[toxic_app_issue] {\n\tpadding: var(--mol_gap_block);\n}\n\n[toxic_app_issue_main] {\n\tjustify-content: space-between;\n\tflex-wrap: wrap;\n\tgap: .75rem;\n}\n\n[toxic_app_issue_name] {\n\ttext-shadow: 0 0;\n\tflex: 1 1 auto;\n}\n\n[toxic_app_issue_type] {\n\tcolor: var(--mol_theme_shade);\n}\n\n[toxic_app_issue_date] {\n\tcolor: var(--mol_theme_shade);\n}\n\n[toxic_app_issue_descr] {\n\tmax-width: 100%\n}\n");
+    $mol_style_attach("toxic/app/app.view.css", "[toxic_app] {\n\t--mol_theme_hue: 380deg;\n}\n\n[toxic_app_menu] {\n\tflex: 0 0 18rem;\n}\n\n[toxic_app_link] {\n\tjustify-content: space-between;\n}\n\n[toxic_app_issues_page] {\n\tflex: 0 0 60rem;\n}\n\n[toxic_app_menu_foot] {\n\tpadding: var(--mol_gap_block);\n}\n\n[toxic_app_issue] {\n\tpadding: var(--mol_gap_block);\n}\n\n[toxic_app_issue_main] {\n\tjustify-content: space-between;\n\tflex-wrap: wrap;\n\tgap: .75rem;\n}\n\n[toxic_app_issue_name] {\n\ttext-shadow: 0 0;\n\tflex: 1 1 auto;\n}\n\n[toxic_app_issue_type] {\n\tcolor: var(--mol_theme_shade);\n}\n\n[toxic_app_issue_date] {\n\tcolor: var(--mol_theme_shade);\n}\n\n[toxic_app_issue_descr] {\n\tmax-width: 100%\n}\n");
 })($ || ($ = {}));
 //toxic/app/-css/app.view.css.ts
 ;
@@ -10500,6 +10519,12 @@ var $;
         class $toxic_app extends $.$toxic_app {
             issues_page_title(id) {
                 return this.type_name()[id] ?? id;
+            }
+            spread_count(type) {
+                let data = this.data_all();
+                if (type)
+                    data = data.filter(item => item.problem_type === type);
+                return data.length;
             }
             data_all() {
                 const json = this.$.$mol_fetch.json('toxic/data/json/toxic-repos.json');
@@ -10550,6 +10575,9 @@ var $;
         __decorate([
             $mol_mem_key
         ], $toxic_app.prototype, "issues_page_title", null);
+        __decorate([
+            $mol_mem_key
+        ], $toxic_app.prototype, "spread_count", null);
         __decorate([
             $mol_mem
         ], $toxic_app.prototype, "data_all", null);
