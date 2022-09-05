@@ -48,7 +48,7 @@ $mol_link $mol_view
 	attr *
 		^
 		href <= uri_toggle \
-		title <= hint \
+		title <= hint_safe <= hint \
 		target <= target \_self
 		download <= file_name \
 		mol_link_current <= current false
@@ -151,7 +151,7 @@ $mol_button $mol_view
 		disabled <= disabled false
 		role \button
 		tabindex <= tab_index 0
-		title <= hint \
+		title <= hint_safe <= hint \
 	sub /$mol_view_content
 		<= title
 	Speck $mol_speck
@@ -564,6 +564,7 @@ $mol_text $mol_list
 		highlight <= highlight \
 		auto_scroll null
 	Header* $mol_text_header
+		minimal_height 40
 		dom_name <= header_level* \h
 		content <= block_content* /
 		arg <= header_arg* *
