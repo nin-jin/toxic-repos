@@ -59,73 +59,28 @@ $mol_link $mol_view
 		^
 		click?event <=> click?event <=> event_click?event null
 
-$mol_list $mol_view
-	render_visible_only true
-	render_over 0
-	sub <= rows /$mol_view
-	Empty $mol_view
-	Gap_before $mol_view style * paddingTop <= gap_before 0
-	Gap_after $mol_view style * paddingTop <= gap_after 0
-	view_window /
-		0
-		0
+$mol_pop $mol_view
+	showed?val false
+	align_vert \
+	align_hor \
+	sub /
+		<= Anchor null
+	sub_visible /
+		<= Anchor
+		<= Bubble $mol_pop_bubble
+			align <= align \bottom_center
+			content <= bubble_content /$mol_view_content
+			height_max <= height_max 9999
 
-$mol_page $mol_view
-	dom_name \article
-	field *
+$mol_pop_bubble $mol_scroll
+	sub <= content /$mol_view_content
+	style *
 		^
-		tabIndex <= tabindex -1
-	sub /
-		<= Head $mol_view
-			minimal_height 64
-			dom_name \header
-			sub <= head /
-				<= Title $mol_view
-					dom_name \h1
-					sub <= title_content /
-						<= Logo null
-						<= title
-				<= Tools $mol_view
-					sub <= tools /$mol_view_content
-		<= Body $mol_scroll
-			scroll_top?val => body_scroll_top?val
-			sub <= body /$mol_view_content
-		<= Foot $mol_view
-			dom_name \footer
-			sub <= foot /$mol_view
-
-$mol_icon_cross $mol_icon path \M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z
-
-$mol_book2_catalog $mol_book2
-	param \
-	spread?val \
-	spreads *
-	Spread $mol_view
-	pages /
-		<= Menu $mol_page
-			title <= menu_title \
-			tools <= menu_tools /
-			foot <= menu_foot /
-			body /
-				<= Links $mol_list
-					rows <= links /
-	Link* $mol_link
-		arg <= arg* *
-		sub <= link_content* /
-			<= spread_title* \
-	Spread_close $mol_link
-		arg <= spread_close_arg *
-		sub /
-			<= Spread_close_icon $mol_icon_cross
-
-$mol_icon_plus $mol_icon path \M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z
-
-$mol_icon_github_circle $mol_icon path \M12,2C6.48,2 2,6.48 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12C22,6.48 17.52,2 12,2Z
-
-$mol_link_source $mol_link
-	hint @ \Source code
-	sub /
-		<= Icon $mol_icon_github_circle
+		maxHeight <= height_max 9999
+	attr *
+		^
+		mol_pop_align <= align \
+		tabindex 0
 
 $mol_speck $mol_view
 	attr *
@@ -163,71 +118,6 @@ $mol_button_typed $mol_button
 
 $mol_button_minor $mol_button_typed
 
-$mol_check $mol_button_minor
-	attr *
-		^
-		mol_check_checked <= checked?val false
-		aria-checked <= checked?val false
-		role \checkbox
-	sub /$mol_view_content
-		<= Icon null
-		<= label /
-			<= Title $mol_view
-				sub /
-					<= title \
-
-$mol_check_icon $mol_check
-
-$mol_icon_brightness_6 $mol_icon path \M12,18V6C15.31,6 18,8.69 18,12C18,15.31 15.31,18 12,18M20,15.31L23.31,12L20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31Z
-
-$mol_lights_toggle $mol_check_icon
-	Icon <= Lights_icon $mol_icon_brightness_6
-	hint @ \Toggle lights
-	checked?val <=> lights?val false
-
-$mol_icon_telegram $mol_icon path \M9.78,18.65L10.06,14.42L17.74,7.5C18.08,7.19 17.67,7.04 17.22,7.31L7.74,13.3L3.64,12C2.76,11.75 2.75,11.14 3.84,10.7L19.81,4.54C20.54,4.21 21.24,4.72 20.96,5.84L18.24,18.65C18.05,19.56 17.5,19.78 16.74,19.36L12.6,16.3L10.61,18.23C10.38,18.46 10.19,18.65 9.78,18.65Z
-
-$mol_icon_bug $mol_icon path \M14,12H10V10H14M14,16H10V14H14M20,8H17.19C16.74,7.22 16.12,6.55 15.37,6.04L17,4.41L15.59,3L13.42,5.17C12.96,5.06 12.5,5 12,5C11.5,5 11.04,5.06 10.59,5.17L8.41,3L7,4.41L8.62,6.04C7.88,6.55 7.26,7.22 6.81,8H4V10H6.09C6.04,10.33 6,10.66 6,11V12H4V14H6V15C6,15.34 6.04,15.67 6.09,16H4V18H6.81C7.85,19.79 9.78,21 12,21C14.22,21 16.15,19.79 17.19,18H20V16H17.91C17.96,15.67 18,15.34 18,15V14H20V12H18V11C18,10.66 17.96,10.33 17.91,10H20V8Z
-
-$mol_icon_bug_outline $mol_icon path \M20,8H17.19C16.74,7.2 16.12,6.5 15.37,6L17,4.41L15.59,3L13.42,5.17C12.96,5.06 12.5,5 12,5C11.5,5 11.05,5.06 10.59,5.17L8.41,3L7,4.41L8.62,6C7.87,6.5 7.26,7.21 6.81,8H4V10H6.09C6.03,10.33 6,10.66 6,11V12H4V14H6V15C6,15.34 6.03,15.67 6.09,16H4V18H6.81C8.47,20.87 12.14,21.84 15,20.18C15.91,19.66 16.67,18.9 17.19,18H20V16H17.91C17.97,15.67 18,15.34 18,15V14H20V12H18V11C18,10.66 17.97,10.33 17.91,10H20V8M16,15C16,17.21 14.21,19 12,19C9.79,19 8,17.21 8,15V11C8,8.79 9.79,7 12,7C14.21,7 16,8.79 16,11V15M14,10V12H10V10H14M10,14H14V16H10V14Z
-
-$mol_icon_email $mol_icon path \M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18C2,19.1 2.9,20 4,20H20C21.1,20 22,19.1 22,18V6C22,4.89 21.1,4 20,4Z
-
-$mol_theme_auto $mol_plugin
-	attr * mol_theme <= theme \
-
-$mol_icon_download $mol_icon path \M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z
-
-$mol_button_download $mol_button_minor
-	blob null
-	uri \
-	file_name \blob.bin
-	sub /
-		<= Icon $mol_icon_download
-
-$mol_pop $mol_view
-	showed?val false
-	align_vert \
-	align_hor \
-	sub /
-		<= Anchor null
-	sub_visible /
-		<= Anchor
-		<= Bubble $mol_pop_bubble
-			align <= align \bottom_center
-			content <= bubble_content /$mol_view_content
-			height_max <= height_max 9999
-
-$mol_pop_bubble $mol_scroll
-	sub <= content /$mol_view_content
-	style *
-		^
-		maxHeight <= height_max 9999
-	attr *
-		^
-		mol_pop_align <= align \
-		tabindex 0
-
 $mol_hotkey $mol_plugin
 	event *
 		^
@@ -264,6 +154,8 @@ $mol_string $mol_view
 	minimal_height 40
 	autocomplete false
 	selection?val /number
+		0
+		0
 	auto /
 		<= selection_watcher null
 	field *
@@ -275,9 +167,10 @@ $mol_string $mol_view
 		autocomplete <= autocomplete_native \
 		selectionEnd <= selection_end 0
 		selectionStart <= selection_start 0
+		inputMode <= keyboard \text
 	attr *
 		^
-		maxlength <= length_max Infinity
+		maxlength <= length_max +Infinity
 		type <= type?val \text
 	event *
 		^
@@ -287,10 +180,23 @@ $mol_string $mol_view
 		<= Submit $mol_hotkey
 			key * enter?event <=> submit?event null
 
+$mol_icon_cross $mol_icon path \M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z
+
+$mol_list $mol_view
+	render_visible_only true
+	render_over 0
+	sub <= rows /$mol_view
+	Empty $mol_view
+	Gap_before $mol_view style * paddingTop <= gap_before 0
+	Gap_after $mol_view style * paddingTop <= gap_after 0
+	view_window /
+		0
+		0
+
 $mol_paragraph $mol_view
 	line_height 24
 	letter_width 7
-	width_limit Infinity
+	width_limit +Infinity
 	sub / <= title
 
 $mol_dimmer $mol_paragraph
@@ -338,6 +244,112 @@ $mol_search $mol_pop
 			<= Suggest_label* $mol_dimmer
 				haystack <= suggest_label* \
 				needle <= query?val \
+
+$mol_page $mol_view
+	dom_name \article
+	field *
+		^
+		tabIndex <= tabindex -1
+	sub /
+		<= Head $mol_view
+			minimal_height 64
+			dom_name \header
+			sub <= head /
+				<= Title $mol_view
+					dom_name \h1
+					sub <= title_content /
+						<= Logo null
+						<= title
+				<= Tools $mol_view
+					sub <= tools /$mol_view_content
+		<= Body $mol_scroll
+			scroll_top?val => body_scroll_top?val
+			sub <= body /$mol_view_content
+		<= Foot $mol_view
+			dom_name \footer
+			sub <= foot /$mol_view
+
+$mol_book2_catalog $mol_book2
+	param \
+	spread?val \
+	spreads *
+	Spread $mol_view
+	pages /
+		<= Menu $mol_page
+			Title => Menu_title
+			title <= menu_title \
+			Tools => Menu_tools
+			tools <= menu_tools /
+			head <= menu_head /
+				<= Menu_title
+				<= Menu_tools
+			body <= menu_body /
+				<= Menu_filter $mol_search
+					query? <=> menu_filter? \
+				<= Menu_links $mol_list
+					rows <= menu_links /
+						<= Menu_link*0 $mol_link
+							arg <= arg* *
+							sub <= menu_link_content* /
+								<= Menu_link_title* $mol_dimmer
+									needle <= menu_filter
+									haystack <= spread_title* \
+			foot <= menu_foot /
+	Spread_close $mol_link
+		arg <= spread_close_arg *
+		sub /
+			<= Spread_close_icon $mol_icon_cross
+
+$mol_icon_plus $mol_icon path \M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z
+
+$mol_icon_github_circle $mol_icon path \M12,2C6.48,2 2,6.48 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12C22,6.48 17.52,2 12,2Z
+
+$mol_link_source $mol_link
+	hint @ \Source code
+	sub /
+		<= Icon $mol_icon_github_circle
+
+$mol_check $mol_button_minor
+	attr *
+		^
+		mol_check_checked <= checked?val false
+		aria-checked <= checked?val false
+		role \checkbox
+	sub /$mol_view_content
+		<= Icon null
+		<= label /
+			<= Title $mol_view
+				sub /
+					<= title \
+
+$mol_check_icon $mol_check
+
+$mol_icon_brightness_6 $mol_icon path \M12,18V6C15.31,6 18,8.69 18,12C18,15.31 15.31,18 12,18M20,15.31L23.31,12L20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31Z
+
+$mol_lights_toggle $mol_check_icon
+	Icon <= Lights_icon $mol_icon_brightness_6
+	hint @ \Toggle lights
+	checked?val <=> lights?val false
+
+$mol_icon_telegram $mol_icon path \M9.78,18.65L10.06,14.42L17.74,7.5C18.08,7.19 17.67,7.04 17.22,7.31L7.74,13.3L3.64,12C2.76,11.75 2.75,11.14 3.84,10.7L19.81,4.54C20.54,4.21 21.24,4.72 20.96,5.84L18.24,18.65C18.05,19.56 17.5,19.78 16.74,19.36L12.6,16.3L10.61,18.23C10.38,18.46 10.19,18.65 9.78,18.65Z
+
+$mol_icon_bug $mol_icon path \M14,12H10V10H14M14,16H10V14H14M20,8H17.19C16.74,7.22 16.12,6.55 15.37,6.04L17,4.41L15.59,3L13.42,5.17C12.96,5.06 12.5,5 12,5C11.5,5 11.04,5.06 10.59,5.17L8.41,3L7,4.41L8.62,6.04C7.88,6.55 7.26,7.22 6.81,8H4V10H6.09C6.04,10.33 6,10.66 6,11V12H4V14H6V15C6,15.34 6.04,15.67 6.09,16H4V18H6.81C7.85,19.79 9.78,21 12,21C14.22,21 16.15,19.79 17.19,18H20V16H17.91C17.96,15.67 18,15.34 18,15V14H20V12H18V11C18,10.66 17.96,10.33 17.91,10H20V8Z
+
+$mol_icon_bug_outline $mol_icon path \M20,8H17.19C16.74,7.2 16.12,6.5 15.37,6L17,4.41L15.59,3L13.42,5.17C12.96,5.06 12.5,5 12,5C11.5,5 11.05,5.06 10.59,5.17L8.41,3L7,4.41L8.62,6C7.87,6.5 7.26,7.21 6.81,8H4V10H6.09C6.03,10.33 6,10.66 6,11V12H4V14H6V15C6,15.34 6.03,15.67 6.09,16H4V18H6.81C8.47,20.87 12.14,21.84 15,20.18C15.91,19.66 16.67,18.9 17.19,18H20V16H17.91C17.97,15.67 18,15.34 18,15V14H20V12H18V11C18,10.66 17.97,10.33 17.91,10H20V8M16,15C16,17.21 14.21,19 12,19C9.79,19 8,17.21 8,15V11C8,8.79 9.79,7 12,7C14.21,7 16,8.79 16,11V15M14,10V12H10V10H14M10,14H14V16H10V14Z
+
+$mol_icon_email $mol_icon path \M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18C2,19.1 2.9,20 4,20H20C21.1,20 22,19.1 22,18V6C22,4.89 21.1,4 20,4Z
+
+$mol_theme_auto $mol_plugin
+	attr * mol_theme <= theme \
+
+$mol_icon_download $mol_icon path \M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z
+
+$mol_button_download $mol_button_minor
+	blob null
+	uri \
+	file_name \blob.bin
+	sub /
+		<= Icon $mol_icon_download
 
 $mol_text_code_token $mol_dimmer
 	attr *
@@ -501,6 +513,8 @@ $mol_embed_native $mol_scroll
 			uri <= uri
 			sub /
 				<= title \
+	message *
+		hashchange? <=> uri_change? null
 
 $mol_frame $mol_embed_native
 	dom_name \iframe
@@ -601,7 +615,7 @@ $mol_text $mol_list
 		content <= line_content* /
 	Link_http* $mol_link_iconed
 		uri <= link_uri* \
-		content / <= String*
+		content / <= link_host* \
 	Embed* $mol_embed_any
 		uri <= link_uri* \
 		title <= line_text* \
