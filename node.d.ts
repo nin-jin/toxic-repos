@@ -574,6 +574,10 @@ declare namespace $ {
 }
 
 declare namespace $ {
+    function $mol_wire_solid(): void;
+}
+
+declare namespace $ {
     function $mol_const<Value>(value: Value): {
         (): Value;
         '()': Value;
@@ -588,6 +592,12 @@ declare namespace $ {
 
 declare namespace $ {
     function $mol_wire_async<Host extends object>(obj: Host): (Host extends (...args: infer Args) => infer Res ? Res extends Promise<any> ? Host : (...args: Args) => Promise<Res> : {}) & { [key in keyof Host]: Host[key] extends (...args: infer Args_1) => infer Res_1 ? Res_1 extends Promise<any> ? Host[key] : (...args: Args_1) => Promise<Res_1> : Host[key]; };
+}
+
+declare namespace $ {
+    function $mol_dom_render_events(el: Element, events: {
+        [key: string]: (event: Event) => any;
+    }, passive?: boolean): void;
 }
 
 declare namespace $ {
@@ -1085,6 +1095,19 @@ declare namespace $ {
         height_max(): number;
         align(): string;
     }
+}
+
+declare namespace $ {
+}
+
+declare namespace $ {
+    let $mol_layer: {
+        readonly hover: $mol_style_func<"var", "--mol_layer_hover">;
+        readonly focus: $mol_style_func<"var", "--mol_layer_focus">;
+        readonly speck: $mol_style_func<"var", "--mol_layer_speck">;
+        readonly float: $mol_style_func<"var", "--mol_layer_float">;
+        readonly popup: $mol_style_func<"var", "--mol_layer_popup">;
+    };
 }
 
 declare namespace $ {
@@ -2547,15 +2570,6 @@ declare namespace $ {
     }
 }
 
-declare namespace $ {
-    function $mol_dom_render_events(el: Element, events: {
-        [key: string]: (event: Event) => any;
-    }): void;
-    function $mol_dom_render_events_async(el: Element, events: {
-        [key: string]: (event: Event) => any;
-    }): void;
-}
-
 declare namespace $.$$ {
     class $mol_ghost extends $.$mol_ghost {
         dom_node(next?: Element): Element;
@@ -2585,10 +2599,6 @@ declare namespace $ {
         Fallback(): $$.$mol_link;
         uri_change(next?: any): any;
     }
-}
-
-declare namespace $ {
-    function $mol_wire_solid(): void;
 }
 
 declare namespace $ {
