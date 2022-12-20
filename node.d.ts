@@ -65,10 +65,10 @@ declare namespace $ {
         get $(): $;
         set $(next: $);
         static create<Instance>(this: new (init?: (instance: any) => void) => Instance, init?: (instance: $mol_type_writable<Instance>) => void): Instance;
-        static [Symbol.toPrimitive](): any;
-        static toString(): any;
+        static [Symbol.toPrimitive](): string;
+        static toString(): string;
         destructor(): void;
-        toString(): any;
+        toString(): string;
         toJSON(): any;
     }
 }
@@ -458,6 +458,11 @@ declare namespace $ {
 }
 
 declare namespace $ {
+    function $mol_func_name(this: $, func: Function): string;
+    function $mol_func_name_from<Target extends Function>(target: Target, source: Function): Target;
+}
+
+declare namespace $ {
     function $mol_guid(length?: number, exists?: (id: string) => boolean): string;
 }
 
@@ -617,11 +622,6 @@ declare namespace $ {
 }
 
 declare namespace $ {
-    function $mol_func_name(this: $, func: Function): string;
-    function $mol_func_name_from<Target extends Function>(target: Target, source: Function): Target;
-}
-
-declare namespace $ {
     type $mol_type_keys_extract<Input, Upper> = {
         [Field in keyof Input]: unknown extends Input[Field] ? never : Input[Field] extends never ? never : Input[Field] extends Upper ? Field : never;
     }[keyof Input];
@@ -662,7 +662,7 @@ declare namespace $ {
             top: number;
             bottom: number;
         } | null;
-        dom_id(): any;
+        dom_id(): string;
         dom_node(next?: Element): Element;
         dom_final(): Element | undefined;
         dom_tree(next?: Element): Element;
@@ -1028,6 +1028,10 @@ declare namespace $ {
 }
 
 declare namespace $ {
+    let $mol_action: typeof $mol_wire_method;
+}
+
+declare namespace $ {
     class $mol_state_arg extends $mol_object {
         prefix: string;
         static href(next?: string): string;
@@ -1042,6 +1046,9 @@ declare namespace $ {
         static make_link(next: {
             [key: string]: any;
         }): string;
+        static go(next: {
+            [key: string]: string | null;
+        }): void;
         constructor(prefix?: string);
         value(key: string, next?: string): string | null;
         sub(postfix: string): $mol_state_arg;
@@ -1602,7 +1609,6 @@ declare namespace $ {
         };
         event(): {
             input: (event?: any) => any;
-            keydown: (event?: any) => any;
         };
         plugins(): readonly any[];
         selection_watcher(): any;
@@ -1619,7 +1625,6 @@ declare namespace $ {
         length_max(): number;
         type(val?: any): string;
         event_change(event?: any): any;
-        event_key_press(event?: any): any;
         submit(event?: any): any;
         Submit(): $$.$mol_hotkey;
     }
@@ -1765,15 +1770,15 @@ declare namespace $ {
     export class $mol_regexp<Groups extends Record<string, string>> extends RegExp {
         readonly groups: (Extract<keyof Groups, string>)[];
         constructor(source: string, flags?: string, groups?: (Extract<keyof Groups, string>)[]);
-        [Symbol.matchAll](str: string): IterableIterator<$mol_type_override<RegExpExecArray, {
+        [Symbol.matchAll](str: string): IterableIterator<RegExpMatchArray & $mol_type_override<RegExpMatchArray, {
             groups?: {
                 [key in keyof Groups]: string;
             };
         }>>;
-        [Symbol.match](str: string): null | string[];
+        [Symbol.match](str: string): null | RegExpMatchArray;
         [Symbol.split](str: string): string[];
         test(str: string): boolean;
-        exec(str: string): $mol_type_override<RegExpExecArray, {
+        exec(str: string): RegExpExecArray & $mol_type_override<RegExpExecArray, {
             groups?: {
                 [key in keyof Groups]: string;
             };
@@ -1862,10 +1867,6 @@ declare namespace $ {
 
 declare namespace $ {
     function $mol_wire_sync<Host extends object>(obj: Host): (Host extends (...args: infer Args) => infer Res ? Res extends Promise<infer Res2> ? (...args: Args) => Res2 : Host : {}) & { [key in keyof Host]: Host[key] extends (...args: infer Args_1) => Promise<infer Res_1> ? (...args: Args_1) => Res_1 : Host[key]; };
-}
-
-declare namespace $ {
-    let $mol_action: typeof $mol_wire_method;
 }
 
 declare namespace $ {
@@ -2265,6 +2266,7 @@ declare namespace $ {
         'code-field': RegExp;
         'code-keyword': RegExp;
         'code-global': RegExp;
+        'code-word': RegExp;
         'code-decorator': RegExp;
         'code-tag': RegExp;
         'code-punctuation': RegExp;
@@ -2530,11 +2532,15 @@ declare namespace $ {
             src: string;
             alt: string;
             loading: string;
+            decoding: string;
+            crossOrigin: any;
         };
         minimal_width(): number;
         minimal_height(): number;
         uri(): string;
         loading(): string;
+        decoding(): string;
+        cors(): any;
     }
 }
 
@@ -2779,10 +2785,10 @@ declare namespace $.$$ {
         }[];
         block_type(index: number): string;
         rows(): ($mol_paragraph | $mol_text_code | $mol_grid | $mol_text | $mol_text_header)[];
-        param(): any;
+        param(): string;
         header_level(index: number): string;
         header_arg(index: number): {
-            [x: number]: string;
+            [x: string]: string;
         };
         pre_text(index: number): string;
         quote_text(index: number): string;

@@ -175,7 +175,6 @@ $mol_string $mol_view
 	event *
 		^
 		input?event <=> event_change?event null
-		keydown?event <=> event_key_press?event null
 	plugins /
 		<= Submit $mol_hotkey
 			key * enter?event <=> submit?event null
@@ -485,6 +484,8 @@ $mol_image $mol_view
 		src <= uri \
 		alt <= title
 		loading <= loading \eager
+		decoding <= decoding \async
+		crossOrigin <= cors null
 	minimal_width 16
 	minimal_height 16
 
