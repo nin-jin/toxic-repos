@@ -1,4 +1,73 @@
-#24.08.22
+# 11.11.22
+[add]
++ WorldCat
++ wikidot
++ NewTek
++ Syncfusion
++ preactjs/preact-www (Preact JS)
++ dmitriigriffin/dmitriigriffin.github.io
++ cherrypy/cherrypy
++ zen-tools/gxkb
++ butzist/ActivityLauncher (Activity Launcher)
++ Anivisual
++ Charcoal app
++ BokhanMax/cheshiresofficial
+
+# 16.10.22
+[add]
++ cybersecurity-help
++ arrterian/nix-env-selector
++ letitbit
++ PocketTube (Firefox addon)
++ FFmpeg
++ Citrix Workspace
++ Jooble
++ meteo.paraplan
++ WD Marvel repair tool
++ reportportal
++ appium
++ Keenetic
++ host-tracker
++ SELKS (StamusNetwork)
++ bdseo
+
+# 10.10.22
+[add]
++ CZ-NIC/pz
++ w84death/Tanks-of-Freedom
++ Atlassian
+
+# 19.09.22
+[add]
++ metafields.guru
++ Lorem Picsum
++ AzureCast
++ time.is
+
+# 14.09.22
+[add]
++ strava
++ Mutools MuLab
++ gperftools
++ GitBook
+
+# 05.09.22
+[add]
++ Mongodb Atlas
++ pixabay
++ Autodesk
++ NewEXE/ua-help
+
+# 02.09.22
+[add]
++ Seagate
++ WeTransfer
++ Lossless Scaling
++ Octopus Deploy
++ exler
++ immerjs/immer
+
+# 24.08.22
 [add]
 + hybridauth/hybridauth
 + JetBrains
@@ -8,14 +77,14 @@
 + FBSearch
 + ngrx/platform
 
-#17.08.22
+# 17.08.22
 [add]
 + Disc Makers
 + Случайный User-Agent (browser extension)
 + Custom firmware for Nindendo 3DS
 + AdBlockPlus (browser extension)
 
-#08.08.22
+# 08.08.22
 [add]
 + Unscreen
 + Remove image background
@@ -33,11 +102,11 @@
 + Downie 4 (macOS)
 + bestwebsoft
 
-#21.07.22
+# 21.07.22
 [add]
 + Magic Enum
 
-#20.07.22
+# 20.07.22
 [add]
 + WinZip
 + OSZone
@@ -49,16 +118,16 @@
 + SnowRunner
 + Poster POS
 
-#13.07.22
+# 13.07.22
 [add]
 + selfsignedcertificate
 
-#11.07.22
+# 11.07.22
 [add]
 + Zety Resume Builder
 + GHCup
 
-#07.07.22
+# 07.07.22
 [add]
 + sweetalert2/sweetalert2
 + Autodesk
@@ -88,7 +157,7 @@
 + PyText
 + Wix
 
-#28.06.22
+# 28.06.22
 [add]
 + LiveCareer
 + 3DMark
@@ -100,14 +169,14 @@
 + djinni
 + gperftools/gperftools
 
-#21.06.22
+# 21.06.22
 [add]
 + cgtrader
 + Microsoft
 + jtx Board
 + devart
 
-#17.06.22
+# 17.06.22
 [add]
 + Syncthing
 + Kerkythea
@@ -397,7 +466,7 @@
 + Weather.com
 + Ionos
 + Bitdefender
-+ Syncfusion (C#)
++ Syncfusion (C# )
 + MoneyGram.com
 + GitLab
 + Oracle SQL Developer
