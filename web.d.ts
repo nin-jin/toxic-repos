@@ -14,15 +14,7 @@ declare namespace $ {
 }
 
 declare namespace $ {
-    function $mol_fail(error: any): never;
-}
-
-declare namespace $ {
-    function $mol_fail_hidden(error: any): never;
-}
-
-declare namespace $ {
-    function $mol_offline(uri?: string): void;
+    function $mol_offline(): void;
 }
 
 declare namespace $ {
@@ -50,6 +42,14 @@ declare namespace $ {
         destructor(): void;
     };
     function $mol_owning_catch<Owner, Having>(owner: Owner, having: Having): boolean;
+}
+
+declare namespace $ {
+    function $mol_fail(error: any): never;
+}
+
+declare namespace $ {
+    function $mol_fail_hidden(error: any): never;
 }
 
 declare namespace $ {
@@ -828,6 +828,7 @@ declare namespace $ {
         sub(): readonly $mol_view[];
         minimal_width(): number;
         Placeholder(): $mol_view;
+        Gap(id: any): $mol_view;
         pages(): readonly $mol_view[];
     }
 }
@@ -1658,6 +1659,7 @@ declare namespace $ {
         line_height(): number;
         letter_width(): number;
         width_limit(): number;
+        row_width(): number;
         sub(): readonly any[];
     }
 }
@@ -1962,12 +1964,6 @@ declare namespace $ {
 }
 
 declare namespace $ {
-    class $mol_media extends $mol_object2 {
-        static match(query: string, next?: boolean): boolean;
-    }
-}
-
-declare namespace $ {
     function $mol_lights(this: $, next?: boolean): boolean;
 }
 
@@ -2202,14 +2198,18 @@ declare namespace $ {
         code: RegExp;
         'code-indent': RegExp;
         table: RegExp;
+        grid: RegExp;
+        cut: RegExp;
         block: RegExp;
     }>;
     var $mol_syntax2_md_line: $mol_syntax2<{
         strong: RegExp;
         emphasis: RegExp;
-        code3: RegExp;
         code: RegExp;
-        strike: RegExp;
+        insert: RegExp;
+        delete: RegExp;
+        embed: RegExp;
+        link: RegExp;
         'image-link': RegExp;
         'text-link': RegExp;
         'text-link-http': RegExp;
@@ -2297,13 +2297,7 @@ declare namespace $ {
 }
 
 declare namespace $ {
-    class $mol_icon_clipboard_arrow_up extends $mol_icon {
-        path(): string;
-    }
-}
-
-declare namespace $ {
-    class $mol_icon_clipboard_arrow_up_outline extends $mol_icon {
+    class $mol_icon_clipboard_outline extends $mol_icon {
         path(): string;
     }
 }
@@ -2312,7 +2306,7 @@ declare namespace $ {
     class $mol_button_copy extends $mol_button_minor {
         text(): string;
         sub(): readonly any[];
-        Icon(): $mol_icon_clipboard_arrow_up_outline;
+        Icon(): $mol_icon_clipboard_outline;
     }
 }
 
@@ -2462,15 +2456,12 @@ declare namespace $ {
         Cell_dimmer(id: any): $$.$mol_dimmer;
     }
     class $mol_grid_table extends $mol_list {
-        dom_name(): string;
     }
     class $mol_grid_row extends $mol_view {
-        dom_name(): string;
         sub(): readonly $mol_view[];
         cells(): readonly $mol_view[];
     }
     class $mol_grid_cell extends $mol_view {
-        dom_name(): string;
         minimal_height(): number;
     }
     class $mol_grid_number extends $mol_grid_cell {
@@ -2740,12 +2731,17 @@ declare namespace $ {
         auto(): readonly any[];
         Paragraph(id: any): $$.$mol_paragraph;
         Quote(id: any): $$.$mol_text;
-        List(id: any): $$.$mol_text;
+        List(id: any): $mol_text_list;
+        item_index(id: any): number;
         Header(id: any): $$.$mol_text_header;
         Pre(id: any): $$.$mol_text_code;
+        Cut(id: any): $mol_view;
         Table(id: any): $$.$mol_grid;
         Table_row(id: any): $mol_grid_row;
         Table_cell(id: any): $$.$mol_text;
+        Grid(id: any): $$.$mol_grid;
+        Grid_row(id: any): $mol_grid_row;
+        Grid_cell(id: any): $$.$mol_text;
         String(id: any): $$.$mol_dimmer;
         Span(id: any): $mol_text_span;
         Code_line(id: any): $$.$mol_text_code_row;
@@ -2757,6 +2753,7 @@ declare namespace $ {
         uri_resolve(id: any): string;
         quote_text(id: any): string;
         highlight(): string;
+        list_type(id: any): string;
         list_text(id: any): string;
         header_level(id: any): number;
         header_arg(id: any): {};
@@ -2767,6 +2764,9 @@ declare namespace $ {
         table_rows(id: any): readonly any[];
         table_cells(id: any): readonly any[];
         table_cell_text(id: any): string;
+        grid_rows(id: any): readonly any[];
+        grid_cells(id: any): readonly any[];
+        grid_cell_text(id: any): string;
         line_text(id: any): string;
         line_type(id: any): string;
         line_content(id: any): readonly any[];
@@ -2801,12 +2801,14 @@ declare namespace $.$$ {
             chunks: string[];
         }[];
         block_type(index: number): string;
-        rows(): ($mol_paragraph | $mol_text_code | $mol_grid | $mol_text | $mol_text_header)[];
+        rows(): ($mol_view | $mol_paragraph | $mol_text_code | $mol_grid | $mol_text_header)[];
         param(): string;
         header_level(index: number): number;
         header_arg(index: number): {
             [x: string]: string;
         };
+        list_type(index: number): string;
+        item_index(index: number): number;
         pre_text(index: number): string;
         quote_text(index: number): string;
         list_text(index: number): string;
@@ -2818,6 +2820,17 @@ declare namespace $.$$ {
             row: number;
         }): $mol_text[];
         table_cell_text(id: {
+            block: number;
+            row: number;
+            cell: number;
+        }): string;
+        grid_content(indexBlock: number): string[][];
+        grid_rows(blockId: number): $mol_grid_row[];
+        grid_cells(id: {
+            block: number;
+            row: number;
+        }): $mol_text[];
+        grid_cell_text(id: {
             block: number;
             row: number;
             cell: number;
@@ -2864,6 +2877,26 @@ declare namespace $.$$ {
     class $mol_text_header extends $.$mol_text_header {
         dom_name(): string;
     }
+}
+
+declare namespace $ {
+    class $mol_text_list extends $mol_text {
+        auto_scroll(): any;
+        attr(): {
+            mol_text_list_type: string;
+        };
+        Paragraph(id: any): $mol_text_list_item;
+        type(): string;
+    }
+    class $mol_text_list_item extends $mol_paragraph {
+        attr(): {
+            mol_text_list_item_index: number;
+        };
+        index(): number;
+    }
+}
+
+declare namespace $ {
 }
 
 declare namespace $ {

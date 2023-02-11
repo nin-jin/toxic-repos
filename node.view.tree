@@ -12,6 +12,7 @@ $mol_book2 $mol_scroll
 	sub <= pages /$mol_view
 	minimal_width 0
 	Placeholder $mol_view
+	Gap* $mol_view title \
 
 $mol_link $mol_view
 	uri \
@@ -196,6 +197,7 @@ $mol_paragraph $mol_view
 	line_height 24
 	letter_width 7
 	width_limit +Infinity
+	row_width 0
 	sub / <= title
 
 $mol_dimmer $mol_paragraph
@@ -386,14 +388,12 @@ $mol_stack $mol_view
 
 $mol_icon_clipboard $mol_icon path \M19,3H14.82C14.4,1.84 13.3,1 12,1C10.7,1 9.6,1.84 9.18,3H5C3.9,3 3,3.9 3,5V19C3,20.1 3.9,21 5,21H19C20.1,21 21,20.1 21,19V5C21,3.9 20.1,3 19,3M12,3C12.55,3 13,3.45 13,4C13,4.55 12.55,5 12,5C11.45,5 11,4.55 11,4C11,3.45 11.45,3 12,3
 
-$mol_icon_clipboard_arrow_up $mol_icon path \M19,3C20.1,3 21,3.9 21,5V19C21,20.1 20.1,21 19,21H5C3.9,21 3,20.1 3,19V5C3,3.9 3.9,3 5,3H9.18C9.6,1.84 10.7,1 12,1C13.3,1 14.4,1.84 14.82,3H19M12,8L7,13H10V17H14V13H17L12,8M12,3C11.45,3 11,3.45 11,4C11,4.55 11.45,5 12,5C12.55,5 13,4.55 13,4C13,3.45 12.55,3 12,3Z
-
-$mol_icon_clipboard_arrow_up_outline $mol_icon path \M12,8L17,13H14V17H10V13H7L12,8M19,3C20.1,3 21,3.9 21,5V19C21,20.1 20.1,21 19,21H5C3.9,21 3,20.1 3,19V5C3,3.9 3.9,3 5,3H9.18C9.6,1.84 10.7,1 12,1C13.3,1 14.4,1.84 14.82,3H19M12,3C11.45,3 11,3.45 11,4C11,4.55 11.45,5 12,5C12.55,5 13,4.55 13,4C13,3.45 12.55,3 12,3M7,7V5H5V19H19V5H17V7H7Z
+$mol_icon_clipboard_outline $mol_icon path \M19,3H14.82C14.4,1.84 13.3,1 12,1C10.7,1 9.6,1.84 9.18,3H5C3.9,3 3,3.9 3,5V19C3,20.1 3.9,21 5,21H19C20.1,21 21,20.1 21,19V5C21,3.9 20.1,3 19,3M12,3C12.55,3 13,3.45 13,4C13,4.55 12.55,5 12,5C11.45,5 11,4.55 11,4C11,3.45 11.45,3 12,3M7,7H17V5H19V19H5V5H7V7Z
 
 $mol_button_copy $mol_button_minor
 	text \
 	sub /
-		<= Icon $mol_icon_clipboard_arrow_up_outline
+		<= Icon $mol_icon_clipboard_outline
 
 
 $mol_text_code $mol_stack
@@ -476,14 +476,14 @@ $mol_grid $mol_view
 			haystack <= cell_value* \
 
 $mol_grid_table $mol_list
-	dom_name \table
+	- dom_name \table
 
 $mol_grid_row $mol_view
-	dom_name \tr
+	- dom_name \tr
 	sub <= cells /$mol_view
 
 $mol_grid_cell $mol_view
-	dom_name \td
+	- dom_name \td
 	minimal_height 40
 
 $mol_grid_number $mol_grid_cell
@@ -534,7 +534,7 @@ $mol_frame $mol_embed_native
 		^
 		data null
 		type null
-		src <= uri?val \
+		src <= uri?val \about:config
 		srcdoc <= html null
 		allow <= allow \
 		allowfullscreen <= fullscreen true
@@ -584,11 +584,12 @@ $mol_text $mol_list
 		text <= quote_text* \
 		highlight <= highlight \
 		auto_scroll null
-	List* $mol_text
+	List* $mol_text_list
 		uri_resolve* <= uri_resolve* \
+		type <= list_type* \-
 		text <= list_text* \
 		highlight <= highlight \
-		auto_scroll null
+	item_index* 0
 	Header* $mol_text_header
 		minimal_height 40
 		level <= header_level* 1
@@ -599,6 +600,7 @@ $mol_text $mol_list
 		highlight <= highlight \
 		uri_resolve* <= uri_resolve* \
 		sidebar_showed <= pre_sidebar_showed <= code_sidebar_showed true
+	Cut* $mol_view dom_name \hr
 	- \Table
 	Table* $mol_grid
 		head_cells <= table_head_cells* /
@@ -610,6 +612,16 @@ $mol_text $mol_list
 		highlight <= highlight \
 		uri_resolve* <= uri_resolve* \
 		text <= table_cell_text* \
+	- \Grid
+	Grid* $mol_grid
+		rows <= grid_rows* /
+	Grid_row* $mol_grid_row
+		cells <= grid_cells* /
+	Grid_cell* $mol_text
+		auto_scroll null
+		highlight <= highlight \
+		uri_resolve* <= uri_resolve* \
+		text <= grid_cell_text* \
 	- \Lines
 	String* $mol_dimmer
 		dom_name \span
@@ -648,6 +660,20 @@ $mol_text_span $mol_paragraph
 	attr *
 		^
 		mol_text_type <= type \
+
+$mol_text_list $mol_text
+	auto_scroll null
+	attr *
+		^
+		mol_text_list_type <= type \
+	Paragraph* $mol_text_list_item
+		index <= item_index*
+		sub <= block_content*
+
+$mol_text_list_item $mol_paragraph
+	attr *
+		^
+		mol_text_list_item_index <= index 0
 
 $toxic_app $mol_book2_catalog
 	menu_title \Toxic Repos
