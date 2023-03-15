@@ -9,6 +9,7 @@ $mol_scroll $mol_view
 		scroll?event <=> event_scroll?event null
 
 $mol_book2 $mol_scroll
+	menu_title \
 	sub <= pages /$mol_view
 	minimal_width 0
 	Placeholder $mol_view
@@ -57,7 +58,7 @@ $mol_pop_bubble $mol_scroll
 $mol_speck $mol_view
 	attr *
 		^
-		mol_theme \$mol_theme_accent
+		mol_theme <= theme \$mol_theme_accent
 	style *
 		^
 		minHeight \1em
@@ -140,6 +141,7 @@ $mol_string $mol_view
 		selectionEnd <= selection_end 0
 		selectionStart <= selection_start 0
 		inputMode <= keyboard \text
+		enterkeyhint <= enter \go
 	attr *
 		^
 		maxlength <= length_max +Infinity
@@ -149,6 +151,7 @@ $mol_string $mol_view
 		input?event <=> event_change?event null
 	plugins /
 		<= Submit $mol_hotkey
+			mod_ctrl <= submit_with_ctrl false
 			key * enter?event <=> submit?event null
 
 $mol_svg $mol_view
@@ -230,6 +233,8 @@ $mol_search $mol_pop
 				hint <= hint @ \Search...
 				submit?event <=> submit?event null
 				enabled <= enabled true
+				keyboard <= keyboard \search
+				enter <= enter \search
 				bring => bring
 			<= Clear $mol_button_minor
 				hint @ \Clear
@@ -351,6 +356,9 @@ $mol_button_download $mol_button_minor
 	file_name \blob.bin
 	sub /
 		<= Icon $mol_icon_download
+		<= title \
+
+$mol_stack $mol_view
 
 $mol_text_code_token $mol_dimmer
 	attr *
@@ -384,8 +392,6 @@ $mol_text_code_row $mol_paragraph
 		uri <= token_uri* \
 	find_pos* null
 
-$mol_stack $mol_view
-
 $mol_icon_clipboard $mol_icon path \M19,3H14.82C14.4,1.84 13.3,1 12,1C10.7,1 9.6,1.84 9.18,3H5C3.9,3 3,3.9 3,5V19C3,20.1 3.9,21 5,21H19C20.1,21 21,20.1 21,19V5C21,3.9 20.1,3 19,3M12,3C12.55,3 13,3.45 13,4C13,4.55 12.55,5 12,5C11.45,5 11,4.55 11,4C11,3.45 11.45,3 12,3
 
 $mol_icon_clipboard_outline $mol_icon path \M19,3H14.82C14.4,1.84 13.3,1 12,1C10.7,1 9.6,1.84 9.18,3H5C3.9,3 3,3.9 3,5V19C3,20.1 3.9,21 5,21H19C20.1,21 21,20.1 21,19V5C21,3.9 20.1,3 19,3M12,3C12.55,3 13,3.45 13,4C13,4.55 12.55,5 12,5C11.45,5 11,4.55 11,4C11,3.45 11.45,3 12,3M7,7H17V5H19V19H5V5H7V7Z
@@ -394,6 +400,7 @@ $mol_button_copy $mol_button_minor
 	text \
 	sub /
 		<= Icon $mol_icon_clipboard_outline
+		<= title \
 
 
 $mol_text_code $mol_stack
@@ -509,9 +516,6 @@ $mol_link_iconed $mol_link
 		<= title <= uri
 	host \
 
-$mol_ghost $mol_view
-	Sub $mol_view
-
 $mol_embed_native $mol_scroll
 	uri?val \
 	dom_name \object
@@ -558,7 +562,7 @@ $mol_embed_youtube $mol_check
 			uri <= video_embed \
 
 
-$mol_embed_any $mol_ghost
+$mol_embed_any $mol_view
 	Image $mol_image
 		title <= title \
 		uri <= uri \
