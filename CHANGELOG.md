@@ -1,3 +1,19 @@
+# 30.05.23
+[add]
++ oliver006/redis_exporter
++ React is a JavaScript library
+
+# 22.05.23
+[add]
++ zadam/trilium
++ Valentina pattern design software
++ lawinsider
++ crosstalksolutions
++ porteus-kiosk
++ skillsetter
++ mockk/mockk
++ aiogram/aiogram
+
 # 07.02.23
 [add]
 + SweetAlert2
@@ -5,7 +21,7 @@
 + Tyrrrz/DiscordChatExporter
 + YoutubeExplode
 + Freescale Semiconductor
-+ Сайт php
++ Неофициальный сайт php.su
 + Miro
 + MagicalJellyBean
 + Ajax Systems
