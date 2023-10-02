@@ -1,6 +1,6 @@
 $mol_scroll $mol_view
-	scroll_top?val 0
-	scroll_left?val 0
+	scroll_top? 0
+	scroll_left? 0
 	field *
 		^
 		tabIndex <= tabindex -1
@@ -33,7 +33,7 @@ $mol_link $mol_view
 		click?event <=> click?event <=> event_click?event null
 
 $mol_pop $mol_view
-	showed?val false
+	showed? false
 	align_vert \
 	align_hor \
 	prefer \vert
@@ -102,17 +102,17 @@ $mol_hotkey $mol_plugin
 	mod_shift false
 
 $mol_nav $mol_plugin
-	cycle?val false
+	cycle? false
 	-
 	mod_ctrl false
 	mod_shift false
 	mod_alt false
 	-
-	keys_x?val /
-	keys_y?val /
+	keys_x? /
+	keys_y? /
 	-
-	current_x?val null
-	current_y?val null
+	current_x? null
+	current_y? null
 	-
 	event_up?event null
 	event_down?event null
@@ -127,7 +127,7 @@ $mol_string $mol_view
 	enabled true
 	minimal_height 40
 	autocomplete false
-	selection?val /number
+	selection? /number
 		0
 		0
 	auto /
@@ -135,7 +135,7 @@ $mol_string $mol_view
 	field *
 		^
 		disabled <= disabled false
-		value <= value_changed?val <=> value?val \
+		value <= value_changed? <=> value? \
 		placeholder <= hint_visible <= hint \
 		spellcheck <= spellcheck true
 		autocomplete <= autocomplete_native \
@@ -146,7 +146,7 @@ $mol_string $mol_view
 	attr *
 		^
 		maxlength <= length_max +Infinity
-		type <= type?val \text
+		type <= type? \text
 	event *
 		^
 		input?event <=> event_change?event null
@@ -216,21 +216,21 @@ $mol_dimmer $mol_paragraph
 			<= string* \
 
 $mol_search $mol_pop
-	query?val \
+	query? \
 	suggests /string
 	plugins /$mol_plugin
 		^
 		<= Hotkey $mol_hotkey
-			key * escape?val <=> clear?val null
+			key * escape? <=> clear? null
 		<= Nav $mol_nav
 			keys_y <= nav_components /$mol_view
 			current_y?component <=> nav_focused?component null
-	showed?val <=> suggests_showed?val false
+	showed? <=> suggests_showed? false
 	align_hor \right
 	Anchor $mol_view
 		sub <= anchor_content /
 			<= Query $mol_string
-				value?val <=> query?val \
+				value? <=> query? \
 				hint <= hint @ \Search...
 				submit?event <=> submit?event null
 				enabled <= enabled true
@@ -250,7 +250,7 @@ $mol_search $mol_pop
 		sub <= suggest_content* /$mol_view_content
 			<= Suggest_label* $mol_dimmer
 				haystack <= suggest_label* \
-				needle <= query?val \
+				needle <= query? \
 
 $mol_page $mol_view
 	dom_name \article
@@ -270,7 +270,7 @@ $mol_page $mol_view
 				<= Tools $mol_view
 					sub <= tools /$mol_view_content
 		<= Body $mol_scroll
-			scroll_top?val => body_scroll_top?val
+			scroll_top? => body_scroll_top?
 			sub <= body /$mol_view_content
 		<= Foot $mol_view
 			dom_name \footer
@@ -278,9 +278,13 @@ $mol_page $mol_view
 
 $mol_book2_catalog $mol_book2
 	param \
-	spread?val \
+	spread? \
 	spreads *
-	Spread $mol_view
+	Spread* $mol_view
+	Spread_default null
+	spread_ids /string
+	menu_filter_enabled false
+	spread_ids_filtered /string
 	pages /
 		<= Menu $mol_page
 			Title => Menu_title
@@ -319,9 +323,9 @@ $mol_link_source $mol_link
 $mol_check $mol_button_minor
 	attr *
 		^
-		mol_check_checked <= checked?val false
-		aria-checked <= checked?val false
-		role \checkbox
+		mol_check_checked <= checked? false
+		aria-checked <= aria_checked \false
+		role <= aria_role \checkbox
 	sub /$mol_view_content
 		<= Icon null
 		<= label /
@@ -336,7 +340,7 @@ $mol_icon_brightness_6 $mol_icon path \M12,18V6C15.31,6 18,8.69 18,12C18,15.31 1
 $mol_lights_toggle $mol_check_icon
 	Icon <= Lights_icon $mol_icon_brightness_6
 	hint @ \Toggle lights
-	checked?val <=> lights?val false
+	checked? <=> lights? false
 
 $mol_icon_telegram $mol_icon path \M9.78,18.65L10.06,14.42L17.74,7.5C18.08,7.19 17.67,7.04 17.22,7.31L7.74,13.3L3.64,12C2.76,11.75 2.75,11.14 3.84,10.7L19.81,4.54C20.54,4.21 21.24,4.72 20.96,5.84L18.24,18.65C18.05,19.56 17.5,19.78 16.74,19.36L12.6,16.3L10.61,18.23C10.38,18.46 10.19,18.65 9.78,18.65Z
 
@@ -447,7 +451,7 @@ $mol_check_expand $mol_check
 	style *
 		^
 		paddingLeft <= level_style \0px
-	checked?val <=> expanded?val false
+	checked? <=> expanded? false
 	enabled <= expandable false
 
 $mol_grid $mol_view
@@ -484,7 +488,7 @@ $mol_grid $mol_view
 	Cell_branch* $mol_check_expand
 		level <= cell_level* 0
 		label <= cell_content* /$mol_view_content
-		expanded?val <=> cell_expanded*?val false
+		expanded? <=> cell_expanded*? false
 	Cell_content* /
 		<= Cell_dimmer* $mol_dimmer
 			needle <= needle \
@@ -512,6 +516,12 @@ $mol_image $mol_view
 		loading <= loading \eager
 		decoding <= decoding \async
 		crossOrigin <= cors null
+	attr *
+		^
+		width <= natural_width? 0
+		height <= natural_height? 0
+	event *
+		load? <=> load? null
 	minimal_width 16
 	minimal_height 16
 
@@ -525,7 +535,7 @@ $mol_link_iconed $mol_link
 	host \
 
 $mol_embed_native $mol_scroll
-	uri?val \
+	uri? \
 	dom_name \object
 	window null
 	attr *
@@ -540,13 +550,15 @@ $mol_embed_native $mol_scroll
 	message *
 		hashchange? <=> uri_change? null
 
+$mol_icon_youtube $mol_icon path \M10,15L15.19,12L10,9V15M21.56,7.17C21.69,7.64 21.78,8.27 21.84,9.07C21.91,9.87 21.94,10.56 21.94,11.16L22,12C22,14.19 21.84,15.8 21.56,16.83C21.31,17.73 20.73,18.31 19.83,18.56C19.36,18.69 18.5,18.78 17.18,18.84C15.88,18.91 14.69,18.94 13.59,18.94L12,19C7.81,19 5.2,18.84 4.17,18.56C3.27,18.31 2.69,17.73 2.44,16.83C2.31,16.36 2.22,15.73 2.16,14.93C2.09,14.13 2.06,13.44 2.06,12.84L2,12C2,9.81 2.16,8.2 2.44,7.17C2.69,6.27 3.27,5.69 4.17,5.44C4.64,5.31 5.5,5.22 6.82,5.16C8.12,5.09 9.31,5.06 10.41,5.06L12,5C16.19,5 18.8,5.16 19.83,5.44C20.73,5.69 21.31,6.27 21.56,7.17Z
+
 $mol_frame $mol_embed_native
 	dom_name \iframe
 	attr *
 		^
 		data null
 		type null
-		src <= uri?val \about:config
+		src <= uri? \about:config
 		srcdoc <= html null
 		allow <= allow \
 		- allowfullscreen <=
@@ -568,6 +580,7 @@ $mol_embed_youtube $mol_check
 		<= Image $mol_image
 			title <= title \
 			uri <= video_preview \
+		<= Hint $mol_icon_youtube
 		<= Frame $mol_frame
 			title <= title \
 			uri <= video_embed \
