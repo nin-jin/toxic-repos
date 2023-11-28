@@ -1336,6 +1336,70 @@
         "description": "Перенаправление на ролик на youtube"
     },
     {
+        "id": 755,
+        "datetime": "2023-10-16 11:11:00",
+        "problem_type": "hostile_actions",
+        "name": "outline",
+        "commit_link": "https://github.com/outline/outline/commit/228d1faa9fd3cbb82409d98e1443fed65adc5715",
+        "description": "удалили русский перевод без анонсов и объяснений"
+    },
+    {
+        "id": 756,
+        "datetime": "2023-10-16 11:11:00",
+        "problem_type": "hostile_actions",
+        "name": "getoutline",
+        "commit_link": "https://translate.getoutline.com/",
+        "description": "без уведомлений и объяснений убрали русскую локализацию и добавили украинскую"
+    },
+    {
+        "id": 760,
+        "datetime": "2023-10-16 11:11:00",
+        "problem_type": "hostile_actions",
+        "name": "OkHttp Profiler",
+        "commit_link": "https://plugins.jetbrains.com/plugin/11249-okhttp-profiler",
+        "description": "Плагин &quot;OkHttp Profiler&quot; для Android Studio https://plugins.jetbrains.com/plugin/11249-okhttp-profiler (там есть скриншот в комментариях) Выводит ругательства русским и показывает кнопки &quot;Russia Invided Ukraine!&quot; Репозиторий: https://github.com/gektor650/OkHttpProfiler-AndroidStudio-Plugin"
+    },
+    {
+        "id": 761,
+        "datetime": "2023-10-16 12:29:00",
+        "problem_type": "hostile_actions",
+        "name": "Tailscale",
+        "commit_link": "tailscale.com",
+        "description": "Разработчики Tailscale запретили пользоваться их ПО, тперь для жителей России в магазинах приложений AppStore и Google Market клиента TailScale не скачать. У кого были скачены продолжают работать, но на долго ли …."
+    },
+    {
+        "id": 767,
+        "datetime": "2023-11-15 09:15:00",
+        "problem_type": "hostile_actions",
+        "name": "TabHamster",
+        "commit_link": "https://github.com/onikienko/TabHamster/commit/d406d1c3a95c44c28374e7aef7824095a63a6648",
+        "description": "Разработчик расширения управления закладками для браузера Chrome и Opera. Расширение позволяет сохранять и восстанавливать закладки, а также импортировать и экспортировать их через текстовой файл. На странице угрозы от нахрюка в адрес РФ. Хочет удалить русскую локаль: https://github.com/onikienko/TabHamster/issues/53 (их борьба). Сообщил в abuse на владельца (hate speech), Github ничего не сделал, угрозы по прежнему в readme репозитория."
+    },
+    {
+        "id": 768,
+        "datetime": "2023-11-15 09:15:00",
+        "problem_type": "hostile_actions",
+        "name": "MyHomeLib",
+        "commit_link": "https://pikabu.ru/story/o_kriptomaynerakh_v_programmakh_dlya_rabotyi_s_arkhivami_knig_10614906",
+        "description": "Встроенный в программу для работы с архивами криптомайнер, отправляющий деньги ВСУ"
+    },
+    {
+        "id": 780,
+        "datetime": "2023-11-15 09:15:00",
+        "problem_type": "hostile_actions",
+        "name": "Hogwarts Legacy",
+        "commit_link": "https://www.hogwartslegacy.com/",
+        "description": "Нет русского языка при наличии украинского. Нет возможности приобрести, только пиратство. В самом «продукте» русский перевод имеется. https://imgbox.com/MjrumW8o"
+    },
+    {
+        "id": 782,
+        "datetime": "2023-11-15 09:15:00",
+        "problem_type": "hostile_actions",
+        "name": "Yohoho",
+        "commit_link": "https://yohoho.cc/",
+        "description": "Сайт для просмотра фильмов и сериалов (по коду фильма с кинопоиска). Предлагает перед просмотром внести пожертвование. При переходе на пожертвование предлагает \"пiдтримать до ВСУ\". Фактически блокируют просмотр, если не пожертвовать."
+    },
+    {
         "id": 57,
         "datetime": "2022-03-29 15:48:48",
         "problem_type": "ip_block",
@@ -2760,6 +2824,134 @@
         "description": "До СВО обучали продуктовым и проектным профессиям, но так как создатели из Украины, потихоньку перевели ресурсы на украинский и с недавних пор блочат с RU IP &quot;Sorry, you have been blocked&quot; . Собирали деньги на ВСУ и размещали у себя приглашения в &quot;киберкозаки&quot;"
     },
     {
+        "id": 751,
+        "datetime": "2023-10-16 11:11:00",
+        "problem_type": "ip_block",
+        "name": "catgirl.cloud",
+        "commit_link": "https://catgirl.cloud",
+        "description": "сервер со свободными сервисами (invidious, matrix и другие) — не отрывается в РФ"
+    },
+    {
+        "id": 757,
+        "datetime": "2023-10-16 11:11:00",
+        "problem_type": "ip_block",
+        "name": "SAS",
+        "commit_link": "https://www.sas.com/",
+        "description": "поставщик бизнес-решений для работы с данными, ограничил доступ из России к документации, местному stackoverflow. Под VPN заходит. Заблокировали начиная с марта 2022 года."
+    },
+    {
+        "id": 758,
+        "datetime": "2023-10-16 11:11:00",
+        "problem_type": "ip_block",
+        "name": "pygame",
+        "commit_link": "https://www.pygame.org",
+        "description": "открывает сайт-заглушку при запросе с российского IP"
+    },
+    {
+        "id": 759,
+        "datetime": "2023-10-16 11:11:00",
+        "problem_type": "ip_block",
+        "name": "semrush",
+        "commit_link": "https://semrush.com",
+        "description": "Блокировка по IP"
+    },
+    {
+        "id": 762,
+        "datetime": "2023-10-16 12:29:00",
+        "problem_type": "ip_block",
+        "name": "Servarr",
+        "commit_link": "https://github.com/Servarr",
+        "description": "Набор ПО для организации медиатеки и скачки кино, музыки и книг по запросу. После начала СВО автор запретили пользователям из РФ и РБ использовать свой api, также сделали блокировку по IP что отчасти ломает функционал ПО и блокируют доступ к сайту."
+    },
+    {
+        "id": 763,
+        "datetime": "2023-10-25 12:08:00",
+        "problem_type": "ip_block",
+        "name": "virtuozzo (jelastic)",
+        "commit_link": "https://virtuozzo.com",
+        "description": "https://virtuozzo.com https://jelastic.com Блокировка по ip"
+    },
+    {
+        "id": 769,
+        "datetime": "2023-11-15 09:15:00",
+        "problem_type": "ip_block",
+        "name": "finplot",
+        "commit_link": "https://pypi.org/project/finplot/",
+        "description": "Если видит в локали пользователя что-то из _ru _by ru_ be_ ru be, то делает выход из программы. Опасности нет, просто идиотизм (пока что)."
+    },
+    {
+        "id": 770,
+        "datetime": "2023-11-15 09:15:00",
+        "problem_type": "ip_block",
+        "name": "Corona Renderer",
+        "commit_link": "https://corona-renderer.com/download",
+        "description": "403 Forbidden"
+    },
+    {
+        "id": 771,
+        "datetime": "2023-11-15 09:15:00",
+        "problem_type": "ip_block",
+        "name": "Ablebits",
+        "commit_link": "https://imgbox.com/TAfTSiJW",
+        "description": "На всех страницах ablebits.com клякса с ссылкой на очередной высер про «агрессоров», «соогрессоров» и далее по регламенту. А ещё они отреклись от Беларуси, где были основаны."
+    },
+    {
+        "id": 772,
+        "datetime": "2023-11-15 09:15:00",
+        "problem_type": "ip_block",
+        "name": "Monal IM",
+        "commit_link": "https://monal.im",
+        "description": "Страна не разрешена"
+    },
+    {
+        "id": 773,
+        "datetime": "2023-11-15 09:15:00",
+        "problem_type": "ip_block",
+        "name": "SetApp",
+        "commit_link": "https://setapp.com",
+        "description": "Подписочный сервис от украинских разработчиков с каталогом софта для macOS. Прекратили работу сервиса и заблокировали сайт в Беларуси и России, для всех остальных в программе висит баннер с ссылками на помощь ВСУ (судя по скриншоту с страницы-загулшки). Иронично, что блокировка так же блочит запись в блоге разработчиков с \"правдой\" от \"проверенных\" источников, на которую ссылается страница-заглушка."
+    },
+    {
+        "id": 774,
+        "datetime": "2023-11-15 09:15:00",
+        "problem_type": "ip_block",
+        "name": "gcore",
+        "commit_link": "https://gcore.com/",
+        "description": "Удаляют сервера и аккаунты русских пользователей с формулировкой \"За захват Украины\""
+    },
+    {
+        "id": 775,
+        "datetime": "2023-11-15 09:15:00",
+        "problem_type": "ip_block",
+        "name": "signalhire",
+        "commit_link": "https://www.signalhire.com",
+        "description": "баннер со словами руский военый корабль"
+    },
+    {
+        "id": 776,
+        "datetime": "2023-11-15 09:15:00",
+        "problem_type": "ip_block",
+        "name": "kahoot",
+        "commit_link": "https://kahoot.it/",
+        "description": "с российских IP редиректит на страницу с баннером"
+    },
+    {
+        "id": 777,
+        "datetime": "2023-11-15 09:15:00",
+        "problem_type": "ip_block",
+        "name": "Bellsoft",
+        "commit_link": "https://bell-sw.com/",
+        "description": "Заблокировали доступ с российских IP"
+    },
+    {
+        "id": 778,
+        "datetime": "2023-11-15 09:15:00",
+        "problem_type": "ip_block",
+        "name": "bitbucket",
+        "commit_link": "https://community.atlassian.com/t5/Trello-questions/Terminate-your-Atlassian-account-in-30-days/qaq-p/2419532",
+        "description": "Прислали письмо 26 сентября 2023."
+    },
+    {
         "id": 1,
         "datetime": "2022-03-29 15:48:48",
         "problem_type": "malware",
@@ -3795,7 +3987,7 @@
         "id": 246,
         "datetime": "2022-03-29 15:48:48",
         "problem_type": "political_slogans",
-        "name": "django-modeltranslatio",
+        "name": "django-modeltranslation",
         "commit_link": "https://github.com/deschler/django-modeltranslation/commit/0617eadfb4606cd9cf3c5fcea761af142b5eb3b2",
         "description": "Политические лозунги в документации"
     },
@@ -5334,5 +5526,141 @@
         "name": "React is a JavaScript library",
         "commit_link": "https://react.dev/",
         "description": "Политический баннер в шапке"
+    },
+    {
+        "id": 752,
+        "datetime": "2023-10-16 11:11:00",
+        "problem_type": "political_slogans",
+        "name": "Bitwarden",
+        "commit_link": "https://github.com/bitwarden/clients/pull/5011",
+        "description": "1. Удалили поддержку карт Мир по политическим целям 2. Ничего не делают с protestware в их клиенте, вызванный Sweetalert2"
+    },
+    {
+        "id": 753,
+        "datetime": "2023-10-16 11:11:00",
+        "problem_type": "political_slogans",
+        "name": "KLog",
+        "commit_link": "https://www.klog.xyz/",
+        "description": "флаг Украины в заголовке. KLog 2.0 – Stop the war. Posted on 26 February, 2022 by Jaime"
+    },
+    {
+        "id": 754,
+        "datetime": "2023-10-16 11:11:00",
+        "problem_type": "political_slogans",
+        "name": "factorio",
+        "commit_link": "https://factorio.com/",
+        "description": "Плашка с поддержкой Украины на главном сайте, mods. и forum. поддоменах, на wiki. нет. Ведёт на сайт пожертвований. Всё остальное работает."
+    },
+    {
+        "id": 764,
+        "datetime": "2023-10-25 12:08:00",
+        "problem_type": "political_slogans",
+        "name": "dmarket",
+        "commit_link": "https://dmarket.com/",
+        "description": "Политический лозунг"
+    },
+    {
+        "id": 765,
+        "datetime": "2023-10-26 08:00:00",
+        "problem_type": "political_slogans",
+        "name": "jestjs",
+        "commit_link": "https://github.com/jestjs/jest",
+        "description": "Политический лозунг"
+    },
+    {
+        "id": 766,
+        "datetime": "2023-11-15 09:15:00",
+        "problem_type": "political_slogans",
+        "name": "PhpSpeadsheet",
+        "commit_link": "https://github.com/MarkBaker/PHPComplex/commit/d130142eba9d5c6d7e8f3fb4a9571133f206cf69",
+        "description": "Политический лозунг"
+    },
+    {
+        "id": 779,
+        "datetime": "2023-11-15 09:15:00",
+        "problem_type": "political_slogans",
+        "name": "RoadRunner",
+        "commit_link": "https://github.com/roadrunner-server/roadrunner/releases/tag/v2.12.1",
+        "description": "Баннер в версии 2.12.1"
+    },
+    {
+        "id": 781,
+        "datetime": "2023-11-15 09:15:00",
+        "problem_type": "political_slogans",
+        "name": "pdf-manuals",
+        "commit_link": "https://pdf-manuals.ru/",
+        "description": "При загрузке инструкции над кнопкой отображается надпись \"Остановите войну с Украиной\", загруженные файлы вместо инструкций содержат страницу стихотворения с фоном в виде украинского флага"
+    },
+    {
+        "id": 783,
+        "datetime": "2023-11-15 09:15:00",
+        "problem_type": "political_slogans",
+        "name": "LammeXP",
+        "commit_link": "https://lamexp.sourceforge.net/",
+        "description": "Сайт программы содержит большое фото антироссийского митинга со всеми этими \"FCK PTN\"."
+    },
+    {
+        "id": 784,
+        "datetime": "2023-11-15 09:15:00",
+        "problem_type": "political_slogans",
+        "name": "Cobain Backup",
+        "commit_link": "https://www.cobiansoft.com/",
+        "description": "Баннер, лозунги. Поведение не ясно. Без обновления отказывается работать"
+    },
+    {
+        "id": 785,
+        "datetime": "2023-11-15 09:15:00",
+        "problem_type": "political_slogans",
+        "name": "Internal Design Foundation",
+        "commit_link": "https://www.interaction-design.org/",
+        "description": "https://imgbox.com/gzmIfuap"
+    },
+    {
+        "id": 786,
+        "datetime": "2023-11-15 09:15:00",
+        "problem_type": "political_slogans",
+        "name": "open-source-mac-os-apps",
+        "commit_link": "https://github.com/serhii-londar/open-source-mac-os-apps",
+        "description": "Список софта для macOS с открытым исходным кодом. Добавили баннер в readme."
+    },
+    {
+        "id": 787,
+        "datetime": "2023-11-15 09:15:00",
+        "problem_type": "political_slogans",
+        "name": "НомерНедели",
+        "commit_link": "номернедели.рф",
+        "description": "Флаг Украины в шапке и в картинке в результатах поиска"
+    },
+    {
+        "id": 788,
+        "datetime": "2023-11-15 09:15:00",
+        "problem_type": "political_slogans",
+        "name": "Blender Artists Community",
+        "commit_link": "https://blenderartists.org/",
+        "description": "Флаг Украины в логотипе"
+    },
+    {
+        "id": 789,
+        "datetime": "2023-11-15 09:15:00",
+        "problem_type": "political_slogans",
+        "name": "Kompass",
+        "commit_link": "https://www.kompass.com/",
+        "description": "Очередное безосновательное “We stand with ukraine people” и удаление российской версии сайта. https://web.archive.org/web/20220301001832/https://ru.kompass.com/"
+    },
+    {
+        "id": 790,
+        "datetime": "2023-11-15 09:15:00",
+        "problem_type": "political_slogans",
+        "name": "OrbitalMarket - Enhanced marketplace",
+        "commit_link": "https://github.com/hugoattal/OrbitalMarket/commit/325547d22239e398c02a982f76c860b4a108c20a",
+        "description": "\"Orbital Market stands with Ukraine\" в README и на сайте"
+    },
+    {
+        "id": 791,
+        "datetime": "2023-11-15 09:15:00",
+        "problem_type": "political_slogans",
+        "name": "Vox Player",
+        "commit_link": "https://vox.rocks/forum/",
+        "description": "В шапке баннер с политическими заявлениями. Разработчики с Украины. Лучше не пользоваться этим плеером"
     }
 ]
