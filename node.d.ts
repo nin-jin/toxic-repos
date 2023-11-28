@@ -231,6 +231,7 @@ declare namespace $ {
         abstract put(next: Result | Error | Promise<Result | Error>): Result | Error | Promise<Result | Error>;
         sync(): Awaited<Result>;
         async(): Promise<Result>;
+        step(): Promise<null>;
     }
 }
 
@@ -1361,7 +1362,7 @@ declare namespace $ {
 declare namespace $.$$ {
     class $mol_hotkey extends $.$mol_hotkey {
         key(): {
-            [x: number]: ((event: KeyboardEvent) => void) | undefined;
+            readonly [x: number]: ((event: KeyboardEvent) => void) | undefined;
             readonly backspace?: ((event: KeyboardEvent) => void) | undefined;
             readonly tab?: ((event: KeyboardEvent) => void) | undefined;
             readonly enter?: ((event: KeyboardEvent) => void) | undefined;
@@ -1495,6 +1496,15 @@ declare namespace $.$$ {
         event_right(event?: KeyboardEvent): undefined;
         index_y(): number | null;
         index_x(): number | null;
+    }
+}
+
+declare namespace $ {
+    class $mol_storage extends $mol_object2 {
+        static native(): any;
+        static persisted(next?: boolean): boolean;
+        static estimate(): number;
+        static dir(): FileSystemDirectoryHandle;
     }
 }
 
@@ -1671,6 +1681,7 @@ declare namespace $ {
         event(): Record<string, any>;
         plugins(): readonly any[];
         selection_watcher(): any;
+        error_report(): any;
         disabled(): boolean;
         value(next?: any): string;
         value_changed(next?: any): string;
@@ -1694,6 +1705,7 @@ declare namespace $ {
 declare namespace $.$$ {
     class $mol_string extends $.$mol_string {
         event_change(next?: Event): void;
+        error_report(): void;
         hint_visible(): string;
         disabled(): boolean;
         autocomplete_native(): "on" | "off";
@@ -2018,7 +2030,9 @@ declare namespace $ {
         Tools(): $mol_view;
         head(): readonly any[];
         Head(): $mol_view;
-        body(): readonly $mol_view_content[];
+        body(): readonly $mol_view[];
+        Body_content(): $$.$mol_list;
+        body_content(): readonly any[];
         body_scroll_top(next?: any): number;
         Body(): $$.$mol_scroll;
         foot(): readonly $mol_view[];
