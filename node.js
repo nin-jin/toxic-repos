@@ -10328,9 +10328,7 @@ var $;
                 this.Download(),
                 this.Search()
             ];
-            obj.body = () => [
-                this.Issues()
-            ];
+            obj.Body_content = () => this.Issues();
             return obj;
         }
         Add_icon() {
