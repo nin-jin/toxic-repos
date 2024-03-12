@@ -2,6 +2,10 @@
 	--mol_theme_hue: 180deg;
 }
 
+[toxic_app_placeholder] {
+	max-width: 18rem;
+}
+
 [toxic_app_menu] {
 	flex: 0 0 18rem;
 }
@@ -11,7 +15,8 @@
 }
 
 [toxic_app_issues_page] {
-	flex: 0 0 60rem;
+	flex: 0 0 50rem;
+	margin: auto;
 }
 
 [toxic_app_issues_page_body] {
