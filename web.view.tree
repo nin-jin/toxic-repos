@@ -15,27 +15,6 @@ $mol_book2 $mol_scroll
 	Placeholder $mol_view
 	Gap* $mol_view title \
 
-$mol_link $mol_view
-	uri \
-	dom_name \a
-	uri_off \
-	uri_native null
-	external false
-	attr *
-		^
-		href <= uri_toggle \
-		title <= hint_safe <= hint \
-		target <= target \_self
-		download <= file_name \
-		mol_link_current <= current false
-		rel <= relation \
-	sub /$mol_view_content
-		<= title
-	arg *
-	event *
-		^
-		click?event <=> click?event <=> event_click?event null
-
 $mol_pop $mol_view
 	showed? false
 	align_vert \
@@ -59,42 +38,6 @@ $mol_pop_bubble $mol_view
 		^
 		mol_pop_align <= align \
 		tabindex 0
-
-$mol_speck $mol_view
-	attr *
-		^
-		mol_theme <= theme \$mol_theme_accent
-	style *
-		^
-		minHeight \1em
-	sub /
-		<= value null
-
-$mol_button $mol_view
-	enabled true
-	click?event null
-	event_click?event null
-	event *
-		^
-		click?event <=> event_activate?event null
-		dblclick?event <=> clicks?event null
-		keydown?event <=> event_key_press?event null 
-	attr *
-		^
-		disabled <= disabled false
-		role \button
-		tabindex <= tab_index 0
-		title <= hint_safe <= hint \
-	sub /$mol_view_content
-		<= title
-	Speck $mol_speck
-		value <= error \
-
-$mol_button_typed $mol_button
-	minimal_height 40
-	minimal_width 40
-
-$mol_button_minor $mol_button_typed
 
 $mol_hotkey $mol_plugin
 	event *
@@ -191,6 +134,42 @@ $mol_icon $mol_svg_root
 
 $mol_icon_cross $mol_icon path \M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z
 
+$mol_speck $mol_view
+	attr *
+		^
+		mol_theme <= theme \$mol_theme_accent
+	style *
+		^
+		minHeight \1em
+	sub /
+		<= value null
+
+$mol_button $mol_view
+	enabled true
+	click?event null
+	event_click?event null
+	event *
+		^
+		click?event <=> event_activate?event null
+		dblclick?event <=> clicks?event null
+		keydown?event <=> event_key_press?event null 
+	attr *
+		^
+		disabled <= disabled false
+		role \button
+		tabindex <= tab_index 0
+		title <= hint_safe <= hint \
+	sub /$mol_view_content
+		<= title
+	Speck $mol_speck
+		value <= error \
+
+$mol_button_typed $mol_button
+	minimal_height 40
+	minimal_width 40
+
+$mol_button_minor $mol_button_typed
+
 $mol_list $mol_view
 	render_visible_only true
 	render_over 0
@@ -257,6 +236,27 @@ $mol_search $mol_pop
 				haystack <= suggest_label* \
 				needle <= query? \
 
+$mol_link $mol_view
+	uri \
+	dom_name \a
+	uri_off \
+	uri_native null
+	external false
+	attr *
+		^
+		href <= uri_toggle \
+		title <= hint_safe <= hint \
+		target <= target \_self
+		download <= file_name \
+		mol_link_current <= current false
+		rel <= relation \
+	sub /$mol_view_content
+		<= title
+	arg *
+	event *
+		^
+		click?event <=> click?event <=> event_click?event null
+
 $mol_page $mol_view
 	dom_name \article
 	field *
@@ -292,12 +292,17 @@ $mol_book2_catalog $mol_book2
 	spread_ids /string
 	menu_filter_enabled false
 	spread_ids_filtered /string
+	menu_tools /
+	addon_tools /
 	pages /
 		<= Menu $mol_page
 			Title => Menu_title
 			title <= menu_title \
 			Tools => Menu_tools
-			tools <= menu_tools /
+			Logo <= Menu_logo null
+			tools /
+				^ menu_tools
+				^ addon_tools
 			head <= menu_head /
 				<= Menu_title
 				<= Menu_tools
@@ -518,18 +523,18 @@ $mol_grid_number $mol_grid_cell
 
 $mol_image $mol_view
 	dom_name \img
-	field *
+	field *any
 		^
 		src <= uri \
 		alt <= title
 		loading <= loading \eager
 		decoding <= decoding \async
 		crossOrigin <= cors null
-	attr *
+	attr *any
 		^
-		width <= natural_width? 0
-		height <= natural_height? 0
-	event *
+		width <= natural_width 0
+		height <= natural_height 0
+	event *any
 		load? <=> load? null
 	minimal_width 16
 	minimal_height 16
@@ -611,6 +616,7 @@ $mol_text $mol_list
 	text \
 	param \
 	flow_tokens /
+	block_text* \
 	auto /
 		<= auto_scroll null
 	- \Blocks
@@ -753,7 +759,7 @@ $toxic_app $mol_book2_catalog
 		ip_block <= Issues_page*ip_block
 		malware <= Issues_page*malware
 		political_slogans <= Issues_page*political_slogans
-	type_name *
+	type_name *string
 		all @ \All
 		broken_assembly @ \Broken Assemply
 		ddos @ \DDOS
