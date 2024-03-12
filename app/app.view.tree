@@ -39,7 +39,7 @@ $toxic_app $mol_book2_catalog
 		ip_block <= Issues_page*ip_block
 		malware <= Issues_page*malware
 		political_slogans <= Issues_page*political_slogans
-	type_name *
+	type_name *string
 		all @ \All
 		broken_assembly @ \Broken Assemply
 		ddos @ \DDOS
