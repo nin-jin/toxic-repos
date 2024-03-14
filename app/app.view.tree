@@ -6,10 +6,10 @@ $toxic_app $mol_book2_catalog
 			hint @ \Add new issue
 			sub /
 				<= Add_icon $mol_icon_plus
-		<= Source $mol_link_source
-			uri \https://github.com/nin-jin/toxic-repos
 		<= Lights $mol_lights_toggle
 	menu_foot /
+		<= Source $mol_link_source
+			uri \https://github.com/nin-jin/toxic-repos
 		<= News $mol_link
 			uri \https://t.me/toxic_repos
 			hint @ \News
