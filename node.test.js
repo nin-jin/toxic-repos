@@ -5377,11 +5377,11 @@ var $;
                 }
                 let top2 = top;
                 let bottom2 = bottom;
-                if (anchoring && (top <= limit_top) && (bottom < limit_bottom)) {
+                if (anchoring && (top < limit_top) && (bottom < limit_bottom) && (max < kids.length)) {
                     min2 = max;
                     top2 = bottom;
                 }
-                if ((bottom >= limit_bottom) && (top > limit_top)) {
+                if ((bottom > limit_bottom) && (top > limit_top) && (min > 0)) {
                     max2 = min;
                     bottom2 = top;
                 }
@@ -6888,47 +6888,6 @@ var $;
 "use strict";
 
 ;
-	($.$mol_icon_script) = class $mol_icon_script extends ($.$mol_icon) {
-		path(){
-			return "M17.8,20C17.4,21.2 16.3,22 15,22H5C3.3,22 2,20.7 2,19V18H5L14.2,18C14.6,19.2 15.7,20 17,20H17.8M19,2H8C6.3,2 5,3.3 5,5V16H16V17C16,17.6 16.4,18 17,18H18V5C18,4.4 18.4,4 19,4C19.6,4 20,4.4 20,5V6H22V5C22,3.3 20.7,2 19,2Z";
-		}
-	};
-
-
-;
-"use strict";
-
-;
-	($.$mol_icon_script_text) = class $mol_icon_script_text extends ($.$mol_icon) {
-		path(){
-			return "M17.8,20C17.4,21.2 16.3,22 15,22H5C3.3,22 2,20.7 2,19V18H5L14.2,18C14.6,19.2 15.7,20 17,20H17.8M19,2C20.7,2 22,3.3 22,5V6H20V5C20,4.4 19.6,4 19,4C18.4,4 18,4.4 18,5V18H17C16.4,18 16,17.6 16,17V16H5V5C5,3.3 6.3,2 8,2H19M8,6V8H15V6H8M8,10V12H14V10H8Z";
-		}
-	};
-
-
-;
-"use strict";
-
-;
-	($.$mol_link_source) = class $mol_link_source extends ($.$mol_link) {
-		Icon(){
-			const obj = new this.$.$mol_icon_script_text();
-			return obj;
-		}
-		hint(){
-			return (this.$.$mol_locale.text("$mol_link_source_hint"));
-		}
-		sub(){
-			return [(this.Icon())];
-		}
-	};
-	($mol_mem(($.$mol_link_source.prototype), "Icon"));
-
-
-;
-"use strict";
-
-;
 "use strict";
 var $;
 (function ($) {
@@ -7117,6 +7076,47 @@ var $;
         $$.$mol_lights_toggle = $mol_lights_toggle;
     })($$ = $.$$ || ($.$$ = {}));
 })($ || ($ = {}));
+
+;
+	($.$mol_icon_script) = class $mol_icon_script extends ($.$mol_icon) {
+		path(){
+			return "M17.8,20C17.4,21.2 16.3,22 15,22H5C3.3,22 2,20.7 2,19V18H5L14.2,18C14.6,19.2 15.7,20 17,20H17.8M19,2H8C6.3,2 5,3.3 5,5V16H16V17C16,17.6 16.4,18 17,18H18V5C18,4.4 18.4,4 19,4C19.6,4 20,4.4 20,5V6H22V5C22,3.3 20.7,2 19,2Z";
+		}
+	};
+
+
+;
+"use strict";
+
+;
+	($.$mol_icon_script_text) = class $mol_icon_script_text extends ($.$mol_icon) {
+		path(){
+			return "M17.8,20C17.4,21.2 16.3,22 15,22H5C3.3,22 2,20.7 2,19V18H5L14.2,18C14.6,19.2 15.7,20 17,20H17.8M19,2C20.7,2 22,3.3 22,5V6H20V5C20,4.4 19.6,4 19,4C18.4,4 18,4.4 18,5V18H17C16.4,18 16,17.6 16,17V16H5V5C5,3.3 6.3,2 8,2H19M8,6V8H15V6H8M8,10V12H14V10H8Z";
+		}
+	};
+
+
+;
+"use strict";
+
+;
+	($.$mol_link_source) = class $mol_link_source extends ($.$mol_link) {
+		Icon(){
+			const obj = new this.$.$mol_icon_script_text();
+			return obj;
+		}
+		hint(){
+			return (this.$.$mol_locale.text("$mol_link_source_hint"));
+		}
+		sub(){
+			return [(this.Icon())];
+		}
+	};
+	($mol_mem(($.$mol_link_source.prototype), "Icon"));
+
+
+;
+"use strict";
 
 ;
 	($.$mol_icon_telegram) = class $mol_icon_telegram extends ($.$mol_icon) {
@@ -9810,13 +9810,13 @@ var $;
 			(obj.sub) = () => ([(this.Add_icon())]);
 			return obj;
 		}
+		Lights(){
+			const obj = new this.$.$mol_lights_toggle();
+			return obj;
+		}
 		Source(){
 			const obj = new this.$.$mol_link_source();
 			(obj.uri) = () => ("https://github.com/nin-jin/toxic-repos");
-			return obj;
-		}
-		Lights(){
-			const obj = new this.$.$mol_lights_toggle();
 			return obj;
 		}
 		News_icon(){
@@ -9955,14 +9955,11 @@ var $;
 			return "Toxic Repos";
 		}
 		menu_tools(){
-			return [
-				(this.Add()), 
-				(this.Source()), 
-				(this.Lights())
-			];
+			return [(this.Add()), (this.Lights())];
 		}
 		menu_foot(){
 			return [
+				(this.Source()), 
 				(this.News()), 
 				(this.Support()), 
 				(this.Mail())
@@ -10006,8 +10003,8 @@ var $;
 	};
 	($mol_mem(($.$toxic_app.prototype), "Add_icon"));
 	($mol_mem(($.$toxic_app.prototype), "Add"));
-	($mol_mem(($.$toxic_app.prototype), "Source"));
 	($mol_mem(($.$toxic_app.prototype), "Lights"));
+	($mol_mem(($.$toxic_app.prototype), "Source"));
 	($mol_mem(($.$toxic_app.prototype), "News_icon"));
 	($mol_mem(($.$toxic_app.prototype), "News"));
 	($mol_mem(($.$toxic_app.prototype), "Chat_icon"));
@@ -11063,7 +11060,50 @@ var $;
 "use strict";
 var $;
 (function ($) {
-    $mol_style_attach("toxic/app/app.view.css", "[toxic_app] {\n\t--mol_theme_hue: 180deg;\n}\n\n[toxic_app_placeholder] {\n\tmax-width: 18rem;\n}\n\n[toxic_app_menu] {\n\tflex: 0 0 18rem;\n}\n\n[toxic_app_link] {\n\tjustify-content: space-between;\n}\n\n[toxic_app_issues_page] {\n\tflex: 0 0 50rem;\n\tmargin: 0 auto;\n}\n\n[toxic_app_issues_page_body] {\n\tpadding: 0;\n}\n\n[toxic_app_menu_foot] {\n\tpadding: var(--mol_gap_block);\n}\t\n\n[toxic_app_issue] {\n\tpadding: var(--mol_gap_block);\n}\t\n\n[toxic_app_issue_main] {\n\tjustify-content: space-between;\n\tflex-wrap: wrap;\n\tgap: .75rem;\n}\n\n[toxic_app_issue_name] {\n\ttext-shadow: 0 0;\n\tflex: 1 1 auto;\n}\n\n[toxic_app_issue_type] {\n\tcolor: var(--mol_theme_shade);\n}\n\n[toxic_app_issue_date] {\n\tcolor: var(--mol_theme_shade);\n}\n\n[toxic_app_issue_descr] {\n\tmax-width: 100%\n}\n");
+    var $$;
+    (function ($$) {
+        $mol_style_define($toxic_app, {
+            '--mol_theme_hue': '180deg',
+            Menu: {
+                flex: {
+                    basis: '15rem',
+                },
+            },
+            Placeholder: {
+                maxWidth: '15rem',
+            },
+            Issues_page: {
+                flex: {
+                    basis: '50rem',
+                },
+                margin: [0, 'auto'],
+            },
+            Issue: {
+                padding: $mol_gap.block,
+            },
+            Issue_main: {
+                flex: {
+                    wrap: 'wrap',
+                },
+                justify: {
+                    content: 'flex-end',
+                },
+                gap: $mol_gap.block,
+            },
+            Issue_name: {
+                textShadow: '0 0',
+                flex: {
+                    grow: 1,
+                },
+            },
+            Issue_type: {
+                color: $mol_theme.shade,
+            },
+            Issue_date: {
+                color: $mol_theme.shade,
+            },
+        });
+    })($$ = $.$$ || ($.$$ = {}));
 })($ || ($ = {}));
 
 ;
